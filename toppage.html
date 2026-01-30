@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pokémon Sleep Tools</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/top.css">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<!-- ▼ 固定ヘッダー -->
+<header class="header">
+  <div class="header-title">Pokémon Sleep Tools</div>
+  <div class="menu-icon" id="menuBtn">☰</div>
+</header>
+
+<!-- ▼ スライドメニュー -->
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">メニュー</div>
+
+  <a href="詳細評価/ポケスリver1.6.1.html">詳細評価</a>
+  <a href="比較評価/ポケスリver1.1.0.html">比較評価</a>
+  <a href="Exp計算/ポケスリExp_ver1.1.0.html">Exp計算機</a>
+
+  <div class="menu-bottom">
+    <a href="toppage.html">トップページ</a>
+  </div>
+</nav>
+
+<!-- ▼ メニュー展開時の背景 -->
+<div class="overlay" id="overlay"></div>
+
+<main>
+
+  <h1>評価ツールまとめ</h1>
+
+  <!-- ▼ ツール一覧 -->
+  <section id="tools">
+    <h2>ツール一覧</h2>
+    <div id="toolGrid" class="grid"></div>
+  </section>
+
+  <!-- ▼ 更新履歴 -->
+  <section id="history" class="panel chalkboard">
+    <h2>更新履歴</h2>
+
+    <table id="historyTable">
+      <thead>
+        <tr>
+          <th>日付</th>
+          <th>
+            <div class="filter-box">
+              <label>ツール名：</label>
+              <select id="filterTool">
+                <option value="all">すべて</option>
+                <option value="詳細評価">詳細評価</option>
+                <option value="比較評価">比較評価</option>
+                <option value="Exp算出">Exp算出</option>
+              </select>
+            </div>
+          </th>
+          <th>更新内容</th>
+        </tr>
+      </thead>
+      <tbody id="historyBody"></tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <small>© Penkichi Tools</small>
+</footer>
+
+<!-- ▼ JS -->
+<script src="src/top.js"></script>
+
+</body>
+</html>
