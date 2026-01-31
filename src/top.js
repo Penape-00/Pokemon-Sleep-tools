@@ -5,8 +5,8 @@ const tools = [
   {
     id: "detail",
     title: "詳細評価",
-    href: "../detail.html",
-    icon: "Clodsire Eclair.png",
+    href: "tools/detail.html",
+    icon: "src/Clodsire Eclair.png",
     desc: "個別ポケモンの詳細評価",
     color: "#c78184",
     hoverColor: "#9f3c40"
@@ -14,8 +14,8 @@ const tools = [
   {
     id: "compare",
     title: "比較評価",
-    href: "../compare.html",
-    icon: "Flower Gift Macarons.png",
+    href: "tools/compare.html",
+    icon: "src/Flower Gift Macarons.png",
     desc: "2体の性能を比較",
     color: "#64b5f6",
     hoverColor: "#1e88e5"
@@ -23,8 +23,8 @@ const tools = [
   {
     id: "exp",
     title: "Exp算出",
-    href: "../Exp.html",
-    icon: "Jigglypuff's Fruity Flan.png",
+    href: "tools/Exp.html",
+    icon: "src/Jigglypuff's Fruity Flan.png",
     desc: "経験値計算ツール",
     color: "#ffb74d",
     hoverColor: "#fb8c00"
