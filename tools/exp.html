@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポケスリExp計算機 ver1.2.0</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="data/exp.css">
+</head>
+
+<body>
+
+<!-- ▼ 固定ヘッダー -->
+<header class="header">
+  <div class="header-title">Pokémon Sleep Tools</div>
+  <div class="menu-icon" id="menuBtn">☰</div>
+</header>
+
+<!-- ▼ スライドメニュー -->
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">メニュー</div>
+
+  <a href="../詳細評価/ポケスリver1.6.2.html">詳細評価</a>
+  <a href="../比較評価/ポケスリver1.1.1.html">比較評価</a>
+  <a href="ポケスリExp_ver1.2.0.html">Exp計算機</a>
+
+  <div class="menu-bottom">
+    <a href="../toppage.html">トップページ</a>
+  </div>
+</nav>
+
+<!-- ▼ メニュー展開時の背景 -->
+<div class="overlay" id="overlay"></div>
+
+<h1>ポケスリExp計算機 ver1.2.0</h1>
+
+<!-- ▼ 入力エリア -->
+<section class="section-block">
+
+  <h2>基本情報</h2>
+  <div class="row">
+    <div class="field">
+      <label>ポケモン名</label>
+      <select id="pokemonSelect"></select>
+    </div>
+
+    <div class="field">
+      <label>性格</label>
+      <select id="natureSelect"></select>
+    </div>
+  </div>
+
+  <h2>レベル情報</h2>
+  <div class="row">
+    <div class="field">
+      <label>現在Lv</label>
+      <input type="number" id="currentLevel" min="1" max="65" value="15">
+    </div>
+
+    <div class="field">
+      <label>次のレベルまでのEXP</label>
+      <input type="number" id="currentExp" min="0">
+    </div>
+
+    <div class="field">
+      <label>目標Lv</label>
+      <input type="number" id="targetLevel" min="1" max="65" value="60">
+    </div>
+  </div>
+
+  <h2>睡眠情報</h2>
+  <div class="row">
+    <div class="field">
+      <label>平均睡眠EXP</label>
+      <input type="number" id="sleepExp" min="0" max="100" value="100">
+    </div>
+
+    <div class="field">
+      <label>睡眠EXPボーナス</label>
+      <select id="sleepBonus">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+
+  <h2>アメ使用設定</h2>
+  <div class="row">
+    <div class="field">
+      <label>アメブースト</label>
+      <select id="candyBoost">
+        <option value="none">なし</option>
+        <option value="mini">ミニアメブースト</option>
+        <option value="full">アメブースト</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="button-row">
+    <button id="calcButton" class="btn-comp">計算する</button>
+    <button id="clearButton" class="btn-clear">クリア</button>
+  </div>
+
+</section>
+
+<!-- ▼ 結果表示 -->
+<section class="section-block results">
+  <h2>結果</h2>
+
+  <table id="resultTable"></table>
+
+  <p id="resultNote" class="result-note" style="display:none;">
+    ※計算結果はゲーム内仕様により多少前後する場合があります。
+  </p>
+</section>
+
+<!-- ▼ データファイル -->
+<script src="data/expTable.js"></script>
+<script src="data/shardTable.js"></script>
+
+<!-- ▼ メインロジック -->
+<script src="data/exp.js"></script>
+
+</body>
+</html>
