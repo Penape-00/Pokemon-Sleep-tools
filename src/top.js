@@ -23,7 +23,7 @@ const tools = [
   {
     id: "exp",
     title: "Exp算出",
-    href: "tools/Exp.html",
+    href: "tools/exp.html",
     icon: "src/Jigglypuff's Fruity Flan.png",
     desc: "経験値計算ツール",
     color: "#ffb74d",
