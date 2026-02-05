@@ -26,8 +26,17 @@ const tools = [
     href: "tools/exp.html",
     icon: "src/Jigglypuff's Fruity Flan.png",
     desc: "経験値計算ツール",
-    color: "#ffb74d",
-    hoverColor: "#fb8c00"
+    color: "#81c784",
+    hoverColor: "#43a047"
+  },
+  {
+    id: "sleepPower",
+    title: "ねむけパワー算出",
+    href: "tools/sleepPower.html",
+    icon: "src/Petal Dance Chocolate Tart.png",
+    desc: "ねむけパワー計算ツール",
+    color: "#ba68c8",
+    hoverColor: "#ab47bc"
   }
 ];
 
@@ -35,10 +44,9 @@ const tools = [
    ▼ 更新履歴データ
 ================================ */
 const updateHistory = [
-  { date: "2025-01-26", tool: "Exp算出", color: "rgba(255,238,119,0.8)", content: "ハンバーガーメニュー追加(ver1.1.0)" },
-  { date: "2025-01-23", tool: "詳細評価", color: "rgba(255,187,255,0.8)", content: "公開(ver1.6.1)" },
-  { date: "2025-01-23", tool: "比較評価", color: "rgba(102,187,255,0.8)", content: "公開(ver1.1.0)" },
-  { date: "2025-01-23", tool: "Exp算出", color: "rgba(255,238,119,0.8)", content: "公開(ver1.0.0)" }
+  { date: "2025-02-05", tool: "詳細評価", color: "rgba(255,187,255,0.8)", content: "公開(ver1.6.2)" },
+  { date: "2025-02-05", tool: "比較評価", color: "rgba(102,187,255,0.8)", content: "公開(ver1.1.1)" },
+  { date: "2025-02-05", tool: "Exp算出", color: "rgba(255,238,119,0.8)", content: "公開(ver1.2.0)" }
 ];
 
 /* ===============================
