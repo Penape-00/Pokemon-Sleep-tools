@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ねむけパワー算出ツール ver1.0.0</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/sleepPower.css">
+</head>
+
+<body>
+
+<!-- ▼ 固定ヘッダー -->
+<header class="header">
+  <div class="header-title">Pokémon Sleep Tools</div>
+  <div class="menu-icon" id="menuBtn">☰</div>
+</header>
+
+<!-- ▼ スライドメニュー -->
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">メニュー</div>
+
+  <a href="../詳細評価/ポケスリver1.6.2.html">詳細評価</a>
+  <a href="../比較評価/ポケスリver1.1.1.html">比較評価</a>
+  <a href="../パーティ評価/party.html">パーティ評価</a>
+  <a href="../Exp計算/ポケスリExp_ver1.2.0.html">Exp計算</a>
+  <a href="sleepPower_ver1.0.0.html">ねむけパワー算出</a>
+  <a href="../database/database.html">データベース</a>
+
+  <div class="menu-bottom">
+    <a href="../toppage.html">トップページ</a>
+  </div>
+</nav>
+
+<!-- ▼ メニュー展開時の背景 -->
+<div class="overlay" id="overlay"></div>
+
+<h1>ねむけパワー算出ツール ver1.0.0</h1>
+
+<!-- ▼ 入力エリア -->
+<section class="section-block">
+
+  <h2>基本情報</h2>
+
+  <div class="row">
+    <div class="field">
+      <label>フィールド</label>
+      <select id="fieldSelect">
+        <option value="ワカクサ本島">ワカクサ本島</option>
+        <option value="シアンの砂浜">シアンの砂浜</option>
+        <option value="トープ洞窟">トープ洞窟</option>
+        <option value="ウノハナ雪原">ウノハナ雪原</option>
+        <option value="ラピスラズリ湖畔">ラピスラズリ湖畔</option>
+        <option value="ゴールド旧発電所">ゴールド旧発電所</option>
+        <option value="アンバー渓谷">アンバー渓谷</option>
+        <option value="ワカクサ本島EX">ワカクサ本島EX</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>総エナジー</label>
+      <input type="number" id="energyInput" min="0" placeholder="例：12000">
+    </div>
+
+    <div class="field">
+      <label>ねむけパワー倍率</label>
+      <select id="bonusSelect">
+        <option value="1.0">1.0倍（通常）</option>
+        <option value="1.5">1.5倍</option>
+        <option value="2.0">2.0倍</option>
+        <option value="2.5">2.5倍</option>
+        <option value="3.0">3.0倍</option>
+        <option value="4.0">4.0倍</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="button-row">
+    <button id="calcButton" class="btn-comp">計算する</button>
+    <button id="openBorderBtn" class="btn-clear">ボーダー一覧を見る</button>
+  </div>
+
+</section>
+
+<!-- ▼ 結果表示 -->
+<section class="section-block results">
+  <h2>結果</h2>
+
+  <table id="resultTable"></table>
+
+  <p id="resultNote" class="result-note" style="display:none;">
+    ※睡眠スコアは最大100、睡眠時間は最大8時間30分で計算しています。
+  </p>
+</section>
+
+<!-- ▼ モーダル（ボーダー一覧） -->
+<div id="modalOverlay" class="modal-overlay"></div>
+
+<div id="borderModal" class="modal">
+  <h2>フィールド別ボーダー一覧</h2>
+
+  <div class="field">
+    <label>フィールド</label>
+    <select id="modalFieldSelect">
+      <option value="ワカクサ本島">ワカクサ本島</option>
+      <option value="シアンの砂浜">シアンの砂浜</option>
+      <option value="トープ洞窟">トープ洞窟</option>
+      <option value="ウノハナ雪原">ウノハナ雪原</option>
+      <option value="ラピスラズリ湖畔">ラピスラズリ湖畔</option>
+      <option value="ゴールド旧発電所">ゴールド旧発電所</option>
+      <option value="アンバー渓谷">アンバー渓谷</option>
+      <option value="ワカクサ本島EX">ワカクサ本島EX</option>
+    </select>
+  </div>
+
+  <table id="borderTable"></table>
+
+  <button id="closeBorderBtn" class="btn-close">閉じる</button>
+</div>
+
+<!-- ▼ データファイル -->
+<script src="src/sleepPower_data.js"></script>
+
+<!-- ▼ メインロジック -->
+<script src="src/sleepPower.js"></script>
+
+</body>
+</html>
