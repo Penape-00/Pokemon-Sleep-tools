@@ -13,10 +13,10 @@ function scoreToSleepTime(score) {
   if (score === "不可") return "―";
 
   // スコア100は必ず8時間30分
-  const minutes = (score >= 100) ? 510 : score * 5;
+  const minutes = (score >= 100) ? 510 : score * 5.1;
 
   const h = Math.floor(minutes / 60);
-  const m = minutes % 60;
+  const m = Math.ceil(minutes % 60);
 
   return `${h}時間${m}分`;
 }
@@ -136,4 +136,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("openBorderBtn").addEventListener("click", openBorderModal);
   document.getElementById("closeBorderBtn").addEventListener("click", closeBorderModal);
   document.getElementById("modalOverlay").addEventListener("click", closeBorderModal);
+
 });
