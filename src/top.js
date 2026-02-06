@@ -8,8 +8,8 @@ const tools = [
     href: "tools/detail.html",
     icon: "src/Clodsire Eclair.png",
     desc: "個別ポケモンの詳細評価",
-    color: "#c78184",
-    hoverColor: "#9f3c40"
+    color: "#ef5350",
+    hoverColor: "#d52925"
   },
   {
     id: "compare",
@@ -44,9 +44,10 @@ const tools = [
    ▼ 更新履歴データ
 ================================ */
 const updateHistory = [
+  { date: "2025-02-05", tool: "ねむけパワー", color: "rgba(186,104,216,0.8)", content: "公開(ver1.0.0)" },
   { date: "2025-02-05", tool: "詳細評価", color: "rgba(255,187,255,0.8)", content: "公開(ver1.6.2)" },
   { date: "2025-02-05", tool: "比較評価", color: "rgba(102,187,255,0.8)", content: "公開(ver1.1.1)" },
-  { date: "2025-02-05", tool: "Exp算出", color: "rgba(255,238,119,0.8)", content: "公開(ver1.2.0)" }
+  { date: "2025-02-05", tool: "Exp算出", color: "rgba(129,199,132,0.8)", content: "公開(ver1.2.0)" }
 ];
 
 /* ===============================
