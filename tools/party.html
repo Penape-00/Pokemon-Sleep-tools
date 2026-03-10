@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パーティ総合評価 ver1.0.0</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src_party/party.css">
+</head>
+
+<body>
+
+<!-- ▼ 固定ヘッダー -->
+<header class="header">
+  <div class="header-title">Pokémon Sleep Tools</div>
+  <div class="menu-icon" id="menuBtn">☰</div>
+</header>
+
+<!-- ▼ スライドメニュー -->
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">メニュー</div>
+
+  <a href="detail.html">詳細評価</a>
+  <a href="compare.html">比較評価</a>
+  <a href="party.html">パーティ評価</a>
+  <a href="exp.html">Exp計算</a>
+  <a href="sleepPower.html">ねむけパワー算出</a>
+  <a href="database.html">データベース</a>
+
+  <div class="menu-bottom">
+    <a href="../index.html">トップページ</a>
+  </div>
+</nav>
+
+<!-- ▼ メニュー展開時の背景 -->
+<div class="overlay" id="overlay"></div>
+
+<h1>パーティ総合評価 ver1.0.0</h1>
+
+<!-- ▼ 全体設定 -->
+<section class="section-block">
+  <h2>全体設定</h2>
+
+  <div class="row">
+
+    <!-- フィールド選択 -->
+    <div class="field">
+      <label>フィールド</label>
+      <select id="fieldSelect">
+        <option value="ワカクサ本島">ワカクサ本島</option>
+        <option value="シアンの砂浜">シアンの砂浜</option>
+        <option value="トープ洞窟">トープ洞窟</option>
+        <option value="ウノハナ雪原">ウノハナ雪原</option>
+        <option value="ラピスラズリ湖畔">ラピスラズリ湖畔</option>
+        <option value="ゴールド旧発電所">ゴールド旧発電所</option>
+        <option value="アンバー渓谷">アンバー渓谷</option>
+      </select>
+    </div>
+
+    <!-- EXモード -->
+    <div class="field">
+      <label>EXモード</label>
+      <select id="exMode">
+        <option value="0">なし</option>
+        <option value="1">あり（ワカクサ本島のみ）</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- ▼ 適正タイプ（3枠固定） -->
+  <h3>適正タイプ（※EXモード時は括弧内が適用）</h3>
+
+  <div class="row">
+
+    <div class="field">
+      <label id="typeLabel1">きのみ①（メイン適正）</label>
+      <select id="type1"></select>
+    </div>
+
+    <div class="field">
+      <label id="typeLabel2">きのみ②（サブ適正①）</label>
+      <select id="type2"></select>
+    </div>
+
+    <div class="field">
+      <label id="typeLabel3">きのみ③（サブ適正②）</label>
+      <select id="type3"></select>
+    </div>
+
+  </div>
+
+  <!-- ▼ その他の全体設定 -->
+  <div class="row">
+
+    <div class="field">
+      <label>フィールドボーナス（％）</label>
+      <input type="number" id="fieldBonus" value="65" min="0" max="85">
+    </div>
+
+    <div class="field">
+      <label>いいキャンプチケット</label>
+      <select id="campTicket">
+        <option value="1">なし</option>
+        <option value="1.2">あり</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>EXボーナス</label>
+      <select id="exBonus">
+        <option value="">なし</option>
+        <option value="きのみ">きのみEX（きのみエナジー1.2倍）</option>
+        <option value="スキル">スキルEX（スキル発動確率1.25倍）</option>
+        <option value="食材">食材EX（食材1個追加+α）</option>
+      </select>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ▼ テンプレート（5体分の入力欄） -->
+<template id="pokemon-template">
+  <div class="tab-content">
+    <h3></h3>
+
+    <div class="row row-basic">
+      <div class="col autocomplete-wrapper">
+        <label>ポケモン名</label>
+        <input type="text" class="pokeName">
+        <div class="autocomplete-list"></div>
+      </div>
+
+      <div class="col">
+        <label>レベル</label>
+        <input type="number" class="pokeLevel" value="60" min="0" max="100">
+      </div>
+
+      <div class="col">
+        <label>性格</label>
+        <select class="pokeNature"></select>
+      </div>
+    </div>
+
+    <div class="subskill-header">サブスキル</div>
+
+    <div class="row row-subskills">
+      <div class="col">
+        <label>Lv10</label>
+        <select class="pokeSubSkill" data-slot="1"></select>
+      </div>
+      <div class="col">
+        <label>Lv25</label>
+        <select class="pokeSubSkill" data-slot="2"></select>
+      </div>
+      <div class="col">
+        <label>Lv50</label>
+        <select class="pokeSubSkill" data-slot="3"></select>
+      </div>
+      <div class="col">
+        <label>Lv75</label>
+        <select class="pokeSubSkill" data-slot="4"></select>
+      </div>
+      <div class="col">
+        <label>Lv100</label>
+        <select class="pokeSubSkill" data-slot="5"></select>
+      </div>
+    </div>
+
+    <button class="btn-clear">このポケモンをクリア</button>
+  </div>
+</template>
+
+<!-- ▼ ポケモン入力（5体分を JS で生成） -->
+<section class="section-block">
+  <h2>ポケモン入力（5体）</h2>
+
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="1">1体目</button>
+    <button class="tab-btn" data-tab="2">2体目</button>
+    <button class="tab-btn" data-tab="3">3体目</button>
+    <button class="tab-btn" data-tab="4">4体目</button>
+    <button class="tab-btn" data-tab="5">5体目</button>
+  </div>
+
+  <div class="tab-contents" id="pokemon-container"></div>
+
+  <div class="button-row">
+    <button id="calcButton" class="btn-comp">評価</button>
+    <button id="clearAllButton" class="btn-clear-all">全体クリア</button>
+  </div>
+</section>
+
+<!-- ▼ 結果表示 -->
+<section class="section-block results">
+  <h2>結果</h2>
+  <table id="resultTable"></table>
+</section>
+
+<!-- ▼ データファイル -->
+<script src="src_common/pokemonData.js"></script>
+<script src="src_common/natureData.js"></script>
+<script src="src_party/subSkillData.js"></script>
+
+<!-- ▼ メインロジック -->
+<script src="src_party/calc.js"></script>
+<script src="src_party/party.js"></script>
+
+</body>
+</html>
