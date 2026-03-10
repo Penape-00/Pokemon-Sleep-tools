@@ -21,6 +21,15 @@ const tools = [
     hoverColor: "#1e88e5"
   },
   {
+    id: "party",
+    title: "パーティ評価",
+    href: "tools/party.html",
+    icon: "src/Scary Face Pancakes.png",
+    desc: "パーティを総合的に評価",
+    color: "#ffb74d",
+    hoverColor: "#fb8c00"
+  },
+  {
     id: "exp",
     title: "Exp算出",
     href: "tools/exp.html",
@@ -44,6 +53,7 @@ const tools = [
    ▼ 更新履歴データ
 ================================ */
 const updateHistory = [
+  { date: "2025-03-10", tool: "パーティ評価", color: "rgba(255,183,77,0.8)", content: "公開(ver1.0.0)" },
   { date: "2025-02-05", tool: "ねむけパワー", color: "rgba(186,104,216,0.8)", content: "公開(ver1.0.0)" },
   { date: "2025-02-05", tool: "詳細評価", color: "rgba(255,187,255,0.8)", content: "公開(ver1.6.2)" },
   { date: "2025-02-05", tool: "比較評価", color: "rgba(102,187,255,0.8)", content: "公開(ver1.1.1)" },
