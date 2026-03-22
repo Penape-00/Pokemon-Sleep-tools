@@ -3,7 +3,7 @@
   "short_name": "ポケスリTools",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "src/icon_March.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }
