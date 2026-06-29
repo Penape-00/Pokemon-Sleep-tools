@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポケモンデータベース</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src_database/database.css">
+</head>
+
+<body>
+
+<!-- ▼ 固定ヘッダー -->
+<header class="header">
+  <div class="header-title">Pokémon Sleep Tools</div>
+  <div class="menu-icon" id="menuBtn">☰</div>
+</header>
+
+<!-- ▼ スライドメニュー -->
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">メニュー</div>
+
+  <a href="detail.html">詳細評価</a>
+  <a href="compare.html">比較評価</a>
+  <a href="party.html">パーティ評価</a>
+  <a href="exp.html">Exp計算</a>
+  <a href="sleepPower.html">ねむけパワー算出</a>
+  <a href="database.html">データベース</a>
+
+  <div class="menu-bottom">
+    <a href="../index.html">トップページ</a>
+  </div>
+</nav>
+
+<!-- ▼ メニュー展開時の背景 -->
+<div class="overlay" id="overlay"></div>
+
+<h1>データベース</h1>
+
+<!-- ▼ 絞り込みエリア -->
+<section class="section-block section-filter">
+ <h2 class="section-header" data-target="#filterArea">絞り込み <span class="toggle-icon">+</span></h2>
+  <div id="filterArea" class="filter-content">
+
+   <div class="filter-row">
+
+    <div class="filter-field"><div class="dropdown-multi" data-filter="type"></div></div>
+    <div class="filter-field"><div class="dropdown-multi" data-filter="tokui"></div></div>
+    <div class="filter-field"><div class="dropdown-multi" data-filter="skill"></div></div>
+    <div class="filter-field"><div class="dropdown-multi" data-filter="ingredient"></div></div>
+    <div class="filter-field"><div class="dropdown-multi" data-filter="sleep"></div></div>
+    <div class="filter-field"><div class="dropdown-multi" data-filter="field"></div></div>
+
+   </div>
+
+   <div style="margin-top: 12px;">
+     <button id="filterClearBtn">クリア</button>
+   </div>
+
+ </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ▼ ソートエリア -->
+<section class="section-block section-sort">
+ <h2 class="section-header" data-target="#sortArea">ソート <span class="toggle-icon">+</span></h2>
+  <div id="sortArea" class="filter-content">
+
+   <div class="filter-row">
+
+    <div class="filter-field">
+      <label>項目</label>
+      <select id="sortSelect">
+        <option value="dex">図鑑番号</option>
+        <option value="name">名前</option>
+        <option value="help">おてつだい時間</option>
+        <option value="berry">きのみ指数</option>
+        <option value="ing">食材指数</option>
+        <option value="skill">スキル発動指標</option>
+      </select>
+    </div>
+
+    <div class="filter-field">
+      <label>順序</label>
+      <select id="sortOrder">
+        <option value="asc">昇順</option>
+        <option value="desc">降順</option>
+      </select>
+    </div>
+
+   </div>
+  </div>
+</section>
+
+<!-- ▼ カード一覧 -->
+<section class="section-block">
+  <h2>
+    ポケモン一覧
+    <span id="pokemonCount" class="pokemon-count">表示中: 0 / 0</span>
+  </h2>
+
+  <div id="cardGrid" class="card-grid"></div>
+
+  <button id="showMoreBtn" class="btn-comp" style="margin-top:16px;">
+    もっと見る
+  </button>
+</section>
+
+<!-- ▼ カードテンプレート -->
+<template id="pokemon-card-template">
+  <div class="pokemon-card">
+    <div class="card-left">
+      <img class="card-image" src="" alt="">
+    </div>
+
+    <div class="card-right">
+      <div class="card-dex"></div>
+      <div class="card-name"></div>
+      <div class="card-type"></div>
+      <div class="card-tokui"></div>
+    </div>
+
+    <div class="tokui-accent"></div>
+    <div class="type-accent"></div>
+  </div>
+</template>
+
+<!-- ▼ 詳細パネル -->
+<div id="detailOverlay" class="modal-overlay"></div>
+
+<div id="detailPanel" class="modal">
+
+  <div class="detail-tabs">
+    <button class="detail-tab active" data-tab="info">基本情報</button>
+    <button class="detail-tab" data-tab="skill">食材・スキル</button>
+    <button class="detail-tab" data-tab="evolution">進化段階</button>
+    <button class="detail-tab" data-tab="fields">出現フィールド</button>
+  </div>
+
+  <div class="detail-content">
+    <div id="tab-info" class="tab-section active"></div>
+    <div id="tab-skill" class="tab-section"></div>
+    <div id="tab-evolution" class="tab-section"></div>
+    <div id="tab-fields" class="tab-section"></div>
+  </div>
+
+  <button id="closeDetailBtn" class="btn-close">閉じる</button>
+</div>
+
+<!-- ▼ データファイル -->
+<script src="src_database/mainSkillData.js"></script>
+<script src="src_database/ingredientData.js"></script>
+<script src="src_database/berryData.js"></script>
+<script src="src_database/pokedexData_Kanto.js"></script>
+<script src="src_database/pokedexData_Johto.js"></script>
+<script src="src_database/pokedexData_Hoenn.js"></script>
+<script src="src_database/pokedexData_Sinnoh.js"></script>
+<script src="src_database/pokedexData_Unova.js"></script>
+<script src="src_database/pokedexData_Kalos.js"></script>
+<script src="src_database/pokedexData_Alola.js"></script>
+<script src="src_database/pokedexData_Galar.js"></script>
+<script src="src_database/pokedexData_Paldea.js"></script>
+<script src="src_database/pokedexData_All.js"></script>
+<script src="src_database/evolutionChain.js"></script>
+
+<!-- ▼ 分割後のJS（ここが重要） -->
+<script src="src_database/ui.js"></script>
+<script src="src_database/card.js"></script>
+<script src="src_database/filter.js"></script>
+<script src="src_database/detail.js"></script>
+
+</body>
+</html>
