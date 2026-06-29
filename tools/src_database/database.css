@@ -1,0 +1,978 @@
+/* ================================
+   全体設定
+================================ */
+body {
+  font-family: sans-serif;
+  background: #a9a9a9;
+  padding: 16px;
+  padding-top: 30px;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  border-left: 6px solid #78909c;
+  padding-left: 8px;
+  margin: 0 0 12px 0;
+}
+
+/* ================================
+   セクション
+================================ */
+.section-block {
+  background: #f5f5f5;
+  padding: 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.field {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+select,
+input,
+button {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* ================================
+   固定ヘッダー
+================================ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #4CAF50;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 2000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ================================
+   スライドメニュー
+================================ */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -220px;
+  width: 220px;
+  height: 100%;
+  background: #e8f5e9;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.2);
+  padding-top: 30px;
+  transition: right 0.3s ease;
+  z-index: 3000;
+  border-radius: 12px 0 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu a {
+  display: block;
+  padding: 14px;
+  font-size: 16px;
+  color: #2e7d32;
+  text-decoration: none;
+  border-bottom: 1px solid #c8e6c9;
+}
+
+.side-menu a:hover {
+  background: #c8e6c9;
+}
+
+.menu-header {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px;
+  color: #1b5e20;
+  border-bottom: 2px solid #a5d6a7;
+}
+
+.side-menu .menu-bottom {
+  margin-top: auto;
+  border-top: 2px solid #a5d6a7;
+  padding: 16px;
+}
+
+.side-menu .menu-bottom a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+/* メニュー展開時の背景 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 2500;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* ================================
+   ▼ 絞り込み・ソート開閉
+================================ */
+
+.section-header {
+  padding: 4px 10px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  user-select: none;
+  margin-bottom: 6px;
+}
+
+.section-header:hover {
+  background: #e8e8e8;
+}
+
+.section-filter {
+  margin-bottom: 0;
+  padding: 8px 16px 0 16px;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+}
+
+.section-sort {
+  margin-top: 0;
+  padding: 8px 16px 0 16px;
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+}
+
+.toggle-icon {
+  font-size: 1.2em;
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+}
+
+.section-header .toggle-icon {
+  color: #e53935;
+}
+.section-header.open .toggle-icon {
+  color: #1e88e5;
+}
+
+.filter-content {
+  display: none;
+  padding: 10px 0;
+}
+.filter-content.open {
+  display: block;
+}
+
+.section-divider {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* ================================
+   ▼ カスタム複数選択ドロップダウン
+================================ */
+
+/* ▼ 絞り込み行：横並びにする */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ▼ 6等分（flex を使う方が安定する） */
+.filter-field {
+  flex: 1;
+  min-width: 180px;
+  box-sizing: border-box;
+}
+
+/* ▼ ラベル（高さはそのままでOK） */
+.filter-field label {
+  display: block;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+/* ▼ ドロップダウン本体（はみ出しの原因を完全に除去） */
+.filter-field .dropdown-multi {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ▼ ▼マーク */
+.dropdown-multi::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* 選択中のドロップダウン */
+.dropdown-multi.active {
+  background: #e3f2fd; /* 薄い青 */
+  color: #000;         /* 黒字 */
+}
+
+/* ▼ 開いたときのメニュー */
+.dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 20;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 6px 0;
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background: #f0f0f0;
+}
+
+.dropdown-option input[type="checkbox"],
+.dropdown-option input[type="radio"] {
+  margin-right:  8px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+#ingredientMode:checked {
+  accent-color: #d32f2f;
+}
+
+.dropdown-selected-text {
+  font-size: 0.9em;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#filterClearBtn {
+  padding: 6px 12px;
+  border: none;
+  background: #888;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#filterClearBtn:hover {
+  background: #666;
+}
+
+/* ================================
+   ボタン
+================================ */
+.btn-comp {
+  padding: 10px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-comp:hover {
+  background: #43a047;
+}
+
+/* ================================
+   カード一覧
+================================ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.pokemon-card {
+  display: flex;
+  background: #f3f8ff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  position: relative;
+}
+
+.pokemon-card:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.card-left {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.card-right {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  z-index: 2;
+}
+
+.card-dex {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-type,
+.card-tokui {
+  font-size: 14px;
+  color: #333;
+}
+
+.card-name,
+.card-type,
+.card-tokui {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tokui-accent {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: #ccc;
+  clip-path: polygon(80% 0%, 100% 0%, 20% 100%, 0% 100%);
+  z-index: 1;
+}
+
+.type-accent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: #ccc;
+  clip-path: polygon(100% 0%, 100% 100%, 10% 100%, 90% 0%);
+  border-radius: 0 8px 8px 0;
+  z-index: 1;
+}
+
+.section-block h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon-count {
+  font-size: 16px;
+  color: #333;
+  margin: 0; /* 下余白を消す */
+}
+
+/* ================================
+   詳細パネル（モーダル）
+================================ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 4000;
+}
+
+.modal-overlay.show {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 92%;
+  max-width: 520px;
+  max-height: 85vh;
+  height: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 5000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  overflow-y: hidden;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.btn-close {
+  position: sticky;
+  bottom: 0;
+  padding-top: 12px;
+  background: #78909c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  background: #546e7a;
+}
+/* ================================
+   タブ
+================================ */
+.detail-tabs {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 0px;
+}
+
+.detail-tab {
+  flex: 1;
+  padding: 10px 5px 10px 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.detail-tab.active {
+  background: #ffb74d;
+}
+
+.detail-content {
+  height: calc(85vh - 100px);
+  overflow-y: auto;
+  padding-bottom: 12px;
+}
+
+.tab-section {
+  display: none;
+  background: #fff;
+  padding: 12px;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #ccc;
+  max-height: calc(85vh - 128px);
+  overflow-y: auto;
+}
+
+.tab-section.active {
+  display: block;
+}
+
+.tab-content {
+  max-height: calc(85vh - 120px);
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+@media (max-width: 480px) {
+  .detail-tab {
+    padding: 10px 2px;
+    font-size: 12px;
+  }
+}
+/* ================================
+   基本情報
+================================ */
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-left {
+  flex: 1;
+}
+
+.info-left h3 {
+  margin: 4px 0;
+}
+
+.info-left p {
+  margin: 4px 0;
+}
+
+.info-right {
+  flex-shrink: 0;
+}
+
+.info-hr {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.info-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.dex-badge {
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  background: rgba(var(--type-color), 0.25);
+  border: 1px solid rgba(var(--type-color), 0.45);
+  white-space: nowrap;
+}
+
+.title-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-name {
+  font-size: 22px;
+  font-weight: 700;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.2;
+}
+
+.detail-image-small {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0px auto 0px;
+  object-fit: contain;
+}
+
+.info-left img.detail-image-small {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-grid, .index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 6px 20px;
+  align-items: center;
+}
+
+.info-grid div, .index-grid div {
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .info-grid, .index-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================
+   色違いトグルスイッチ
+================================ */
+.title-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 100%;
+}
+
+.shiny-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+.shiny-switch input {
+  display: none;
+}
+.shiny-switch .slider {
+  position: absolute;
+  inset: 0;
+  background: #ccc;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+.shiny-switch .slider::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.shiny-switch input:checked + .slider {
+  background: #4caf50;
+}
+.shiny-switch input:checked + .slider::after {
+  transform: translateX(20px);
+}
+
+.shiny-switch.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.title-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shiny-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  user-select: none;
+}
+
+/* ================================
+   メインスキル
+================================ */
+.skill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  table-layout: fixed;
+}
+
+/* 全セル */
+.skill-table th,
+.skill-table td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  word-break: break-all;
+}
+
+/* スキル名（背景#666・白文字・左寄せ） */
+.skill-table .skill-title {
+  background: #666;
+  color: #fff;
+  text-align: left;
+}
+
+/* 説明文（背景は通常） */
+.skill-table .skill-desc {
+  background: #fafafa;
+  text-align: left;
+}
+
+/* Lv ヘッダー（背景#666・白文字） */
+.skill-table .col-lv-header {
+  background: #666;
+  color: #fff;
+  text-align: center;
+}
+
+/* A/B/C ヘッダー（背景#666・白文字） */
+.skill-table .col-param-header {
+  background: #666;
+  color: #fff;
+  text-align: center;
+}
+
+/* Lv 列（背景は通常） */
+.skill-table .col-lv {
+  width: 50px;
+  text-align: center;
+}
+
+/* A/B/C のセル（中央寄せ） */
+.skill-table .col-param {
+  text-align: center;
+}
+
+/* ================================
+   食材リスト
+================================ */
+/* ▼ 食材テーブル全体 */
+.ingredient-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  table-layout: fixed;
+}
+
+/* ▼ 全セル */
+.ingredient-table th,
+.ingredient-table td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* ▼ ヘッダー（背景#666・白文字） */
+.ingredient-table th {
+  background: #666;
+  color: #fff;
+}
+
+/* ▼ 食材画像セル（左寄せ） */
+.ingredient-name-cell {
+  text-align: center;
+}
+
+/* ▼ 食材画像 */
+.ingredient-img {
+  width: 45px;   /* ← 好きなサイズに変更してOK */
+  height: 45px;
+  object-fit: contain;
+}
+
+.empty-cell {
+  background: #ddd;   /* ← お好みで #ccc や #bbb に変更可能 */
+}
+
+/* ================================
+   進化チェーン（横並び・分岐対応）
+================================ */
+
+#tab-evolution {
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+.evo-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.evo-cell {
+  padding: 0 6px;
+  vertical-align: middle;
+}
+
+.evo-item {
+  text-align: center;
+}
+
+.evo-item div {
+  white-space: nowrap;
+}
+
+.evo-img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.evo-cond-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evo-conditions {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.evo-long-arrow {
+  width: 120px;
+  height: 4px;
+  background-color: #444;
+  position: relative;
+}
+
+.evo-long-arrow::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: -4px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #444;
+}
+
+/* ================================
+   出現フィールド表
+================================ */
+.field-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.field-table th,
+.field-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.field-table th {
+  background: #666;
+  color: #fff;
+}
+
+.field-table-wrapper {
+  overflow-x: auto;
+}
+
+.field-cell.empty {
+  color: #aaa;
+}
+
+.field-block {
+  padding: 2px 0;
+}
+
+.field-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+}
+
+.field-title-line {
+  width: 4px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+@media (max-width: 480px) {
+  .field-table th,
+  .field-table td {
+    font-size: 14px;
+    padding: 4px;
+  }
+}
+/* ================================
+   スマホ対応
+================================ */
+@media (max-width: 480px) {
+  .field {
+    min-width: 100%;
+  }
+}
