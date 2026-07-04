@@ -161,6 +161,59 @@ button {
 }
 
 /* ================================
+   オプションパネル
+================================ */
+.toggle-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  width: 40px;
+  height: 22px;
+  background-color: #ccc;
+  border-radius: 22px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 2px;
+  top: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(18px);
+}
+
+.label-text {
+  font-size: 16px;
+  color: #333;
+}
+
+#optionsToggle {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/* ================================
    ボタン
 ================================ */
 .button-row {
@@ -198,6 +251,79 @@ button {
 
 .btn-clear:hover {
   background: #c9302c;
+}
+
+/* ================================
+   目標レベル手入力の表示調整
+================================ */
+#targetLevel {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* ------------------------
+   所持数差分の色分け
+================================ */
+.status-positive {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.status-negative {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+/* ================================
+   段階別テーブル（breakdown）
+================================ */
+.breakdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.breakdown-table th,
+.breakdown-table td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+.breakdown-table th {
+  background: #f0f0f0;
+  color: #333;
+  font-weight: 700;
+}
+
+/* 横幅が狭いときにスクロールさせる */
+#breakdownContainer {
+  overflow-x: auto;
+}
+
+/* ================================
+   結果テーブルの小調整
+================================ */
+#resultTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#resultTable th,
+#resultTable td {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#resultTable th {
+  background: #666;
+  color: #fff;
+  text-align: left;
 }
 
 /* ================================
@@ -240,5 +366,17 @@ th {
 @media (max-width: 480px) {
   .field {
     min-width: 100%;
+  }
+
+  #optionsPanel {
+    padding: 10px;
+  }
+
+  .breakdown-table {
+    font-size: 13px;
+  }
+
+  #optionsToggle {
+    width: 100%;
   }
 }
