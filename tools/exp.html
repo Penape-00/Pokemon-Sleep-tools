@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exp計算機 ver1.2.0</title>
+  <title>Expシミュレーター ver2.0.0</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="src_exp/exp.css">
@@ -23,7 +23,10 @@
 
   <a href="detail.html">詳細評価</a>
   <a href="compare.html">比較評価</a>
-  <a href="exp.html">Exp計算機</a>
+  <a href="party.html">パーティ評価</a>
+  <a href="exp.html">Exp計算</a>
+  <a href="sleepPower.html">ねむけパワー算出</a>
+  <a href="database.html">データベース</a>
 
   <div class="menu-bottom">
     <a href="../index.html">トップページ</a>
@@ -33,7 +36,7 @@
 <!-- ▼ メニュー展開時の背景 -->
 <div class="overlay" id="overlay"></div>
 
-<h1>ポケスリExp計算機 ver1.2.0</h1>
+<h1>Expシミュレーター ver2.0.0</h1>
 
 <!-- ▼ 入力エリア -->
 <section class="section-block">
@@ -51,11 +54,10 @@
     </div>
   </div>
 
-  <h2>レベル情報</h2>
   <div class="row">
     <div class="field">
       <label>現在Lv</label>
-      <input type="number" id="currentLevel" min="1" max="65" value="15">
+      <input type="number" id="currentLevel" min="1" max="70" value="15">
     </div>
 
     <div class="field">
@@ -65,11 +67,26 @@
 
     <div class="field">
       <label>目標Lv</label>
-      <input type="number" id="targetLevel" min="1" max="65" value="60">
+
+      <!-- プリセット + 任意入力（最小変更で追加） -->
+      <select id="targetLevelSelect" aria-label="目標レベル選択">
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="50">50</option>
+        <option value="60" selected>60</option>
+        <option value="70">70</option>
+        <option value="custom">その他（手入力）</option>
+      </select>
+
+      <input type="number" id="targetLevel" min="1" max="70" value="60" style="display:none; margin-top:8px;">
+      <!--
+        注意:
+        - 元の input#targetLevel を残しつつ、プリセット選択時は select の値を targetLevel に反映、
+          「その他（手入力）」選択時に input#targetLevel を表示して直接編集できるようにする想定です。
+      -->
     </div>
   </div>
 
-  <h2>睡眠情報</h2>
   <div class="row">
     <div class="field">
       <label>平均睡眠EXP</label>
@@ -77,27 +94,48 @@
     </div>
 
     <div class="field">
-      <label>睡眠EXPボーナス</label>
-      <select id="sleepBonus">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-    </div>
-  </div>
-
-  <h2>アメ使用設定</h2>
-  <div class="row">
-    <div class="field">
       <label>アメブースト</label>
       <select id="candyBoost">
         <option value="none">なし</option>
         <option value="mini">ミニアメブースト</option>
         <option value="full">アメブースト</option>
       </select>
+    </div>
+  </div>
+
+  <!-- オプション折り畳み（最小限の追記） -->
+  <div style="margin-top:12px;">
+<label class="toggle-switch">
+  <input type="checkbox" id="optionsToggleSwitch">
+  <span class="slider"></span>
+  <span class="label-text">オプション設定</span>
+</label>
+
+    <div id="optionsPanel" style="display:none; margin-top:12px;">
+      <div class="row">
+        <div class="field">
+          <label>所持アメ数</label>
+          <input type="number" id="ownedCandy" min="0" placeholder="例: 120">
+        </div>
+
+        <div class="field">
+          <label>所持ゆめのかけら数</label>
+          <input type="number" id="ownedShards" min="0" placeholder="例: 5000">
+        </div>
+
+        <div class="field">
+          <label>睡眠EXPボーナス</label>
+          <select id="sleepBonus">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -114,16 +152,26 @@
 
   <table id="resultTable"></table>
 
+  <details id="breakdownDetails" style="margin-top:12px; display:none;">
+    <summary>途中レベル別の必要数を見る</summary>
+    <div id="breakdownContainer" style="margin-top:8px; overflow-x:auto;"></div>
+  </details>
+
   <p id="resultNote" class="result-note" style="display:none;">
     ※計算結果はゲーム内仕様により多少前後する場合があります。
   </p>
 </section>
 
-<!-- ▼ データファイル -->
-<script src="src_exp/expTable.js"></script>
+<footer style="margin-top:20px; font-size:13px; color:#555;">
+  <p>
+    参照元：
+    <a href="https://pks.raenonx.cc/ja" target="_blank">RaenonX ポケモンスリープ攻略ツール</a>, 
+    <a href="https://wikiwiki.jp/poke_sleep/" target="_blank">Pokémon Sleep攻略・検証Wiki</a>
+  </p>
+</footer>
 
-<!-- ▼ メインロジック -->
-<script src="src_exp/exp.js"></script>
+<script src="src_exp/expTable.js" defer></script>
+<script src="src_exp/exp.js" defer></script>
 
 </body>
 </html>
