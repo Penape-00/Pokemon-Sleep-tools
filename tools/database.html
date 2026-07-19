@@ -44,14 +44,20 @@
   <div id="filterArea" class="filter-content">
 
    <div class="filter-row">
+     <div class="filter-field">
+       <input id="nameSearch" type="text" placeholder="名前検索（ひらがな可）">
+     </div>
 
-    <div class="filter-field"><div class="dropdown-multi" data-filter="type"></div></div>
-    <div class="filter-field"><div class="dropdown-multi" data-filter="tokui"></div></div>
-    <div class="filter-field"><div class="dropdown-multi" data-filter="skill"></div></div>
-    <div class="filter-field"><div class="dropdown-multi" data-filter="ingredient"></div></div>
-    <div class="filter-field"><div class="dropdown-multi" data-filter="sleep"></div></div>
-    <div class="filter-field"><div class="dropdown-multi" data-filter="field"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="type"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="tokui"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="ingredient"></div></div>
+   </div>
 
+   <!-- ▼ 下段：メインスキル + 睡眠タイプ + 出現フィールド -->
+   <div class="filter-row">
+     <div class="filter-field"><div class="dropdown-multi" data-filter="skill"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="sleep"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="field"></div></div>
    </div>
 
    <div style="margin-top: 12px;">
@@ -148,6 +154,14 @@
 
   <button id="closeDetailBtn" class="btn-close">閉じる</button>
 </div>
+
+<footer style="margin-top:20px; font-size:13px; color:#555;">
+  <p>
+    参照元：
+    <a href="https://pks.raenonx.cc/ja" target="_blank">RaenonX ポケモンスリープ攻略ツール</a>, 
+    <a href="https://www.serebii.net/" target="_blank">Serebii.net</a>
+  </p>
+</footer>
 
 <!-- ▼ データファイル -->
 <script src="src_database/mainSkillData.js"></script>
