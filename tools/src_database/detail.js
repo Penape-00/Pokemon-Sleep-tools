@@ -100,23 +100,46 @@ function renderTabInfo(p) {
 
         <img src="${p.imageDetail}" class="detail-image-small">
 
-<div class="info-grid">
-  <div><b>タイプ：</b> ${p.type.join("・")} ${renderBerryIcon(p.type[0])}</div>
-  <div><b>とくい：</b> ${p.tokui}</div>
-  <div><b>睡眠タイプ：</b> ${p.sleepType}</div>
-  <div><b>基礎おてつだい時間：</b> ${p.baseHelpTime} 秒</div>
-  <div><b>食材確率：</b> ${(p.ingRate * 100).toFixed(1)}%</div>
-  <div><b>スキル発動確率：</b> ${(p.skillRate * 100).toFixed(1)}%</div>
-  <div><b>最大所持数：</b> ${p.maxHold} 個</div>
-</div>
+        <div class="info-grid">
+          <div><b>タイプ：</b> ${p.type.join("・")} ${renderBerryIcon(p.type[0])}</div>
+          <div><b>とくい：</b> ${p.tokui}</div>
+          <div><b>睡眠タイプ：</b> ${p.sleepType}</div>
+          <div><b>基礎おてつだい時間：</b> ${p.baseHelpTime} 秒</div>
+          <div><b>食材確率：</b> ${(p.ingRate * 100).toFixed(1)}%</div>
+          <div><b>スキル発動確率：</b> ${(p.skillRate * 100).toFixed(1)}%</div>
+          <div><b>最大所持数：</b> ${p.maxHold} 個</div>
+        </div>
 
-<hr class="info-hr">
+        <hr class="info-hr">
 
-<div class="index-grid">
-  <div><b>きのみ指数：</b> ${p.berryIndex.toFixed(2)}</div>
-  <div><b>食材指数：</b> ${p.ingIndex.toFixed(2)}</div>
-  <div><b>スキル発動指標：</b> ${p.skillIndicator.toFixed(3)}</div>
-</div>
+        <div class="index-grid">
+          <div>
+            <b>きのみ指数：</b> ${p.berryIndex.toFixed(2)}
+            <span class="info-icon" data-info="berry">ⓘ
+              <div class="tooltip-box" style="display:none;">
+                「きのみの数S」、食材確率を加味したきのみエナジー効率の指標
+              </div>
+            </span>
+          </div>
+
+          <div>
+            <b>食材指数：</b> ${p.ingIndex.toFixed(2)}
+            <span class="info-icon" data-info="ingredient">ⓘ
+              <div class="tooltip-box" style="display:none;">
+                睡眠時間を加味したLv60での食材期待エナジー効率の指標
+              </div>
+            </span>
+          </div>
+
+          <div>
+            <b>スキル発動指標：</b> ${p.skillIndicator.toFixed(2)}
+            <span class="info-icon" data-info="skill">ⓘ
+              <div class="tooltip-box" style="display:none;">
+                睡眠時間を加味したLv60での1日当たりのスキル発動期待値
+              </div>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   `;
@@ -124,6 +147,64 @@ function renderTabInfo(p) {
   document.getElementById("tab-info").innerHTML = html;
 }
 
+document.addEventListener("click", (e) => {
+  document.querySelectorAll(".tooltip-box").forEach(t => t.style.display = "none");
+
+  const icon = e.target.closest(".info-icon");
+  if (!icon) return;
+
+  const type = icon.dataset.info;
+  const messages = {
+    berry: "「きのみの数S」、食材確率を加味したきのみエナジー効率の指標",
+    ingredient: "睡眠時間を加味したLv60での食材期待エナジー効率の指標",
+    skill: "睡眠時間を加味したLv60での1日当たりのスキル発動期待値"
+  };
+
+  let tooltip = icon.querySelector(".tooltip-box");
+  if (!tooltip) {
+    tooltip = document.createElement("div");
+    tooltip.className = "tooltip-box";
+    tooltip.textContent = messages[type];
+    icon.appendChild(tooltip);
+  }
+
+  tooltip.style.display = "block";
+});
+
+/* ▼ 指数説明 tooltip（PCはhover、スマホはtap） */
+const isTouch = matchMedia("(pointer: coarse)").matches;
+
+if (!isTouch) {
+  /* PC版：hoverで表示 */
+  document.addEventListener("mouseover", (e) => {
+    const icon = e.target.closest(".info-icon");
+    if (!icon) return;
+
+    const tooltip = icon.querySelector(".tooltip-box");
+    if (tooltip) tooltip.style.display = "block";
+  });
+
+  document.addEventListener("mouseout", (e) => {
+    const icon = e.target.closest(".info-icon");
+    if (!icon) return;
+
+    const tooltip = icon.querySelector(".tooltip-box");
+    if (tooltip) tooltip.style.display = "none";
+  });
+
+} else {
+  /* スマホ版：tapで表示、他を触ると閉じる */
+  document.addEventListener("click", (e) => {
+    // 他の tooltip を閉じる
+    document.querySelectorAll(".tooltip-box").forEach(t => t.style.display = "none");
+
+    const icon = e.target.closest(".info-icon");
+    if (!icon) return;
+
+    const tooltip = icon.querySelector(".tooltip-box");
+    if (tooltip) tooltip.style.display = "block";
+  });
+}
 
 /* ================================
    ▼ タブ2：食材・スキル
