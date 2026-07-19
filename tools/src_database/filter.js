@@ -12,6 +12,13 @@ let filteredList = [...pokedexData_All];
 const selectedFilters = { type:[], tokui:[], skill:[], ingredient:[], sleep:[], field:[] };
 let ingredientMode = "OR";
 
+/* ▼ ひらがな → カタカナ変換 */
+function hiraToKana(str) {
+  return str.replace(/[\u3041-\u3096]/g, ch =>
+    String.fromCharCode(ch.charCodeAt(0) + 0x60)
+  );
+}
+
 /* ▼ 表示名 */
 const FILTER_DISPLAY_NAMES = {
   type:"タイプ", tokui:"とくいタイプ", skill:"メインスキル",
@@ -147,7 +154,13 @@ function initDropdowns() {
 
 /* ▼ 絞り込み */
 function applyFilters() {
+  const keywordRaw = document.getElementById("nameSearch").value.trim();
+  const keyword = keywordRaw ? hiraToKana(keywordRaw) : "";
+
   filteredList = pokedexData_All.filter(p => {
+
+    /* ▼ 名前検索（ひらがな対応・部分一致） */
+    if (keyword && !p.name.includes(keyword)) return false;
 
     if (selectedFilters.type.length && !p.type.some(t => selectedFilters.type.includes(t))) return false;
     if (selectedFilters.tokui.length && !selectedFilters.tokui.includes(p.tokui)) return false;
@@ -197,6 +210,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
   initDropdowns();
 
+  document.getElementById("nameSearch").addEventListener("input", () => {
+    applyFilters();
+  });
+
   document.getElementById("sortSelect").addEventListener("change", () => {
     applySort();
     resetAndRender();
@@ -223,6 +240,8 @@ window.addEventListener("DOMContentLoaded", () => {
 document.getElementById("filterClearBtn").addEventListener("click", () => {
 
   Object.keys(selectedFilters).forEach(k => selectedFilters[k] = []);
+
+  document.getElementById("nameSearch").value = "";
 
   document.querySelectorAll(".dropdown-multi").forEach(d => {
     d.querySelectorAll("input[type='checkbox'], input[type='radio']").forEach(cb => cb.checked = false);
