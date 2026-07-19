@@ -228,30 +228,27 @@ button {
    ▼ カスタム複数選択ドロップダウン
 ================================ */
 
-/* ▼ 絞り込み行：横並びにする */
 .filter-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   width: 100%;
+  padding-bottom: 4px;
   box-sizing: border-box;
 }
 
-/* ▼ 6等分（flex を使う方が安定する） */
 .filter-field {
   flex: 1;
   min-width: 180px;
   box-sizing: border-box;
 }
 
-/* ▼ ラベル（高さはそのままでOK） */
 .filter-field label {
   display: block;
   white-space: normal;
   line-height: 1.2;
 }
 
-/* ▼ ドロップダウン本体（はみ出しの原因を完全に除去） */
 .filter-field .dropdown-multi {
   position: relative;
   width: 100%;
@@ -264,7 +261,6 @@ button {
   user-select: none;
 }
 
-/* ▼ ▼マーク */
 .dropdown-multi::after {
   content: "▼";
   position: absolute;
@@ -275,13 +271,11 @@ button {
   color: #666;
 }
 
-/* 選択中のドロップダウン */
 .dropdown-multi.active {
   background: #e3f2fd; /* 薄い青 */
   color: #000;         /* 黒字 */
 }
 
-/* ▼ 開いたときのメニュー */
 .dropdown-options {
   position: absolute;
   top: calc(100% + 4px);
@@ -328,6 +322,27 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#nameSearch {
+  height: 34px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  background: #fff;
+  vertical-align: middle;
+}
+
+#nameSearch:hover {
+  border-color: #999;
+}
+
+#nameSearch:focus {
+  outline: none;
+  border-color: #6a9bff;
+  box-shadow: 0 0 6px #6a9bff55;
 }
 
 #filterClearBtn {
@@ -680,6 +695,43 @@ button {
 
 .info-grid div, .index-grid div {
   line-height: 1.6;
+}
+
+.info-icon {
+  display: inline-block;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1e88e5;
+  font-weight: bold;
+  user-select: none;
+  position: relative;
+}
+
+.tooltip-box {
+  position: absolute;
+  bottom: 22px;
+  left: -144px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #333;
+  width: 240px;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  display: none;
+}
+
+.tooltip-box::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 20px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ccc;
 }
 
 @media (max-width: 600px) {
