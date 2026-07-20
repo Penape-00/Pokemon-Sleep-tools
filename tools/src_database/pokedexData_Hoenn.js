@@ -36,8 +36,8 @@ const pokedexData_Hoenn = [
     maxHold: 8,
 
     berryIndex: 1.10,
-    ingIndex: 0.91,
-    skillIndicator:0.672,
+    ingIndex: 0.75,
+    skillIndicator: 1.33,
 
     evolutionChain: [
       {
@@ -151,8 +151,8 @@ const pokedexData_Hoenn = [
     maxHold: 16,
 
     berryIndex: 1.55,
-    ingIndex: 1.08,
-    skillIndicator:0.916,
+    ingIndex: 0.90,
+    skillIndicator: 1.98,
 
     evolutionChain: [
       {
@@ -266,8 +266,8 @@ const pokedexData_Hoenn = [
     maxHold: 27,
 
     berryIndex: 2.33,
-    ingIndex: 1.11,
-    skillIndicator:1.127,
+    ingIndex: 0.82,
+    skillIndicator: 2.57,
 
     evolutionChain: [
       {
@@ -381,8 +381,8 @@ const pokedexData_Hoenn = [
     maxHold: 12,
 
     berryIndex: 1.58,
-    ingIndex: 1.25,
-    skillIndicator:0.884,
+    ingIndex: 0.95,
+    skillIndicator: 1.68,
 
     evolutionChain: [
       {
@@ -487,8 +487,8 @@ const pokedexData_Hoenn = [
     maxHold: 21,
 
     berryIndex: 1.98,
-    ingIndex: 1.68,
-    skillIndicator:1.321,
+    ingIndex: 1.39,
+    skillIndicator: 2.65,
 
     evolutionChain: [
       {
@@ -593,8 +593,8 @@ const pokedexData_Hoenn = [
     maxHold: 32,
 
     berryIndex: 2.64,
-    ingIndex: 1.98,
-    skillIndicator:1.628,
+    ingIndex: 1.61,
+    skillIndicator: 3.37,
 
     evolutionChain: [
       {
@@ -699,8 +699,8 @@ const pokedexData_Hoenn = [
     maxHold: 11,
 
     berryIndex: 1.60,
-    ingIndex: 1.11,
-    skillIndicator:0.441,
+    ingIndex: 0.93,
+    skillIndicator: 0.84,
 
     evolutionChain: [
       {
@@ -805,8 +805,8 @@ const pokedexData_Hoenn = [
     maxHold: 21,
 
     berryIndex: 2.07,
-    ingIndex: 1.31,
-    skillIndicator:0.691,
+    ingIndex: 1.09,
+    skillIndicator: 1.41,
 
     evolutionChain: [
       {
@@ -911,8 +911,8 @@ const pokedexData_Hoenn = [
     maxHold: 30,
 
     berryIndex: 2.65,
-    ingIndex: 1.42,
-    skillIndicator:1.049,
+    ingIndex: 1.14,
+    skillIndicator: 2.20,
 
     evolutionChain: [
       {
@@ -1017,8 +1017,8 @@ const pokedexData_Hoenn = [
     maxHold: 9,
 
     berryIndex: 0.93,
-    ingIndex: 0.50,
-    skillIndicator:0.774,
+    ingIndex: 0.40,
+    skillIndicator: 1.61,
 
     evolutionChain: [
       {
@@ -1123,8 +1123,8 @@ const pokedexData_Hoenn = [
     maxHold: 18,
 
     berryIndex: 1.27,
-    ingIndex: 0.70,
-    skillIndicator:1.061,
+    ingIndex: 0.61,
+    skillIndicator: 2.43,
 
     evolutionChain: [
       {
@@ -1229,8 +1229,8 @@ const pokedexData_Hoenn = [
     maxHold: 28,
 
     berryIndex: 1.85,
-    ingIndex: 1.00,
-    skillIndicator:1.512,
+    ingIndex: 0.89,
+    skillIndicator: 3.53,
 
     evolutionChain: [
       {
@@ -1335,8 +1335,8 @@ const pokedexData_Hoenn = [
     maxHold: 7,
 
     berryIndex: 1.34,
-    ingIndex: 0.91,
-    skillIndicator:0.335,
+    ingIndex: 0.77,
+    skillIndicator: 0.61,
 
     evolutionChain: [
       {
@@ -1441,8 +1441,8 @@ const pokedexData_Hoenn = [
     maxHold: 14,
 
     berryIndex: 2.09,
-    ingIndex: 1.32,
-    skillIndicator:0.405,
+    ingIndex: 1.12,
+    skillIndicator: 0.76,
 
     evolutionChain: [
       {
@@ -1547,8 +1547,8 @@ const pokedexData_Hoenn = [
     maxHold: 26,
 
     berryIndex: 1.54,
-    ingIndex: 1.95,
-    skillIndicator:1.608,
+    ingIndex: 2.43,
+    skillIndicator: 3.44,
 
     evolutionChain: [
       {
@@ -1653,8 +1653,8 @@ const pokedexData_Hoenn = [
     maxHold: 16,
 
     berryIndex: 1.40,
-    ingIndex: 1.36,
-    skillIndicator:1.632,
+    ingIndex: 1.28,
+    skillIndicator: 3.56,
 
     evolutionChain: [
       {
@@ -1722,8 +1722,8 @@ const pokedexData_Hoenn = [
     maxHold: 17,
 
     berryIndex: 1.64,
-    ingIndex: 3.07,
-    skillIndicator:1.026,
+    ingIndex: 2.77,
+    skillIndicator: 2.05,
 
     evolutionChain: [
       {
@@ -1809,8 +1809,8 @@ const pokedexData_Hoenn = [
     maxHold: 10,
 
     berryIndex: 0.84,
-    ingIndex: 1.95,
-    skillIndicator:0.697,
+    ingIndex: 2.03,
+    skillIndicator: 1.39,
 
     evolutionChain: [
       {
@@ -1906,8 +1906,8 @@ const pokedexData_Hoenn = [
     maxHold: 18,
 
     berryIndex: 1.14,
-    ingIndex: 2.68,
-    skillIndicator:0.987,
+    ingIndex: 2.97,
+    skillIndicator: 2.08,
 
     evolutionChain: [
       {
@@ -2003,8 +2003,8 @@ const pokedexData_Hoenn = [
     maxHold: 28,
 
     berryIndex: 1.57,
-    ingIndex: 3.86,
-    skillIndicator: 1.50,
+    ingIndex: 4.44,
+    skillIndicator: 3.22,
 
     evolutionChain: [
       {
@@ -2065,6 +2065,355 @@ const pokedexData_Hoenn = [
   },
 
   {
+    dexNo: 311,
+    formId: "normal",
+    name: "プラスル",
+
+    imageCard: getImagePath("card", 311, "normal"),
+    imageDetail: getImagePath("panel", 311, "normal"),
+
+    type: ["でんき"],
+    tokui: "スキル",
+
+    sleepType: "すやすや",
+
+    mainSkill: "プラス(食材ゲットS)",
+
+    ingredients: [
+      {
+        name: "めざましコーヒー",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "ふといながねぎ",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "モーモーミルク",
+        countsByLevel: { 60: 6 }
+      }
+    ],
+
+    baseHelpTime: 2400,
+    ingRate: 0.103,
+    skillRate: 0.049,
+    maxHold: 16,
+
+    berryIndex: 1.87,
+    ingIndex: 0.87,
+    skillIndicator: 3.55,
+
+    evolutionChain: [
+      {
+        dexNo: 311,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ハイパー", rank: 5 }],
+          2: [{ type: "マスター", rank: 4 }],
+          3: null,
+          4: [{ type: "マスター", rank: 5 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
+      },
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 1 }],
+          2: [{ type: "ハイパー", rank: 4 }],
+          3: [{ type: "マスター", rank: 4 }],
+          4: [{ type: "マスター", rank: 5 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 312,
+    formId: "normal",
+    name: "マイナン",
+
+    imageCard: getImagePath("card", 312, "normal"),
+    imageDetail: getImagePath("panel", 312, "normal"),
+
+    type: ["でんき"],
+    tokui: "スキル",
+
+    sleepType: "すやすや",
+
+    mainSkill: "マイナス(料理パワーアップS)",
+
+    ingredients: [
+      {
+        name: "あまいミツ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "モーモーミルク",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 2400,
+    ingRate: 0.174,
+    skillRate: 0.049,
+    maxHold: 16,
+
+    berryIndex: 1.72,
+    ingIndex: 1.22,
+    skillIndicator: 3.52,
+
+    evolutionChain: [
+      {
+        dexNo: 311,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ハイパー", rank: 5 }],
+          2: [{ type: "マスター", rank: 4 }],
+          3: null,
+          4: [{ type: "マスター", rank: 5 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
+      },
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 1 }],
+          2: [{ type: "ハイパー", rank: 4 }],
+          3: [{ type: "マスター", rank: 4 }],
+          4: [{ type: "マスター", rank: 5 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 316,
+    formId: "normal",
+    name: "ゴクリン",
+
+    imageCard: getImagePath("card", 316, "normal"),
+    imageDetail: getImagePath("panel", 316, "normal"),
+
+    type: ["どく"],
+    tokui: "スキル",
+
+    sleepType: "うとうと",
+
+    mainSkill: "ゆめのかけらゲットS(ランダム)",
+
+    ingredients: [
+      {
+        name: "ワカクサ大豆",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あじわいキノコ",
+        countsByLevel: { 30: 1, 60: 2 }
+      },
+      {
+        name: "あまいミツ",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 5900,
+    ingRate: 0.214,
+    skillRate: 0.063,
+    maxHold: 8,
+
+    berryIndex: 0.85,
+    ingIndex: 0.66,
+    skillIndicator: 1.92,
+
+    evolutionChain: [
+      {
+        dexNo: 316,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 317,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 20 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 317,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ノーマル", rank: 2 }],
+          2: [{ type: "スーパー", rank: 1 }],
+          3: null,
+          4: [{ type: "スーパー", rank: 2 }]
+        }
+      },
+      {
+        name: "シアンの砂浜",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 3 }],
+          3: [{ type: "スーパー", rank: 4 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 317,
+    formId: "normal",
+    name: "マルノーム",
+
+    imageCard: getImagePath("card", 317, "normal"),
+    imageDetail: getImagePath("panel", 317, "normal"),
+
+    type: ["どく"],
+    tokui: "スキル",
+
+    sleepType: "うとうと",
+
+    mainSkill: "ゆめのかけらゲットS(ランダム)",
+
+    ingredients: [
+      {
+        name: "ワカクサ大豆",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あじわいキノコ",
+        countsByLevel: { 30: 1, 60: 2 }
+      },
+      {
+        name: "あまいミツ",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 3500,
+    ingRate: 0.210,
+    skillRate: 0.070,
+    maxHold: 24,
+
+    berryIndex: 1.44,
+    ingIndex: 1.27,
+    skillIndicator: 4.23,
+
+    evolutionChain: [
+      {
+        dexNo: 316,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 317,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 20 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 317,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: null,
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ノーマル", rank: 2 }],
+          2: [{ type: "スーパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
+      }
+    ]
+  },
+
+  {
     dexNo: 328,
     formId: "normal",
     name: "ナックラー",
@@ -2100,8 +2449,8 @@ const pokedexData_Hoenn = [
     maxHold: 8,
 
     berryIndex: 0.98,
-    ingIndex: 2.00,
-    skillIndicator:0.536,
+    ingIndex: 1.48,
+    skillIndicator: 1.02,
 
     evolutionChain: [
       {
@@ -2197,8 +2546,8 @@ const pokedexData_Hoenn = [
     maxHold: 17,
 
     berryIndex: 1.32,
-    ingIndex: 2.75,
-    skillIndicator:0.794,
+    ingIndex: 2.22,
+    skillIndicator: 1.63,
 
     evolutionChain: [
       {
@@ -2294,8 +2643,8 @@ const pokedexData_Hoenn = [
     maxHold: 27,
 
     berryIndex: 1.78,
-    ingIndex: 4.19,
-    skillIndicator:1.248,
+    ingIndex: 3.64,
+    skillIndicator: 2.61,
 
     evolutionChain: [
       {
@@ -2356,6 +2705,440 @@ const pokedexData_Hoenn = [
   },
 
   {
+    dexNo: 333,
+    formId: "normal",
+    name: "チルット",
+
+    imageCard: getImagePath("card", 333, "normal"),
+    imageDetail: getImagePath("panel", 333, "normal"),
+
+    type: ["ひこう"],
+    tokui: "きのみ",
+
+    sleepType: "ぐっすり",
+
+    mainSkill: "げんきチャージS",
+
+    ingredients: [
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "ワカクサ大豆",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "とくせんリンゴ",
+        countsByLevel: { 60: 5 }
+      }
+    ],
+
+    baseHelpTime: 4200,
+    ingRate: 0.177,
+    skillRate: 0.032,
+    maxHold: 12,
+
+    berryIndex: 1.41,
+    ingIndex: 0.80,
+    skillIndicator: 1.25,
+
+    evolutionChain: [
+      {
+        dexNo: 333,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 334,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 26 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 334,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: null,
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 1 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 2 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 334,
+    formId: "normal",
+    name: "チルタリス",
+
+    imageCard: getImagePath("card", 334, "normal"),
+    imageDetail: getImagePath("panel", 334, "normal"),
+
+    type: ["ドラゴン"],
+    tokui: "きのみ",
+
+    sleepType: "うとうと",
+
+    mainSkill: "げんきチャージS",
+
+    ingredients: [
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "ワカクサ大豆",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "とくせんリンゴ",
+        countsByLevel: { 60: 5 }
+      }
+    ],
+
+    baseHelpTime: 3500,
+    ingRate: 0.258,
+    skillRate: 0.061,
+    maxHold: 19,
+
+    berryIndex: 2.23,
+    ingIndex: 1.77,
+    skillIndicator: 2.98,
+
+    evolutionChain: [
+      {
+        dexNo: 333,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 334,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 26 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 334,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 1 }],
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 353,
+    formId: "normal",
+    name: "カゲボウズ",
+
+    imageCard: getImagePath("card", 353, "normal"),
+    imageDetail: getImagePath("panel", 353, "normal"),
+
+    type: ["ゴースト"],
+    tokui: "きのみ",
+
+    sleepType: "うとうと",
+
+    mainSkill: "エナジーチャージS(ランダム)",
+
+    ingredients: [
+      {
+        name: "ピュアなオイル",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 30: 2, 60: 4 }
+      },
+      {
+        name: "あじわいキノコ",
+        countsByLevel: { 60: 3 }
+      }
+    ],
+
+    baseHelpTime: 3900,
+    ingRate: 0.171,
+    skillRate: 0.026,
+    maxHold: 11,
+
+    berryIndex: 1.66,
+    ingIndex: 0.80,
+    skillIndicator: 1.08,
+
+    evolutionChain: [
+      {
+        dexNo: 353,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 354,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 28 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 354,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: null
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 3 }],
+          3: [{ type: "スーパー", rank: 4 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 2 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 354,
+    formId: "normal",
+    name: "ジュペッタ",
+
+    imageCard: getImagePath("card", 354, "normal"),
+    imageDetail: getImagePath("panel", 354, "normal"),
+
+    type: ["ゴースト"],
+    tokui: "きのみ",
+
+    sleepType: "うとうと",
+
+    mainSkill: "エナジーチャージS(ランダム)",
+
+    ingredients: [
+      {
+        name: "ピュアなオイル",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 30: 2, 60: 4 }
+      },
+      {
+        name: "あじわいキノコ",
+        countsByLevel: { 60: 3 }
+      }
+    ],
+
+    baseHelpTime: 2600,
+    ingRate: 0.179,
+    skillRate: 0.033,
+    maxHold: 24,
+
+    berryIndex: 2.46,
+    ingIndex: 1.36,
+    skillIndicator: 2.17,
+
+    evolutionChain: [
+      {
+        dexNo: 353,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 354,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 28 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 354,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ハイパー", rank: 5 }],
+          2: [{ type: "マスター", rank: 4 }],
+          3: null,
+          4: [{ type: "マスター", rank: 5 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 3 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 359,
+    formId: "normal",
+    name: "アブソル",
+
+    imageCard: getImagePath("card", 359, "normal"),
+    imageDetail: getImagePath("panel", 359, "normal"),
+
+    type: ["あく"],
+    tokui: "食材",
+
+    sleepType: "うとうと",
+
+    mainSkill: "エナジーチャージM",
+
+    ingredients: [
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 1: 2, 30: 5, 60: 7 }
+      },
+      {
+        name: "とくせんリンゴ",
+        countsByLevel: { 30: 8, 60: 12 }
+      },
+      {
+        name: "あじわいキノコ",
+        countsByLevel: { 60: 7 }
+      }
+    ],
+
+    baseHelpTime: 2950,
+    ingRate: 0.178,
+    skillRate: 0.038,
+    maxHold: 21,
+
+    berryIndex: 1.73,
+    ingIndex: 3.15,
+    skillIndicator: 2.24,
+
+    evolutionChain: [
+      {
+        dexNo: 359,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: null,
+          4: [{ type: "マスター", rank: 2 }]
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 4 }]
+        }
+      }
+    ]
+  },
+
+  {
     dexNo: 360,
     formId: "normal",
     name: "ソーナノ",
@@ -2391,8 +3174,8 @@ const pokedexData_Hoenn = [
     maxHold: 7,
 
     berryIndex: 0.71,
-    ingIndex: 0.65,
-    skillIndicator:1.028,
+    ingIndex: 0.61,
+    skillIndicator: 2.09,
 
     evolutionChain: [
       {
@@ -2439,6 +3222,628 @@ const pokedexData_Hoenn = [
   },
 
   {
+    dexNo: 363,
+    formId: "normal",
+    name: "タマザラシ",
+
+    imageCard: getImagePath("card", 363, "normal"),
+    imageDetail: getImagePath("panel", 363, "normal"),
+
+    type: ["こおり"],
+    tokui: "きのみ",
+
+    sleepType: "ぐっすり",
+
+    mainSkill: "食材ゲットS",
+
+    ingredients: [
+      {
+        name: "ピュアなオイル",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 5600,
+    ingRate: 0.224,
+    skillRate: 0.023,
+    maxHold: 9,
+
+    berryIndex: 1.33,
+    ingIndex: 0.88,
+    skillIndicator: 0.67,
+
+    evolutionChain: [
+      {
+        dexNo: 363,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 364,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 24 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 364,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 365,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 33 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 365,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "ハイパー", rank: 1 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 1 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 363,
+    formId: "holiday",
+    name: "タマザラシ(ホリデー)",
+
+    imageCard: getImagePath("card", 363, "holiday"),
+    imageDetail: getImagePath("panel", 363, "holiday"),
+
+    type: ["こおり"],
+    tokui: "スキル",
+
+    sleepType: "ぐっすり",
+
+    mainSkill: "料理チャンスS",
+
+    ingredients: [
+      {
+        name: "ピュアなオイル",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 3300,
+    ingRate: 0.214,
+    skillRate: 0.050,
+    maxHold: 20,
+
+    berryIndex: 1.52,
+    ingIndex: 1.62,
+    skillIndicator: 2.88,
+
+    evolutionChain: [
+      {
+        dexNo: 25,
+        formId: "holiday",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "すべて",
+        stars: {
+          1: null,
+          2: null
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 364,
+    formId: "normal",
+    name: "トドグラー",
+
+    imageCard: getImagePath("card", 364, "normal"),
+    imageDetail: getImagePath("panel", 364, "normal"),
+
+    type: ["こおり"],
+    tokui: "きのみ",
+
+    sleepType: "ぐっすり",
+
+    mainSkill: "食材ゲットS",
+
+    ingredients: [
+      {
+        name: "ピュアなオイル",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 4000,
+    ingRate: 0.221,
+    skillRate: 0.021,
+    maxHold: 18,
+
+    berryIndex: 1.87,
+    ingIndex: 1.29,
+    skillIndicator: 0.92,
+
+    evolutionChain: [
+      {
+        dexNo: 363,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 364,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 24 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 364,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 365,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 33 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 365,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ノーマル", rank: 2 }],
+          2: [{ type: "スーパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "スーパー", rank: 5 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 365,
+    formId: "normal",
+    name: "トドゼルガ",
+
+    imageCard: getImagePath("card", 365, "normal"),
+    imageDetail: getImagePath("panel", 365, "normal"),
+
+    type: ["こおり"],
+    tokui: "きのみ",
+
+    sleepType: "ぐっすり",
+
+    mainSkill: "食材ゲットS",
+
+    ingredients: [
+      {
+        name: "ピュアなオイル",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 3000,
+    ingRate: 0.223,
+    skillRate: 0.022,
+    maxHold: 28,
+
+    berryIndex: 2.49,
+    ingIndex: 1.80,
+    skillIndicator: 1.32,
+
+    evolutionChain: [
+      {
+        dexNo: 363,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 364,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 24 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 364,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 365,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 33 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 365,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: [{ type: "マスター", rank: 7 }],
+          4: [{ type: "マスター", rank: 2 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: [{ type: "ハイパー", rank: 4 }],
+          4: [{ type: "ハイパー", rank: 5 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 371,
+    formId: "normal",
+    name: "タツベイ",
+
+    imageCard: getImagePath("card", 371, "normal"),
+    imageDetail: getImagePath("panel", 371, "normal"),
+
+    type: ["ドラゴン"],
+    tokui: "きのみ",
+
+    sleepType: "うとうと",
+
+    mainSkill: "料理パワーアップS",
+
+    ingredients: [
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 5300,
+    ingRate: 0.209,
+    skillRate: 0.027,
+    maxHold: 9,
+
+    berryIndex: 1.57,
+    ingIndex: 0.86,
+    skillIndicator: 0.83,
+
+    evolutionChain: [
+      {
+        dexNo: 371,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 372,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 23 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 372,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 373,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 38 },
+              { type: "candy", value: 100 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 373,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 3 }],
+          3: [{ type: "スーパー", rank: 4 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 372,
+    formId: "normal",
+    name: "コモルー",
+
+    imageCard: getImagePath("card", 372, "normal"),
+    imageDetail: getImagePath("panel", 372, "normal"),
+
+    type: ["ドラゴン"],
+    tokui: "きのみ",
+
+    sleepType: "うとうと",
+
+    mainSkill: "料理パワーアップS",
+
+    ingredients: [
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 3800,
+    ingRate: 0.206,
+    skillRate: 0.027,
+    maxHold: 19,
+
+    berryIndex: 2.19,
+    ingIndex: 1.25,
+    skillIndicator: 1.24,
+
+    evolutionChain: [
+      {
+        dexNo: 371,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 372,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 23 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 372,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 373,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 38 },
+              { type: "candy", value: 100 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 373,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "スーパー", rank: 5 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 373,
+    formId: "normal",
+    name: "ボーマンダ",
+
+    imageCard: getImagePath("card", 373, "normal"),
+    imageDetail: getImagePath("panel", 373, "normal"),
+
+    type: ["ドラゴン"],
+    tokui: "きのみ",
+
+    sleepType: "うとうと",
+
+    mainSkill: "料理パワーアップS",
+
+    ingredients: [
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 2800,
+    ingRate: 0.217,
+    skillRate: 0.034,
+    maxHold: 32,
+
+    berryIndex: 2.94,
+    ingIndex: 1.92,
+    skillIndicator: 2.22,
+
+    evolutionChain: [
+      {
+        dexNo: 371,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 372,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 23 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 372,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 373,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 38 },
+              { type: "candy", value: 100 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 373,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "マスター", rank: 6 }],
+          2: [{ type: "マスター", rank: 10 }],
+          3: [{ type: "マスター", rank: 16 }],
+          4: [{ type: "マスター", rank: 11 }]
+        }
+      }
+    ]
+  },
+
+  {
     dexNo: 380,
     formId: "normal",
     name: "ラティアス",
@@ -2474,8 +3879,8 @@ const pokedexData_Hoenn = [
     maxHold: 19,
 
     berryIndex: 2.22,
-    ingIndex: 0.91,
-    skillIndicator:1.512,
+    ingIndex: 0.67,
+    skillIndicator: 3.33,
 
     evolutionChain: [
       {
@@ -2561,8 +3966,8 @@ const pokedexData_Hoenn = [
     maxHold: 19,
 
     berryIndex: 2.01,
-    ingIndex: 1.48,
-    skillIndicator:0.926,
+    ingIndex: 1.40,
+    skillIndicator: 1.97,
 
     evolutionChain: [
       {
@@ -2612,4 +4017,4 @@ const pokedexData_Hoenn = [
     ]
   }
 
-];
+];  
