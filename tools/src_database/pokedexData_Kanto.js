@@ -46,8 +46,8 @@ const pokedexData_Kanto = [
     maxHold: 11,
 
     berryIndex: 1.01,
-    ingIndex: 2.36,
-    skillIndicator:0.373,
+    ingIndex: 2.31,
+    skillIndicator: 0.72,
 
     evolutionChain: [
       {
@@ -149,11 +149,11 @@ const pokedexData_Kanto = [
     baseHelpTime: 3300,
     ingRate: 0.255,
     skillRate: 0.019,
-    maxHold: 14,
+    maxHold: 19,
 
     berryIndex: 1.35,
-    ingIndex: 3.13,
-    skillIndicator:0.497,
+    ingIndex: 3.19,
+    skillIndicator: 1.00,
 
     evolutionChain: [
       {
@@ -258,8 +258,8 @@ const pokedexData_Kanto = [
     maxHold: 27,
 
     berryIndex: 1.57,
-    ingIndex: 3.84,
-    skillIndicator:0.648,
+    ingIndex: 4.14,
+    skillIndicator: 1.35,
 
     evolutionChain: [
       {
@@ -364,8 +364,8 @@ const pokedexData_Kanto = [
     maxHold: 12,
 
     berryIndex: 1.23,
-    ingIndex: 2.35,
-    skillIndicator:0.272,
+    ingIndex: 2.02,
+    skillIndicator: 0.52,
 
     evolutionChain: [
       {
@@ -470,8 +470,8 @@ const pokedexData_Kanto = [
     maxHold: 20,
 
     berryIndex: 1.39,
-    ingIndex: 3.10,
-    skillIndicator:0.461,
+    ingIndex: 2.99,
+    skillIndicator: 0.93,
 
     evolutionChain: [
       {
@@ -576,8 +576,8 @@ const pokedexData_Kanto = [
     maxHold: 29,
 
     berryIndex: 1.75,
-    ingIndex: 3.83,
-    skillIndicator:0.576,
+    ingIndex: 3.78,
+    skillIndicator: 1.20,
 
     evolutionChain: [
       {
@@ -682,8 +682,8 @@ const pokedexData_Kanto = [
     maxHold: 10,
 
     berryIndex: 1.00,
-    ingIndex: 2.40,
-    skillIndicator:0.384,
+    ingIndex: 2.39,
+    skillIndicator: 0.74,
 
     evolutionChain: [
       {
@@ -788,8 +788,8 @@ const pokedexData_Kanto = [
     maxHold: 19,
 
     berryIndex: 1.33,
-    ingIndex: 3.17,
-    skillIndicator:0.508,
+    ingIndex: 3.37,
+    skillIndicator: 1.04,
 
     evolutionChain: [
       {
@@ -894,8 +894,8 @@ const pokedexData_Kanto = [
     maxHold: 27,
 
     berryIndex: 1.61,
-    ingIndex: 3.91,
-    skillIndicator:0.648,
+    ingIndex: 4.32,
+    skillIndicator: 1.37,
 
     evolutionChain: [
       {
@@ -1000,8 +1000,8 @@ const pokedexData_Kanto = [
     maxHold: 11,
 
     berryIndex: 1.34,
-    ingIndex: 0.81,
-    skillIndicator:0.157,
+    ingIndex: 0.65,
+    skillIndicator: 0.30,
 
     evolutionChain: [
       {
@@ -1115,8 +1115,8 @@ const pokedexData_Kanto = [
     maxHold: 18,
 
     berryIndex: 1.36,
-    ingIndex: 0.99,
-    skillIndicator:0.370,
+    ingIndex: 0.93,
+    skillIndicator: 0.76,
 
     evolutionChain: [
       {
@@ -1221,8 +1221,8 @@ const pokedexData_Kanto = [
     maxHold: 31,
 
     berryIndex: 2.31,
-    ingIndex: 1.57,
-    skillIndicator:0.484,
+    ingIndex: 1.44,
+    skillIndicator: 1.00,
 
     evolutionChain: [
       {
@@ -1327,8 +1327,8 @@ const pokedexData_Kanto = [
     maxHold: 10,
 
     berryIndex: 1.31,
-    ingIndex: 0.84,
-    skillIndicator:0.529,
+    ingIndex: 0.78,
+    skillIndicator: 1.01,
 
     evolutionChain: [
       {
@@ -1410,8 +1410,8 @@ const pokedexData_Kanto = [
     maxHold: 21,
 
     berryIndex: 2.17,
-    ingIndex: 1.40,
-    skillIndicator:0.879,
+    ingIndex: 1.35,
+    skillIndicator: 1.74,
 
     evolutionChain: [
       {
@@ -1493,8 +1493,8 @@ const pokedexData_Kanto = [
     maxHold: 10,
 
     berryIndex: 1.47,
-    ingIndex: 0.96,
-    skillIndicator:0.570,
+    ingIndex: 0.89,
+    skillIndicator: 1.09,
 
     evolutionChain: [
       {
@@ -1576,8 +1576,8 @@ const pokedexData_Kanto = [
     maxHold: 19,
 
     berryIndex: 2.08,
-    ingIndex: 1.58,
-    skillIndicator:1.448,
+    ingIndex: 1.62,
+    skillIndicator: 2.89,
 
     evolutionChain: [
       {
@@ -1659,8 +1659,8 @@ const pokedexData_Kanto = [
     maxHold: 22,
 
     berryIndex: 2.20,
-    ingIndex: 1.41,
-    skillIndicator:0.672,
+    ingIndex: 1.26,
+    skillIndicator: 1.32,
 
     evolutionChain: [
       {
@@ -1774,8 +1774,8 @@ const pokedexData_Kanto = [
     maxHold: 18,
 
     berryIndex: 2.35,
-    ingIndex: 1.61,
-    skillIndicator:0.968,
+    ingIndex: 1.41,
+    skillIndicator: 1.82,
 
     evolutionChain: [
       {
@@ -1832,8 +1832,8 @@ const pokedexData_Kanto = [
     maxHold: 18,
 
     berryIndex: 2.35,
-    ingIndex: 1.61,
-    skillIndicator:0.968,
+    ingIndex: 1.41,
+    skillIndicator: 1.82,
 
     evolutionChain: [
       {
@@ -1890,8 +1890,8 @@ const pokedexData_Kanto = [
     maxHold: 20,
 
     berryIndex: 1.74,
-    ingIndex: 0.96,
-    skillIndicator:1.452,
+    ingIndex: 0.74,
+    skillIndicator: 3.10,
 
     evolutionChain: [
       {
@@ -1948,8 +1948,8 @@ const pokedexData_Kanto = [
     maxHold: 31,
 
     berryIndex: 2.65,
-    ingIndex: 1.87,
-    skillIndicator:1.257,
+    ingIndex: 1.79,
+    skillIndicator: 2.53,
 
     evolutionChain: [
       {
@@ -2054,8 +2054,8 @@ const pokedexData_Kanto = [
     maxHold: 11,
 
     berryIndex: 0.98,
-    ingIndex: 0.92,
-    skillIndicator:0.750,
+    ingIndex: 0.63,
+    skillIndicator: 1.63,
 
     evolutionChain: [
       {
@@ -2155,8 +2155,8 @@ const pokedexData_Kanto = [
     maxHold: 22,
 
     berryIndex: 1.85,
-    ingIndex: 1.88,
-    skillIndicator:1.327,
+    ingIndex: 1.36,
+    skillIndicator: 2.91,
 
     evolutionChain: [
       {
@@ -2256,8 +2256,8 @@ const pokedexData_Kanto = [
     maxHold: 21,
 
     berryIndex: 1.62,
-    ingIndex: 0.73,
-    skillIndicator:0.778,
+    ingIndex: 0.63,
+    skillIndicator: 1.64,
 
     evolutionChain: [
       {
@@ -2407,8 +2407,8 @@ const pokedexData_Kanto = [
     maxHold: 34,
 
     berryIndex: 2.32,
-    ingIndex: 1.05,
-    skillIndicator:1.111,
+    ingIndex: 0.93,
+    skillIndicator: 2.41,
 
     evolutionChain: [
       {
@@ -2558,8 +2558,8 @@ const pokedexData_Kanto = [
     maxHold: 13,
 
     berryIndex: 1.43,
-    ingIndex: 0.77,
-    skillIndicator:0.588,
+    ingIndex: 0.63,
+    skillIndicator: 1.16,
 
     evolutionChain: [
       {
@@ -2659,8 +2659,8 @@ const pokedexData_Kanto = [
     maxHold: 10,
 
     berryIndex: 1.32,
-    ingIndex: 0.89,
-    skillIndicator:0.432,
+    ingIndex: 0.83,
+    skillIndicator: 0.84,
 
     evolutionChain: [
       {
@@ -2742,8 +2742,8 @@ const pokedexData_Kanto = [
     maxHold: 28,
 
     berryIndex: 2.60,
-    ingIndex: 1.36,
-    skillIndicator:0.964,
+    ingIndex: 1.13,
+    skillIndicator: 1.97,
 
     evolutionChain: [
       {
@@ -2843,8 +2843,8 @@ const pokedexData_Kanto = [
     maxHold: 25,
 
     berryIndex: 2.54,
-    ingIndex: 1.73,
-    skillIndicator:0.834,
+    ingIndex: 1.70,
+    skillIndicator: 1.70,
 
     evolutionChain: [
       {
@@ -2926,8 +2926,8 @@ const pokedexData_Kanto = [
     maxHold: 14,
 
     berryIndex: 1.09,
-    ingIndex: 0.92,
-    skillIndicator:0.953,
+    ingIndex: 0.85,
+    skillIndicator: 2.06,
 
     evolutionChain: [
       {
@@ -3023,8 +3023,8 @@ const pokedexData_Kanto = [
     maxHold: 32,
 
     berryIndex: 1.53,
-    ingIndex: 1.37,
-    skillIndicator:1.257,
+    ingIndex: 1.49,
+    skillIndicator: 3.12,
 
     evolutionChain: [
       {
@@ -3120,8 +3120,8 @@ const pokedexData_Kanto = [
     maxHold: 10,
 
     berryIndex: 1.09,
-    ingIndex: 1.98,
-    skillIndicator:0.422,
+    ingIndex: 1.69,
+    skillIndicator: 0.82,
 
     evolutionChain: [
       {
@@ -3201,8 +3201,8 @@ const pokedexData_Kanto = [
     maxHold: 21,
 
     berryIndex: 1.77,
-    ingIndex: 3.19,
-    skillIndicator:0.652,
+    ingIndex: 2.83,
+    skillIndicator: 1.33,
 
     evolutionChain: [
       {
@@ -3278,8 +3278,8 @@ const pokedexData_Kanto = [
     maxHold: 9,
 
     berryIndex: 1.07,
-    ingIndex: 0.68,
-    skillIndicator:0.825,
+    ingIndex: 0.55,
+    skillIndicator: 1.66,
 
     evolutionChain: [
       {
@@ -3366,8 +3366,8 @@ const pokedexData_Kanto = [
     maxHold: 17,
 
     berryIndex: 1.66,
-    ingIndex: 1.11,
-    skillIndicator:1.358,
+    ingIndex: 0.95,
+    skillIndicator: 2.84,
 
     evolutionChain: [
       {
@@ -3458,8 +3458,8 @@ const pokedexData_Kanto = [
     maxHold: 8,
 
     berryIndex: 0.99,
-    ingIndex: 0.76,
-    skillIndicator:2.016,
+    ingIndex: 0.56,
+    skillIndicator: 4.06,
 
     evolutionChain: [
       {
@@ -3547,11 +3547,11 @@ const pokedexData_Kanto = [
     baseHelpTime: 3400,
     ingRate: 0.162,
     skillRate: 0.125,
-    maxHold: 8,
+    maxHold: 19,
 
     berryIndex: 1.53,
-    ingIndex: 1.43,
-    skillIndicator:3.176,
+    ingIndex: 1.26,
+    skillIndicator: 6.94,
 
     evolutionChain: [
       {
@@ -3624,8 +3624,8 @@ const pokedexData_Kanto = [
     maxHold: 12,
 
     berryIndex: 1.55,
-    ingIndex: 0.90,
-    skillIndicator:0.453,
+    ingIndex: 0.77,
+    skillIndicator: 0.87,
 
     evolutionChain: [
       {
@@ -3707,8 +3707,8 @@ const pokedexData_Kanto = [
     maxHold: 22,
 
     berryIndex: 2.31,
-    ingIndex: 1.37,
-    skillIndicator:0.741,
+    ingIndex: 1.22,
+    skillIndicator: 1.47,
 
     evolutionChain: [
       {
@@ -3790,8 +3790,8 @@ const pokedexData_Kanto = [
     maxHold: 8,
 
     berryIndex: 1.08,
-    ingIndex: 0.86,
-    skillIndicator:1.005,
+    ingIndex: 0.62,
+    skillIndicator: 1.96,
 
     evolutionChain: [
       {
@@ -3882,8 +3882,8 @@ const pokedexData_Kanto = [
     maxHold: 21,
 
     berryIndex: 1.87,
-    ingIndex: 1.46,
-    skillIndicator:1.693,
+    ingIndex: 1.14,
+    skillIndicator: 3.58,
 
     evolutionChain: [
       {
@@ -3965,8 +3965,8 @@ const pokedexData_Kanto = [
     maxHold: 8,
 
     berryIndex: 0.89,
-    ingIndex: 1.92,
-    skillIndicator:0.648,
+    ingIndex: 1.77,
+    skillIndicator: 1.24,
 
     evolutionChain: [
       {
@@ -4072,7 +4072,7 @@ const pokedexData_Kanto = [
 
     berryIndex: 1.21,
     ingIndex: 2.65,
-    skillIndicator:0.909,
+    skillIndicator: 1.88,
 
     evolutionChain: [
       {
@@ -4168,8 +4168,8 @@ const pokedexData_Kanto = [
     maxHold: 27,
 
     berryIndex: 1.64,
-    ingIndex: 3.56,
-    skillIndicator:1.203,
+    ingIndex: 3.68,
+    skillIndicator: 2.58,
 
     evolutionChain: [
       {
@@ -4265,8 +4265,8 @@ const pokedexData_Kanto = [
     maxHold: 9,
 
     berryIndex: 0.76,
-    ingIndex: 1.99,
-    skillIndicator:0.788,
+    ingIndex: 2.06,
+    skillIndicator: 1.54,
 
     evolutionChain: [
       {
@@ -4362,8 +4362,8 @@ const pokedexData_Kanto = [
     maxHold: 17,
 
     berryIndex: 1.09,
-    ingIndex: 2.74,
-    skillIndicator:1.037,
+    ingIndex: 2.95,
+    skillIndicator: 2.14,
 
     evolutionChain: [
       {
@@ -4459,8 +4459,8 @@ const pokedexData_Kanto = [
     maxHold: 26,
 
     berryIndex: 1.39,
-    ingIndex: 3.65,
-    skillIndicator:1.449,
+    ingIndex: 4.12,
+    skillIndicator: 3.09,
 
     evolutionChain: [
       {
@@ -4547,8 +4547,8 @@ const pokedexData_Kanto = [
     maxHold: 9,
 
     berryIndex: 0.92,
-    ingIndex: 0.83,
-    skillIndicator:1.182,
+    ingIndex: 0.69,
+    skillIndicator: 2.53,
 
     evolutionChain: [
       {
@@ -4629,9 +4629,9 @@ const pokedexData_Kanto = [
     skillRate: 0.080,
     maxHold: 21,
 
-    berryIndex: 1.36,
-    ingIndex: 1.63,
-    skillIndicator:1.819,
+    berryIndex: 1.31,
+    ingIndex: 1.74,
+    skillIndicator: 4.36,
 
     evolutionChain: [
       {
@@ -4709,8 +4709,8 @@ const pokedexData_Kanto = [
     maxHold: 8,
 
     berryIndex: 0.93,
-    ingIndex: 0.72,
-    skillIndicator:0.953,
+    ingIndex: 0.64,
+    skillIndicator: 1.98,
 
     evolutionChain: [
       {
@@ -4808,8 +4808,8 @@ const pokedexData_Kanto = [
     maxHold: 16,
 
     berryIndex: 1.35,
-    ingIndex: 1.04,
-    skillIndicator:1.361,
+    ingIndex: 1.00,
+    skillIndicator: 3.05,
 
     evolutionChain: [
       {
@@ -4911,8 +4911,8 @@ const pokedexData_Kanto = [
     maxHold: 18,
 
     berryIndex: 1.34,
-    ingIndex: 3.90,
-    skillIndicator:1.238,
+    ingIndex: 3.06,
+    skillIndicator: 2.42,
 
     evolutionChain: [
       {
@@ -4998,8 +4998,8 @@ const pokedexData_Kanto = [
     maxHold: 13,
 
     berryIndex: 1.55,
-    ingIndex: 0.84,
-    skillIndicator:0.455,
+    ingIndex: 0.69,
+    skillIndicator: 0.87,
 
     evolutionChain: [
       {
@@ -5090,8 +5090,8 @@ const pokedexData_Kanto = [
     maxHold: 26,
 
     berryIndex: 2.55,
-    ingIndex: 1.39,
-    skillIndicator:0.751,
+    ingIndex: 1.18,
+    skillIndicator: 1.49,
 
     evolutionChain: [
       {
@@ -5182,8 +5182,8 @@ const pokedexData_Kanto = [
     maxHold: 10,
 
     berryIndex: 1.17,
-    ingIndex: 2.05,
-    skillIndicator:0.341,
+    ingIndex: 1.50,
+    skillIndicator: 0.66,
 
     evolutionChain: [
       {
@@ -5285,8 +5285,8 @@ const pokedexData_Kanto = [
     maxHold: 19,
 
     berryIndex: 1.46,
-    ingIndex: 2.84,
-    skillIndicator:0.634,
+    ingIndex: 2.31,
+    skillIndicator: 1.30,
 
     evolutionChain: [
       {
@@ -5388,8 +5388,8 @@ const pokedexData_Kanto = [
     maxHold: 28,
 
     berryIndex: 1.98,
-    ingIndex: 3.97,
-    skillIndicator:0.943,
+    ingIndex: 3.32,
+    skillIndicator: 1.97,
 
     evolutionChain: [
       {
@@ -5485,8 +5485,8 @@ const pokedexData_Kanto = [
     maxHold: 22,
 
     berryIndex: 2.52,
-    ingIndex: 0.89,
-    skillIndicator:0.641,
+    ingIndex: 0.65,
+    skillIndicator: 1.29,
 
     evolutionChain: [
       {
@@ -5563,8 +5563,8 @@ const pokedexData_Kanto = [
     maxHold: 10,
 
     berryIndex: 1.41,
-    ingIndex: 1.11,
-    skillIndicator:0.792,
+    ingIndex: 1.00,
+    skillIndicator: 1.51,
 
     evolutionChain: [
       {
@@ -5651,8 +5651,8 @@ const pokedexData_Kanto = [
     maxHold: 20,
 
     berryIndex: 2.04,
-    ingIndex: 1.63,
-    skillIndicator:1.178,
+    ingIndex: 1.55,
+    skillIndicator: 2.36,
 
     evolutionChain: [
       {
@@ -5743,8 +5743,8 @@ const pokedexData_Kanto = [
     maxHold: 20,
 
     berryIndex: 1.30,
-    ingIndex: 3.25,
-    skillIndicator:0.602,
+    ingIndex: 3.23,
+    skillIndicator: 1.23,
 
     evolutionChain: [
       {
@@ -5859,8 +5859,8 @@ const pokedexData_Kanto = [
     maxHold: 21,
 
     berryIndex: 1.64,
-    ingIndex: 3.62,
-    skillIndicator:0.554,
+    ingIndex: 3.40,
+    skillIndicator: 1.10,
 
     evolutionChain: [
       {
@@ -5937,8 +5937,8 @@ const pokedexData_Kanto = [
     maxHold: 22,
 
     berryIndex: 1.46,
-    ingIndex: 3.30,
-    skillIndicator:1.203,
+    ingIndex: 3.16,
+    skillIndicator: 2.48,
 
     evolutionChain: [
       {
@@ -6011,8 +6011,8 @@ const pokedexData_Kanto = [
     maxHold: 24,
 
     berryIndex: 1.57,
-    ingIndex: 3.59,
-    skillIndicator:1.116,
+    ingIndex: 3.33,
+    skillIndicator: 2.23,
 
     evolutionChain: [
       {
@@ -6098,8 +6098,8 @@ const pokedexData_Kanto = [
     maxHold: 17,
 
     berryIndex: 1.28,
-    ingIndex: 2.89,
-    skillIndicator:0.889,
+    ingIndex: 2.70,
+    skillIndicator: 1.85,
 
     evolutionChain: [
       {
@@ -6249,8 +6249,8 @@ const pokedexData_Kanto = [
     maxHold: 12,
 
     berryIndex: 1.22,
-    ingIndex: 0.89,
-    skillIndicator:1.284,
+    ingIndex: 0.81,
+    skillIndicator: 2.66,
 
     evolutionChain: [
       {
@@ -6387,8 +6387,8 @@ const pokedexData_Kanto = [
     maxHold: 20,
 
     berryIndex: 2.29,
-    ingIndex: 0.87,
-    skillIndicator:0.892,
+    ingIndex: 0.68,
+    skillIndicator: 1.78,
 
     evolutionChain: [
       {
@@ -6445,8 +6445,8 @@ const pokedexData_Kanto = [
     maxHold: 18,
 
     berryIndex: 1.54,
-    ingIndex: 1.89,
-    skillIndicator:1.242,
+    ingIndex: 1.40,
+    skillIndicator: 2.65,
 
     evolutionChain: [
       {
@@ -6504,7 +6504,7 @@ const pokedexData_Kanto = [
 
     berryIndex: 1.58,
     ingIndex: 1.18,
-    skillIndicator:1.700,
+    skillIndicator: 3.71,
 
     evolutionChain: [
       {
@@ -6632,8 +6632,8 @@ const pokedexData_Kanto = [
     maxHold: 22,
 
     berryIndex: 1.93,
-    ingIndex: 1.18,
-    skillIndicator:1.532,
+    ingIndex: 0.98,
+    skillIndicator: 3.26,
 
     evolutionChain: [
       {
@@ -6761,8 +6761,8 @@ const pokedexData_Kanto = [
     maxHold: 19,
 
     berryIndex: 1.63,
-    ingIndex: 1.18,
-    skillIndicator:1.664,
+    ingIndex: 1.09,
+    skillIndicator: 3.57,
 
     evolutionChain: [
       {
@@ -6890,8 +6890,8 @@ const pokedexData_Kanto = [
     maxHold: 9,
 
     berryIndex: 1.05,
-    ingIndex: 2.60,
-    skillIndicator:0.346,
+    ingIndex: 2.47,
+    skillIndicator: 0.66,
 
     evolutionChain: [
       {
@@ -6978,8 +6978,8 @@ const pokedexData_Kanto = [
     maxHold: 17,
 
     berryIndex: 1.36,
-    ingIndex: 3.58,
-    skillIndicator:0.568,
+    ingIndex: 3.69,
+    skillIndicator: 1.14,
 
     evolutionChain: [
       {
@@ -7066,8 +7066,8 @@ const pokedexData_Kanto = [
     maxHold: 30,
 
     berryIndex: 1.98,
-    ingIndex: 5.27,
-    skillIndicator:0.864,
+    ingIndex: 5.67,
+    skillIndicator: 1.81,
 
     evolutionChain: [
       {
@@ -7174,8 +7174,8 @@ const pokedexData_Kanto = [
     maxHold: 26,
 
     berryIndex: 2.15,
-    ingIndex: 2.84,
-    skillIndicator:1.192,
+    ingIndex: 2.54,
+    skillIndicator:2.39,
 
     evolutionChain: [
       {
