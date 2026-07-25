@@ -36,8 +36,8 @@ const pokedexData_Alola = [
     maxHold: 11,
 
     berryIndex: 0.88,
-    ingIndex: 2.06,
-    skillIndicator: 0.545,
+    ingIndex: 1.62,
+    skillIndicator: 1.09,
 
     evolutionChain: [
       {
@@ -124,8 +124,8 @@ const pokedexData_Alola = [
     maxHold: 20,
 
     berryIndex: 1.23,
-    ingIndex: 2.85,
-    skillIndicator: 0.733,
+    ingIndex: 2.36,
+    skillIndicator: 1.54,
 
     evolutionChain: [
       {
@@ -212,8 +212,8 @@ const pokedexData_Alola = [
     maxHold: 29,
 
     berryIndex: 1.38,
-    ingIndex: 4.24,
-    skillIndicator: 1.574,
+    ingIndex: 4.04,
+    skillIndicator: 3.40,
 
     evolutionChain: [
       {
@@ -300,8 +300,8 @@ const pokedexData_Alola = [
     maxHold: 9,
 
     berryIndex: 0.93,
-    ingIndex: 1.79,
-    skillIndicator: 0.365,
+    ingIndex: 1.53,
+    skillIndicator: 0.70,
 
     evolutionChain: [
       {
@@ -342,24 +342,6 @@ const pokedexData_Alola = [
           2: [{ type: "スーパー", rank: 2 }],
           3: [{ type: "ハイパー", rank: 3 }],
           4: [{ type: "スーパー", rank: 3 }]
-        }
-      },
-      {
-        name: "ラピスラズリ湖畔",
-        stars: {
-          1: [{ type: "ノーマル", rank: 1 }],
-          2: [{ type: "ノーマル", rank: 4 }],
-          3: [{ type: "スーパー", rank: 5 }],
-          4: [{ type: "ノーマル", rank: 5 }]
-        }
-      },
-      {
-        name: "アンバー渓谷",
-        stars: {
-          1: [{ type: "ノーマル", rank: 1 }],
-          2: [{ type: "ノーマル", rank: 2 }],
-          3: [{ type: "スーパー", rank: 3 }],
-          4: [{ type: "ノーマル", rank: 3 }]
         }
       },
       {
@@ -455,24 +437,6 @@ const pokedexData_Alola = [
         }
       },
       {
-        name: "ラピスラズリ湖畔",
-        stars: {
-          1: [{ type: "スーパー", rank: 3 }],
-          2: [{ type: "ハイパー", rank: 2 }],
-          3: [{ type: "マスター", rank: 3 }],
-          4: [{ type: "ハイパー", rank: 3 }]
-        }
-      },
-      {
-        name: "アンバー渓谷",
-        stars: {
-          1: [{ type: "スーパー", rank: 1 }],
-          2: [{ type: "スーパー", rank: 5 }],
-          3: [{ type: "マスター", rank: 1 }],
-          4: [{ type: "ハイパー", rank: 1 }]
-        }
-      },
-      {
         name: "ワカクサ本島EX",
         stars: {
           1: [{ type: "スーパー", rank: 3 }],
@@ -520,8 +484,8 @@ const pokedexData_Alola = [
     maxHold: 13,
 
     berryIndex: 1.02,
-    ingIndex: 3.07,
-    skillIndicator: 0.232,
+    ingIndex: 2.82,
+    skillIndicator: 0.45,
 
     evolutionChain: [
       {
@@ -594,8 +558,8 @@ const pokedexData_Alola = [
     maxHold: 25,
 
     berryIndex: 1.49,
-    ingIndex: 4.57,
-    skillIndicator: 0.401,
+    ingIndex: 4.44,
+    skillIndicator: 0.81,
 
     evolutionChain: [
       {
@@ -668,8 +632,8 @@ const pokedexData_Alola = [
     maxHold: 20,
 
     berryIndex: 1.73,
-    ingIndex: 3.76,
-    skillIndicator: 1.210,
+    ingIndex: 3.03,
+    skillIndicator: 2.38,
 
     evolutionChain: [
       {
@@ -695,15 +659,6 @@ const pokedexData_Alola = [
           1: [{ type: "スーパー", rank: 5 }],
           2: [{ type: "ハイパー", rank: 4 }],
           3: [{ type: "マスター", rank: 5 }],
-          4: [{ type: "マスター", rank: 1 }]
-        }
-      },
-      {
-        name: "ラピスラズリ湖畔",
-        stars: {
-          1: [{ type: "スーパー", rank: 2 }],
-          2: [{ type: "ハイパー", rank: 1 }],
-          3: [{ type: "マスター", rank: 2 }],
           4: [{ type: "マスター", rank: 1 }]
         }
       },
@@ -755,8 +710,8 @@ const pokedexData_Alola = [
     maxHold: 18,
 
     berryIndex: 2.03,
-    ingIndex: 1.10,
-    skillIndicator: 1.728,
+    ingIndex: 0.97,
+    skillIndicator: 3.69,
 
     evolutionChain: [
       {
@@ -774,15 +729,6 @@ const pokedexData_Alola = [
           2: [{ type: "マスター", rank: 8 }],
           3: null,
           4: [{ type: "マスター", rank: 9 }]
-        }
-      },
-      {
-        name: "ウノハナ雪原",
-        stars: {
-          1: [{ type: "ハイパー", rank: 4 }],
-          2: [{ type: "マスター", rank: 3 }],
-          3: [{ type: "マスター", rank: 9 }],
-          4: [{ type: "マスター", rank: 4 }]
         }
       },
       {
@@ -851,8 +797,8 @@ const pokedexData_Alola = [
     maxHold: 19,
 
     berryIndex: 1.76,
-    ingIndex: 1.03,
-    skillIndicator: 1.210,
+    ingIndex: 0.86,
+    skillIndicator: 2.57,
 
     evolutionChain: [
       {
@@ -929,8 +875,8 @@ const pokedexData_Alola = [
     maxHold: 25,
 
     berryIndex: 1.41,
-    ingIndex: 3.34,
-    skillIndicator: 1.136,
+    ingIndex: 3.94,
+    skillIndicator: 2.47,
 
     evolutionChain: [
       {
