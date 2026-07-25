@@ -36,8 +36,8 @@ const pokedexData_Galar = [
     maxHold: 19,
 
     berryIndex: 1.48,
-    ingIndex: 2.91,
-    skillIndicator: 1.248,
+    ingIndex: 2.36,
+    skillIndicator: 2.50,
 
     evolutionChain: [
       {
@@ -123,8 +123,8 @@ const pokedexData_Galar = [
     maxHold: 6,
 
     berryIndex: 0.90,
-    ingIndex: 0.71,
-    skillIndicator: 0.741,
+    ingIndex: 0.63,
+    skillIndicator: 1.44,
 
     evolutionChain: [
       {
@@ -225,8 +225,8 @@ const pokedexData_Galar = [
     maxHold: 23,
 
     berryIndex: 1.57,
-    ingIndex: 1.46,
-    skillIndicator: 1.784,
+    ingIndex: 1.63,
+    skillIndicator: 4.07,
 
     evolutionChain: [
       {
@@ -259,15 +259,6 @@ const pokedexData_Galar = [
           2: [{ type: "マスター", rank: 11 }],
           3: null,
           4: [{ type: "マスター", rank: 12 }]
-        }
-      },
-      {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ハイパー", rank: 5 }],
-          2: [{ type: "マスター", rank: 4 }],
-          3: [{ type: "マスター", rank: 9 }],
-          4: [{ type: "マスター", rank: 5 }]
         }
       },
       {
@@ -327,8 +318,8 @@ const pokedexData_Galar = [
     maxHold: 23,
 
     berryIndex: 1.57,
-    ingIndex: 1.46,
-    skillIndicator: 1.784,
+    ingIndex: 1.63,
+    skillIndicator: 4.07,
 
     evolutionChain: [
       {
@@ -361,15 +352,6 @@ const pokedexData_Galar = [
           2: [{ type: "マスター", rank: 11 }],
           3: null,
           4: [{ type: "マスター", rank: 12 }]
-        }
-      },
-      {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ハイパー", rank: 5 }],
-          2: [{ type: "マスター", rank: 4 }],
-          3: [{ type: "マスター", rank: 9 }],
-          4: [{ type: "マスター", rank: 5 }]
         }
       },
       {
