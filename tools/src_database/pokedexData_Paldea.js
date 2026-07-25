@@ -36,8 +36,8 @@ const pokedexData_Paldea = [
     maxHold: 10,
 
     berryIndex: 1.03,
-    ingIndex: 2.24,
-    skillIndicator: 0.432,
+    ingIndex: 1.95,
+    skillIndicator: 0.83,
 
     evolutionChain: [
       {
@@ -96,15 +96,6 @@ const pokedexData_Paldea = [
         }
       },
       {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ノーマル", rank: 1 }],
-          2: [{ type: "ノーマル", rank: 3 }],
-          3: [{ type: "スーパー", rank: 4 }],
-          4: [{ type: "ハイパー", rank: 1 }]
-        }
-      },
-      {
         name: "ワカクサ本島EX",
         stars: {
           1: [{ type: "ノーマル", rank: 1 }],
@@ -152,8 +143,8 @@ const pokedexData_Paldea = [
     maxHold: 19,
 
     berryIndex: 1.36,
-    ingIndex: 2.96,
-    skillIndicator: 0.568,
+    ingIndex: 2.75,
+    skillIndicator: 1.16,
 
     evolutionChain: [
       {
@@ -212,15 +203,6 @@ const pokedexData_Paldea = [
         }
       },
       {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ノーマル", rank: 5 }],
-          2: [{ type: "スーパー", rank: 4 }],
-          3: [{ type: "ハイパー", rank: 5 }],
-          4: [{ type: "マスター", rank: 1 }]
-        }
-      },
-      {
         name: "ワカクサ本島EX",
         stars: {
           1: [{ type: "ノーマル", rank: 5 }],
@@ -268,8 +250,8 @@ const pokedexData_Paldea = [
     maxHold: 28,
 
     berryIndex: 1.93,
-    ingIndex: 3.62,
-    skillIndicator: 0.731,
+    ingIndex: 3.31,
+    skillIndicator: 1.53,
 
     evolutionChain: [
       {
@@ -328,15 +310,6 @@ const pokedexData_Paldea = [
         }
       },
       {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ハイパー", rank: 5 }],
-          2: [{ type: "マスター", rank: 4 }],
-          3: [{ type: "マスター", rank: 10 }],
-          4: [{ type: "マスター", rank: 5 }]
-        }
-      },
-      {
         name: "ワカクサ本島EX",
         stars: {
           1: [{ type: "ハイパー", rank: 1 }],
@@ -383,9 +356,9 @@ const pokedexData_Paldea = [
     skillRate: 0.053,
     maxHold: 11,
 
-    berryIndex: 0.94,
-    ingIndex: 2.16,
-    skillIndicator: 1.090,
+    berryIndex: 0.96,
+    ingIndex: 2.09,
+    skillIndicator: 2.10,
 
     evolutionChain: [
       {
@@ -452,15 +425,6 @@ const pokedexData_Paldea = [
         }
       },
       {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ノーマル", rank: 1 }],
-          2: [{ type: "ノーマル", rank: 3 }],
-          3: [{ type: "スーパー", rank: 4 }],
-          4: [{ type: "ハイパー", rank: 1 }]
-        }
-      },
-      {
         name: "ワカクサ本島EX",
         stars: {
           1: [{ type: "ノーマル", rank: 1 }],
@@ -508,8 +472,8 @@ const pokedexData_Paldea = [
     maxHold: 21,
 
     berryIndex: 1.31,
-    ingIndex: 2.84,
-    skillIndicator: 1.394,
+    ingIndex: 2.90,
+    skillIndicator: 2.86,
 
     evolutionChain: [
       {
@@ -567,15 +531,6 @@ const pokedexData_Paldea = [
         }
       },
       {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ノーマル", rank: 5 }],
-          2: [{ type: "スーパー", rank: 4 }],
-          3: [{ type: "ハイパー", rank: 5 }],
-          4: [{ type: "マスター", rank: 1 }]
-        }
-      },
-      {
         name: "ワカクサ本島EX",
         stars: {
           1: [{ type: "ノーマル", rank: 5 }],
@@ -623,8 +578,8 @@ const pokedexData_Paldea = [
     maxHold: 29,
 
     berryIndex: 1.41,
-    ingIndex: 3.54,
-    skillIndicator: 1.984,
+    ingIndex: 3.88,
+    skillIndicator: 4.21,
 
     evolutionChain: [
       {
@@ -682,15 +637,6 @@ const pokedexData_Paldea = [
         }
       },
       {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ハイパー", rank: 5 }],
-          2: [{ type: "マスター", rank: 4 }],
-          3: [{ type: "マスター", rank: 10 }],
-          4: [{ type: "マスター", rank: 6 }]
-        }
-      },
-      {
         name: "ワカクサ本島EX",
         stars: {
           1: [{ type: "ハイパー", rank: 1 }],
@@ -739,7 +685,7 @@ const pokedexData_Paldea = [
 
     berryIndex: 0.95,
     ingIndex: 2.09,
-    skillIndicator: 0.504,
+    skillIndicator: 0.99,
 
     evolutionChain: [
       {
@@ -788,29 +734,11 @@ const pokedexData_Paldea = [
         }
       },
       {
-        name: "シアンの砂浜",
-        stars: {
-          1: [{ type: "ノーマル", rank: 3 }],
-          2: [{ type: "スーパー", rank: 2 }],
-          3: [{ type: "ハイパー", rank: 3 }],
-          4: [{ type: "ハイパー", rank: 1 }]
-        }
-      },
-      {
         name: "ラピスラズリ湖畔",
         stars: {
           1: [{ type: "ノーマル", rank: 1 }],
           2: [{ type: "ノーマル", rank: 4 }],
           3: [{ type: "スーパー", rank: 5 }],
-          4: [{ type: "ハイパー", rank: 1 }]
-        }
-      },
-      {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ノーマル", rank: 1 }],
-          2: [{ type: "ノーマル", rank: 3 }],
-          3: [{ type: "スーパー", rank: 4 }],
           4: [{ type: "ハイパー", rank: 1 }]
         }
       },
@@ -862,8 +790,8 @@ const pokedexData_Paldea = [
     maxHold: 19,
 
     berryIndex: 1.28,
-    ingIndex: 2.77,
-    skillIndicator: 0.648,
+    ingIndex: 2.96,
+    skillIndicator: 1.36,
 
     evolutionChain: [
       {
@@ -903,29 +831,11 @@ const pokedexData_Paldea = [
 
     fields: [
       {
-        name: "シアンの砂浜",
-        stars: {
-          1: [{ type: "スーパー", rank: 4 }],
-          2: [{ type: "ハイパー", rank: 3 }],
-          3: [{ type: "マスター", rank: 4 }],
-          4: [{ type: "マスター", rank: 1 }]
-        }
-      },
-      {
         name: "ラピスラズリ湖畔",
         stars: {
           1: [{ type: "スーパー", rank: 1 }],
           2: [{ type: "スーパー", rank: 5 }],
           3: [{ type: "マスター", rank: 1 }],
-          4: [{ type: "マスター", rank: 1 }]
-        }
-      },
-      {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ノーマル", rank: 5 }],
-          2: [{ type: "スーパー", rank: 4 }],
-          3: [{ type: "ハイパー", rank: 5 }],
           4: [{ type: "マスター", rank: 1 }]
         }
       },
@@ -977,8 +887,8 @@ const pokedexData_Paldea = [
     maxHold: 29,
 
     berryIndex: 1.60,
-    ingIndex: 3.43,
-    skillIndicator: 0.798,
+    ingIndex: 3.60,
+    skillIndicator: 1.73,
 
     evolutionChain: [
       {
@@ -1018,29 +928,11 @@ const pokedexData_Paldea = [
 
     fields: [
       {
-        name: "シアンの砂浜",
-        stars: {
-          1: [{ type: "マスター", rank: 4 }],
-          2: [{ type: "マスター", rank: 8 }],
-          3: [{ type: "マスター", rank: 14 }],
-          4: [{ type: "マスター", rank: 9 }]
-        }
-      },
-      {
         name: "ラピスラズリ湖畔",
         stars: {
           1: [{ type: "マスター", rank: 1 }],
           2: [{ type: "マスター", rank: 5 }],
           3: [{ type: "マスター", rank: 11 }],
-          4: [{ type: "マスター", rank: 6 }]
-        }
-      },
-      {
-        name: "ゴールド旧発電所",
-        stars: {
-          1: [{ type: "ハイパー", rank: 5 }],
-          2: [{ type: "マスター", rank: 4 }],
-          3: [{ type: "マスター", rank: 10 }],
           4: [{ type: "マスター", rank: 6 }]
         }
       },
@@ -1051,6 +943,506 @@ const pokedexData_Paldea = [
           2: [{ type: "ハイパー", rank: 5 }],
           3: [{ type: "マスター", rank: 8 }],
           4: [{ type: "マスター", rank: 10 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 921,
+    formId: "normal",
+    name: "パモ",
+
+    imageCard: getImagePath("card", 921, "normal"),
+    imageDetail: getImagePath("panel", 921, "normal"),
+
+    type: ["でんき"],
+    tokui: "スキル",
+
+    sleepType: "すやすや",
+
+    mainSkill: "げんきオールS",
+
+    ingredients: [
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "モーモーミルク",
+        countsByLevel: { 30: 3, 60: 6 }
+      },
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 60: 5 }
+      }
+    ],
+
+    baseHelpTime: 4600,
+    ingRate: 0.111,
+    skillRate: 0.036,
+    maxHold: 9,
+
+    berryIndex: 0.97,
+    ingIndex: 0.49,
+    skillIndicator: 1.37,
+
+    evolutionChain: [
+      {
+        dexNo: 921,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 922,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 14 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 922,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 923,
+            targetFormId: "normal",
+            conditions: [
+              { type: "sleep", value: 150 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 923,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: null,
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "ハイパー", rank: 1 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 3 }],
+          3: [{ type: "スーパー", rank: 4 }],
+          4: [{ type: "ノーマル", rank: 4 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 922,
+    formId: "normal",
+    name: "パモット",
+
+    imageCard: getImagePath("card", 922, "normal"),
+    imageDetail: getImagePath("panel", 922, "normal"),
+
+    type: ["でんき"],
+    tokui: "スキル",
+
+    sleepType: "すやすや",
+
+    mainSkill: "げんきオールS",
+
+    ingredients: [
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "モーモーミルク",
+        countsByLevel: { 30: 3, 60: 6 }
+      },
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 60: 5 }
+      }
+    ],
+
+    baseHelpTime: 3300,
+    ingRate: 0.109,
+    skillRate: 0.036,
+    maxHold: 17,
+
+    berryIndex: 1.35,
+    ingIndex: 0.71,
+    skillIndicator: 2.04,
+
+    evolutionChain: [
+      {
+        dexNo: 921,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 922,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 14 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 922,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 923,
+            targetFormId: "normal",
+            conditions: [
+              { type: "sleep", value: 150 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 923,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "スーパー", rank: 5 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 2 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 923,
+    formId: "normal",
+    name: "パーモット",
+
+    imageCard: getImagePath("card", 923, "normal"),
+    imageDetail: getImagePath("panel", 923, "normal"),
+
+    type: ["でんき"],
+    tokui: "スキル",
+
+    sleepType: "すやすや",
+
+    mainSkill: "げんきオールS",
+
+    ingredients: [
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "モーモーミルク",
+        countsByLevel: { 30: 3, 60: 6 }
+      },
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 60: 5 }
+      }
+    ],
+
+    baseHelpTime: 2400,
+    ingRate: 0.141,
+    skillRate: 0.039,
+    maxHold: 28,
+
+    berryIndex: 1.79,
+    ingIndex: 1.48,
+    skillIndicator: 3.15,
+
+    evolutionChain: [
+      {
+        dexNo: 921,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 922,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 14 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 922,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 923,
+            targetFormId: "normal",
+            conditions: [
+              { type: "sleep", value: 150 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 923,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "マスター", rank: 4 }],
+          2: [{ type: "マスター", rank: 8 }],
+          3: [{ type: "マスター", rank: 14 }],
+          4: [{ type: "マスター", rank: 9 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "マスター", rank: 2 }],
+          2: [{ type: "マスター", rank: 6 }],
+          3: [{ type: "マスター", rank: 12 }],
+          4: [{ type: "マスター", rank: 7 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "マスター", rank: 2 }],
+          3: [{ type: "マスター", rank: 10 }],
+          4: [{ type: "マスター", rank: 13 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 974,
+    formId: "normal",
+    name: "アルクジラ",
+
+    imageCard: getImagePath("card", 974, "normal"),
+    imageDetail: getImagePath("panel", 974, "normal"),
+
+    type: ["こおり"],
+    tokui: "食材",
+
+    sleepType: "ぐっすり",
+
+    mainSkill: "げんきチャージS",
+
+    ingredients: [
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 1: 2, 30: 5, 60: 7 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 30: 5, 60: 9 }
+      },
+      {
+        name: "ずっしりカボチャ",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 5100,
+    ingRate: 0.223,
+    skillRate: 0.042,
+    maxHold: 12,
+
+    berryIndex: 0.98,
+    ingIndex: 2.08,
+    skillIndicator: 1.44,
+
+    evolutionChain: [
+      {
+        dexNo: 974,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 975,
+            targetFormId: "normal",
+            conditions: [
+              { type: "item", value: "こおりのいし" },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 975,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: null,
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "ハイパー", rank: 1 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 975,
+    formId: "normal",
+    name: "ハルクジラ",
+
+    imageCard: getImagePath("card", 975, "normal"),
+    imageDetail: getImagePath("panel", 975, "normal"),
+
+    type: ["こおり"],
+    tokui: "食材",
+
+    sleepType: "ぐっすり",
+
+    mainSkill: "げんきチャージS",
+
+    ingredients: [
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 1: 2, 30: 5, 60: 7 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 30: 5, 60: 9 }
+      },
+      {
+        name: "ずっしりカボチャ",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 2800,
+    ingRate: 0.209,
+    skillRate: 0.042,
+    maxHold: 30,
+
+    berryIndex: 1.81,
+    ingIndex: 3.71,
+    skillIndicator: 2.83,
+
+    evolutionChain: [
+      {
+        dexNo: 974,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 975,
+            targetFormId: "normal",
+            conditions: [
+              { type: "item", value: "こおりのいし" },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 975,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "マスター", rank: 2 }],
+          2: [{ type: "マスター", rank: 6 }],
+          3: [{ type: "マスター", rank: 12 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 1 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: [{ type: "マスター", rank: 9 }]
         }
       }
     ]
@@ -1092,8 +1484,8 @@ const pokedexData_Paldea = [
     maxHold: 25,
 
     berryIndex: 1.45,
-    ingIndex: 3.50,
-    skillIndicator: 1.358,
+    ingIndex: 3.51,
+    skillIndicator: 2.99,
 
     evolutionChain: [
       {
