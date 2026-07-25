@@ -3501,15 +3501,6 @@ const pokedexData_Kanto = [
           3: [{ type: "スーパー", rank: 4 }],
           4: [{ type: "スーパー", rank: 1 }]
         }
-      },
-      {
-        name: "ラピスラズリ湖畔",
-        stars: {
-          1: [{ type: "ノーマル", rank: 1 }],
-          2: [{ type: "ノーマル", rank: 1 }],
-          3: [{ type: "スーパー", rank: 1 }],
-          4: [{ type: "スーパー", rank: 1 }]
-        }
       }
     ]
   },
