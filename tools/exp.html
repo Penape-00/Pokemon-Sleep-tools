@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expシミュレーター ver2.0.0</title>
+  <title>Expシミュレーター ver3.0.0</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="src_exp/exp.css">
@@ -20,7 +20,6 @@
 <!-- ▼ スライドメニュー -->
 <nav class="side-menu" id="sideMenu">
   <div class="menu-header">メニュー</div>
-
   <a href="detail.html">詳細評価</a>
   <a href="compare.html">比較評価</a>
   <a href="party.html">パーティ評価</a>
@@ -33,15 +32,15 @@
   </div>
 </nav>
 
-<!-- ▼ メニュー展開時の背景 -->
 <div class="overlay" id="overlay"></div>
 
-<h1>Expシミュレーター ver2.0.0</h1>
+<h1>Expシミュレーター ver3.0.0</h1>
 
 <!-- ▼ 入力エリア -->
 <section class="section-block">
 
   <h2>基本情報</h2>
+
   <div class="row">
     <div class="field">
       <label>ポケモン名</label>
@@ -61,15 +60,13 @@
     </div>
 
     <div class="field">
-      <label>次のレベルまでのEXP</label>
+      <label>次のレベルまでのEXP（任意）</label>
       <input type="number" id="currentExp" min="0">
     </div>
 
     <div class="field">
       <label>目標Lv</label>
-
-      <!-- プリセット + 任意入力（最小変更で追加） -->
-      <select id="targetLevelSelect" aria-label="目標レベル選択">
+      <select id="targetLevelSelect">
         <option value="25">25</option>
         <option value="30">30</option>
         <option value="50">50</option>
@@ -78,64 +75,75 @@
         <option value="custom">その他（手入力）</option>
       </select>
 
-      <input type="number" id="targetLevel" min="1" max="70" value="60" style="display:none; margin-top:8px;">
-      <!--
-        注意:
-        - 元の input#targetLevel を残しつつ、プリセット選択時は select の値を targetLevel に反映、
-          「その他（手入力）」選択時に input#targetLevel を表示して直接編集できるようにする想定です。
-      -->
+      <input type="number" id="targetLevel" min="1" max="70" value="60"
+             style="display:none; margin-top:8px;">
     </div>
   </div>
 
-  <div class="row">
-    <div class="field">
-      <label>平均睡眠EXP</label>
-      <input type="number" id="sleepExp" min="0" max="100" value="100">
-    </div>
-
-    <div class="field">
-      <label>アメブースト</label>
-      <select id="candyBoost">
-        <option value="none">なし</option>
-        <option value="mini">ミニアメブースト</option>
-        <option value="full">アメブースト</option>
-      </select>
-    </div>
+  <!-- ▼ モード切り替えボタン -->
+  <div class="mode-buttons">
+    <button data-mode="candy" class="active">アメ</button>
+    <button data-mode="sleep">睡眠</button>
+    <button data-mode="nap">おひるね島</button>
   </div>
 
-  <!-- オプション折り畳み（最小限の追記） -->
-  <div style="margin-top:12px;">
-<label class="toggle-switch">
-  <input type="checkbox" id="optionsToggleSwitch">
-  <span class="slider"></span>
-  <span class="label-text">オプション設定</span>
-</label>
-
-    <div id="optionsPanel" style="display:none; margin-top:12px;">
-      <div class="row">
-        <div class="field">
-          <label>所持アメ数</label>
-          <input type="number" id="ownedCandy" min="0" placeholder="例: 120">
-        </div>
-
-        <div class="field">
-          <label>所持ゆめのかけら数</label>
-          <input type="number" id="ownedShards" min="0" placeholder="例: 5000">
-        </div>
-
-        <div class="field">
-          <label>睡眠EXPボーナス</label>
-          <select id="sleepBonus">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
+  <!-- ▼ アメモード -->
+  <div id="mode-candy" class="mode-panel">
+    <div class="row">
+      <div class="field">
+        <label>アメブースト</label>
+        <select id="candyBoost">
+          <option value="none">なし</option>
+          <option value="mini">ミニアメブースト</option>
+          <option value="full">アメブースト</option>
+        </select>
       </div>
 
+      <div class="field">
+        <label>所持アメ数（任意）</label>
+        <input type="number" id="ownedCandy" min="0" placeholder="例: 120">
+      </div>
+
+      <div class="field">
+        <label>所持ゆめのかけら数（任意）</label>
+        <input type="number" id="ownedShards" min="0" placeholder="例: 5000">
+      </div>
+    </div>
+  </div>
+
+  <!-- ▼ 睡眠モード -->
+  <div id="mode-sleep" class="mode-panel" style="display:none;">
+    <div class="row">
+      <div class="field">
+        <label>平均睡眠EXP</label>
+        <input type="number" id="sleepExp" min="0" max="100" value="100">
+      </div>
+
+      <div class="field">
+        <label>睡眠EXPボーナス</label>
+        <select id="sleepBonus">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ▼ おひるね島モード -->
+  <div id="mode-nap" class="mode-panel" style="display:none;">
+    <div class="row">
+      <div class="field">
+        <label>リラックスチケット</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="napRelaxTicket">
+          <span class="slider"></span>
+          <span class="label-text">使用する</span>
+        </label>
+      </div>
     </div>
   </div>
 
@@ -164,9 +172,9 @@
 
 <footer style="margin-top:20px; font-size:13px; color:#555;">
   <p>
-    参照元：
-    <a href="https://pks.raenonx.cc/ja" target="_blank">RaenonX ポケモンスリープ攻略ツール</a>, 
-    <a href="https://wikiwiki.jp/poke_sleep/" target="_blank">Pokémon Sleep攻略・検証Wiki</a>
+    参照元:
+    <a href="https://pks.raenonx.cc/ja" target="_blank">RaenonX ポケモンスリープ攻略ツール</a>,
+    <a href="https://wikiwiki.jp/poke_sleep/" target="_blank">Pokémon Sleep 攻略・検証 Wiki</a>
   </p>
 </footer>
 
