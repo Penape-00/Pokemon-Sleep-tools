@@ -160,9 +160,81 @@ button {
   display: block;
 }
 
-/* ================================
-   オプションパネル
-================================ */
+/* ============================================================
+   モード切り替えボタン（sticky風）
+============================================================ */
+.mode-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.mode-buttons button {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  text-decoration: none;
+  background: #f7f7f7;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  transition: all 0.25s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-buttons button[data-mode="candy"] {
+  border-left: solid 10px #4CAF50;
+  color: #4CAF50;
+}
+
+.mode-buttons button[data-mode="sleep"] {
+  border-left: solid 10px #e74c3c;
+  color: #e74c3c;
+}
+
+.mode-buttons button[data-mode="nap"] {
+  border-left: solid 10px #3498db;
+  color: #3498db;
+}
+
+.mode-buttons button:hover {
+  background: #efefef;
+}
+
+.mode-buttons button:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+
+/* active状態（選択中） */
+.mode-buttons button.active {
+  color: #fff;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.35);
+}
+
+.mode-buttons button.active[data-mode="candy"] {
+  border-left-color: #2e7d32; 
+  background: #4CAF50;
+}
+
+.mode-buttons button.active[data-mode="sleep"] {
+  border-left-color: #c0392b; 
+  background: #e74c3c;
+}
+
+.mode-buttons button.active[data-mode="nap"] {
+  border-left-color: #2c81b4; 
+  background: #3498db;
+}
+
+/* ============================================================
+   トグルスイッチ（リラックスチケット）
+============================================================ */
 .toggle-switch {
   display: inline-flex;
   align-items: center;
@@ -196,7 +268,7 @@ button {
 }
 
 .toggle-switch input:checked + .slider {
-  background-color: #4CAF50;
+  background-color: #2c81b4;
 }
 
 .toggle-switch input:checked + .slider::before {
@@ -211,6 +283,21 @@ button {
 #optionsToggle {
   font-size: 14px;
   padding: 8px 12px;
+}
+
+/* PC（横並び） */
+#mode-nap .field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+/* スマホでは右端に寄せる */
+@media (max-width: 480px) {
+  #mode-nap .field {
+    justify-content: space-between;
+  }
 }
 
 /* ================================
