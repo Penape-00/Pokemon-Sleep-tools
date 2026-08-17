@@ -681,6 +681,18 @@ button {
   object-fit: contain;
 }
 
+.info-grid .info-ingredients,
+.info-grid .info-mainSkill {
+  grid-column: 1 / -1;
+}
+
+.ing-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+  vertical-align: top;
+}
+
 .info-left img.detail-image-small {
   margin-left: auto;
   margin-right: auto;
@@ -967,8 +979,9 @@ button {
 }
 
 /* ================================
-   出現フィールド表
+   タブ4：出現フィールド表（整理済み）
 ================================ */
+
 .field-table {
   width: 100%;
   border-collapse: collapse;
@@ -992,25 +1005,43 @@ button {
   overflow-x: auto;
 }
 
-.field-cell.empty {
-  color: #aaa;
-}
-
 .field-block {
-  padding: 2px 0;
+  padding: 8px 0;
 }
 
-.field-title {
+/* ▼ フィールドタイトル（折り畳み） */
+.field-title-collapsible {
+  cursor: pointer;
+  user-select: none;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1.1em;
+  gap: 6px;
 }
 
 .field-title-line {
-  width: 4px;
+  width: 6px;
   height: 20px;
-  border-radius: 2px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.field-toggle-icon {
+  margin-left: auto;
+  font-size: 12px;
+  color: #666;
+}
+
+/* ▼ 必要エナジー tooltip */
+.energy-tooltip {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 9999;
+  display: none;
 }
 
 @media (max-width: 480px) {
