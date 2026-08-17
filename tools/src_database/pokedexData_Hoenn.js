@@ -12,6 +12,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "きのみバースト",
 
@@ -111,6 +112,15 @@ const pokedexData_Hoenn = [
           3: [{ type: "ハイパー", rank: 2 }],
           4: [{ type: "ハイパー", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -127,6 +137,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "きのみバースト",
 
@@ -226,6 +237,15 @@ const pokedexData_Hoenn = [
           3: [{ type: "ハイパー", rank: 5 }],
           4: [{ type: "マスター", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: [{ type: "ハイパー", rank: 4 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
       }
     ]
   },
@@ -242,6 +262,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "きのみバースト",
 
@@ -341,6 +362,15 @@ const pokedexData_Hoenn = [
           3: [{ type: "マスター", rank: 10 }],
           4: [{ type: "マスター", rank: 11 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 8 }],
+          4: [{ type: "マスター", rank: 9 }]
+        }
       }
     ]
   },
@@ -357,6 +387,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -463,6 +494,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -569,6 +601,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -675,6 +708,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "料理チャンスS",
 
@@ -765,6 +799,15 @@ const pokedexData_Hoenn = [
           3: [{ type: "ハイパー", rank: 2 }],
           4: [{ type: "ハイパー", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -781,6 +824,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "料理チャンスS",
 
@@ -871,6 +915,15 @@ const pokedexData_Hoenn = [
           3: [{ type: "ハイパー", rank: 5 }],
           4: [{ type: "マスター", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: [{ type: "ハイパー", rank: 4 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
       }
     ]
   },
@@ -887,6 +940,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "料理チャンスS",
 
@@ -977,6 +1031,15 @@ const pokedexData_Hoenn = [
           3: [{ type: "マスター", rank: 10 }],
           4: [{ type: "マスター", rank: 11 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 8 }],
+          4: [{ type: "マスター", rank: 9 }]
+        }
       }
     ]
   },
@@ -993,6 +1056,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "げんきオールS",
 
@@ -1099,6 +1163,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "げんきオールS",
 
@@ -1205,6 +1270,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "げんきオールS",
 
@@ -1311,6 +1377,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "食材ゲットS",
 
@@ -1417,6 +1484,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "食材ゲットS",
 
@@ -1523,6 +1591,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "食材ゲットS",
 
@@ -1629,6 +1698,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -1698,6 +1768,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "かいりきバサミ(食材セレクトS)",
 
@@ -1785,6 +1856,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -1882,6 +1954,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -1979,6 +2052,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -2076,6 +2150,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "プラス(食材ゲットS)",
 
@@ -2163,6 +2238,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ホウエン",
 
     mainSkill: "マイナス(料理パワーアップS)",
 
@@ -2250,6 +2326,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -2342,6 +2419,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -2425,6 +2503,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "エナジーチャージS",
 
@@ -2522,6 +2601,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "エナジーチャージS",
 
@@ -2619,6 +2699,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "エナジーチャージS",
 
@@ -2716,6 +2797,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -2808,6 +2890,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "げんきチャージS",
 
@@ -2891,6 +2974,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -2980,6 +3064,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3072,6 +3157,7 @@ const pokedexData_Hoenn = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "エナジーチャージM",
 
@@ -3150,6 +3236,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "げんきエールS",
 
@@ -3233,6 +3320,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "食材ゲットS",
 
@@ -3339,6 +3427,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "料理チャンスS",
 
@@ -3376,10 +3465,10 @@ const pokedexData_Hoenn = [
 
     fields: [
       {
-        name: "すべて",
+        name: "ワカクサ本島",
         stars: {
-          1: null,
-          2: null
+          1: [{ type: null, rank: null }],
+          2: [{ type: null, rank: null }]
         }
       }
     ]
@@ -3397,6 +3486,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "食材ゲットS",
 
@@ -3494,6 +3584,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ホウエン",
 
     mainSkill: "食材ゲットS",
 
@@ -3591,6 +3682,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "料理パワーアップS",
 
@@ -3679,6 +3771,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "料理パワーアップS",
 
@@ -3767,6 +3860,7 @@ const pokedexData_Hoenn = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "料理パワーアップS",
 
@@ -3855,6 +3949,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "いやしのはどう(げんきエールS)",
 
@@ -3942,6 +4037,7 @@ const pokedexData_Hoenn = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ホウエン",
 
     mainSkill: "りゅうせいぐん(きのみバースト)",
 
@@ -4017,4 +4113,4 @@ const pokedexData_Hoenn = [
     ]
   }
 
-];  
+];
