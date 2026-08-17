@@ -12,6 +12,7 @@ const pokedexData_Unova = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "イッシュ",
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -101,6 +102,7 @@ const pokedexData_Unova = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "イッシュ",
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -190,6 +192,7 @@ const pokedexData_Unova = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "イッシュ",
 
     mainSkill: "食材セレクトS",
 
@@ -264,6 +267,7 @@ const pokedexData_Unova = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "イッシュ",
 
     mainSkill: "食材セレクトS",
 
@@ -338,6 +342,7 @@ const pokedexData_Unova = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "イッシュ",
 
     mainSkill: "きのみバースト",
 
@@ -423,6 +428,15 @@ const pokedexData_Unova = [
           3: [{ type: "ハイパー", rank: 2 }],
           4: [{ type: "ハイパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "マスター", rank: 10 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -439,6 +453,7 @@ const pokedexData_Unova = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "イッシュ",
 
     mainSkill: "きのみバースト",
 
@@ -514,6 +529,15 @@ const pokedexData_Unova = [
           2: [{ type: "ハイパー", rank: 2 }],
           3: [{ type: "マスター", rank: 3 }],
           4: [{ type: "マスター", rank: 7 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "マスター", rank: 5 }]
         }
       }
     ]
