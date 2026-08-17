@@ -12,6 +12,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "アローラ",
 
     mainSkill: "エナジーチャージS",
 
@@ -84,6 +85,15 @@ const pokedexData_Alola = [
           3: [{ type: "スーパー", rank: 5 }],
           4: [{ type: "ノーマル", rank: 5 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -100,6 +110,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "アローラ",
 
     mainSkill: "エナジーチャージS",
 
@@ -172,6 +183,15 @@ const pokedexData_Alola = [
           3: [{ type: "マスター", rank: 1 }],
           4: [{ type: "ハイパー", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "マスター", rank: 3 }]
+        }
       }
     ]
   },
@@ -188,6 +208,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "アローラ",
 
     mainSkill: "エナジーチャージS",
 
@@ -260,6 +281,15 @@ const pokedexData_Alola = [
           3: [{ type: "マスター", rank: 14 }],
           4: [{ type: "マスター", rank: 9 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 3 }],
+          2: [{ type: "マスター", rank: 2 }],
+          3: [{ type: "マスター", rank: 9 }],
+          4: [{ type: "マスター", rank: 11 }]
+        }
       }
     ]
   },
@@ -276,6 +306,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "アローラ",
 
     mainSkill: "食材セレクトS",
 
@@ -352,6 +383,15 @@ const pokedexData_Alola = [
           3: [{ type: "ハイパー", rank: 2 }],
           4: [{ type: "ハイパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -368,6 +408,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "アローラ",
 
     mainSkill: "食材セレクトS",
 
@@ -444,6 +485,15 @@ const pokedexData_Alola = [
           3: [{ type: "マスター", rank: 3 }],
           4: [{ type: "マスター", rank: 6 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "マスター", rank: 5 }]
+        }
       }
     ]
   },
@@ -460,6 +510,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "アローラ",
 
     mainSkill: "エナジーチャージS",
 
@@ -534,6 +585,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "アローラ",
 
     mainSkill: "エナジーチャージS",
 
@@ -608,6 +660,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "アローラ",
 
     mainSkill: "げんきエールS",
 
@@ -670,6 +723,15 @@ const pokedexData_Alola = [
           3: [{ type: "ハイパー", rank: 5 }],
           4: [{ type: "マスター", rank: 2 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
       }
     ]
   },
@@ -686,6 +748,7 @@ const pokedexData_Alola = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "アローラ",
 
     mainSkill: "ほっぺすりすり(げんきエールS)",
 
@@ -773,6 +836,7 @@ const pokedexData_Alola = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "アローラ",
 
     mainSkill: "ばけのかわ(きのみバースト)",
 
@@ -851,6 +915,7 @@ const pokedexData_Alola = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "アローラ",
 
     mainSkill: "料理チャンスS",
 
@@ -921,6 +986,15 @@ const pokedexData_Alola = [
           2: [{ type: "ハイパー", rank: 4 }],
           3: [{ type: "マスター", rank: 8 }],
           4: [{ type: "マスター", rank: 11 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 4 }],
+          3: [{ type: "マスター", rank: 7 }],
+          4: [{ type: "マスター", rank: 9 }]
         }
       }
     ]
