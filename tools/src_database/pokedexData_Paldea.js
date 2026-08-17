@@ -12,6 +12,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "パルデア",
 
     mainSkill: "料理パワーアップS",
 
@@ -119,6 +120,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "パルデア",
 
     mainSkill: "料理パワーアップS",
 
@@ -226,6 +228,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "パルデア",
 
     mainSkill: "料理パワーアップS",
 
@@ -333,6 +336,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "パルデア",
 
     mainSkill: "げんきチャージS",
 
@@ -448,6 +452,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "パルデア",
 
     mainSkill: "げんきチャージS",
 
@@ -554,6 +559,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "パルデア",
 
     mainSkill: "げんきチャージS",
 
@@ -660,6 +666,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "パルデア",
 
     mainSkill: "エナジーチャージM",
 
@@ -766,6 +773,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "パルデア",
 
     mainSkill: "エナジーチャージM",
 
@@ -863,6 +871,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "パルデア",
 
     mainSkill: "エナジーチャージM",
 
@@ -960,6 +969,7 @@ const pokedexData_Paldea = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "パルデア",
 
     mainSkill: "げんきオールS",
 
@@ -1075,6 +1085,7 @@ const pokedexData_Paldea = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "パルデア",
 
     mainSkill: "げんきオールS",
 
@@ -1181,6 +1192,7 @@ const pokedexData_Paldea = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "パルデア",
 
     mainSkill: "げんきオールS",
 
@@ -1276,6 +1288,376 @@ const pokedexData_Paldea = [
   },
 
   {
+    dexNo: 957,
+    formId: "normal",
+    name: "カヌチャン",
+
+    imageCard: getImagePath("card", 957, "normal"),
+    imageDetail: getImagePath("panel", 957, "normal"),
+
+    type: ["フェアリー"],
+    tokui: "きのみ",
+
+    sleepType: "すやすや",
+    region: "パルデア",
+
+    mainSkill: "エナジーチャージM",
+
+    ingredients: [
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 60: 3 }
+      }
+    ],
+
+    baseHelpTime: 4500,
+    ingRate: 0.202,
+    skillRate: 0.016,
+    maxHold: 12,
+
+    berryIndex: 1.38,
+    ingIndex: 0.91,
+    skillIndicator: 0.59,
+
+    evolutionChain: [
+      {
+        dexNo: 957,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 958,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 26 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 958,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 959,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 34 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 959,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: null,
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
+      },
+      {
+        name: "シアンの砂浜",
+        stars: {
+          1: [{ type: "ノーマル", rank: 3 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 3 }],
+          3: [{ type: "スーパー", rank: 4 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 4 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 958,
+    formId: "normal",
+    name: "ナカヌチャン",
+
+    imageCard: getImagePath("card", 958, "normal"),
+    imageDetail: getImagePath("panel", 958, "normal"),
+
+    type: ["フェアリー"],
+    tokui: "きのみ",
+
+    sleepType: "すやすや",
+    region: "パルデア",
+
+    mainSkill: "エナジーチャージM",
+
+    ingredients: [
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 60: 3 }
+      }
+    ],
+
+    baseHelpTime: 3300,
+    ingRate: 0.186,
+    skillRate: 0.018,
+    maxHold: 21,
+
+    berryIndex: 1.92,
+    ingIndex: 1.14,
+    skillIndicator: 0.95,
+
+    evolutionChain: [
+      {
+        dexNo: 957,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 958,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 26 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 958,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 959,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 34 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 959,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: null,
+          4: [{ type: "マスター", rank: 2 }]
+        }
+      },
+      {
+        name: "シアンの砂浜",
+        stars: {
+          1: [{ type: "スーパー", rank: 4 }],
+          2: [{ type: "ハイパー", rank: 3 }],
+          3: [{ type: "マスター", rank: 4 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }],
+          4: [{ type: "マスター", rank: 4 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 1 }],
+          4: [{ type: "マスター", rank: 3 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 959,
+    formId: "normal",
+    name: "デカヌチャン",
+
+    imageCard: getImagePath("card", 959, "normal"),
+    imageDetail: getImagePath("panel", 959, "normal"),
+
+    type: ["フェアリー"],
+    tokui: "きのみ",
+
+    sleepType: "すやすや",
+    region: "パルデア",
+
+    mainSkill: "エナジーチャージM",
+
+    ingredients: [
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 60: 3 }
+      }
+    ],
+
+    baseHelpTime: 2400,
+    ingRate: 0.185,
+    skillRate: 0.020,
+    maxHold: 30,
+
+    berryIndex: 2.65,
+    ingIndex: 1.57,
+    skillIndicator: 1.47,
+
+    evolutionChain: [
+      {
+        dexNo: 957,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 958,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 26 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 958,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 959,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 34 },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 959,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "マスター", rank: 7 }],
+          2: [{ type: "マスター", rank: 11 }],
+          3: null
+        }
+      },
+      {
+        name: "シアンの砂浜",
+        stars: {
+          1: [{ type: "マスター", rank: 4 }],
+          2: [{ type: "マスター", rank: 8 }],
+          3: [{ type: "マスター", rank: 14 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "ハイパー", rank: 5 }],
+          2: [{ type: "マスター", rank: 4 }],
+          3: [{ type: "マスター", rank: 10 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: [{ type: "マスター", rank: 10 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 8 }]
+        }
+      }
+    ]
+  },
+
+  {
     dexNo: 974,
     formId: "normal",
     name: "アルクジラ",
@@ -1287,6 +1669,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "パルデア",
 
     mainSkill: "げんきチャージS",
 
@@ -1379,6 +1762,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "パルデア",
 
     mainSkill: "げんきチャージS",
 
@@ -1460,6 +1844,7 @@ const pokedexData_Paldea = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "パルデア",
 
     mainSkill: "げんきチャージS",
 
