@@ -6,10 +6,11 @@
 const TYPE_LIST = ["ノーマル","ほのお","みず","でんき","くさ","こおり","かくとう","どく","じめん","ひこう","エスパー","むし","いわ","ゴースト","ドラゴン","あく","はがね","フェアリー"];
 const TOKUI_LIST = ["きのみ","食材","スキル","オール"];
 const SLEEP_LIST = ["うとうと","すやすや","ぐっすり"];
-const FIELD_LIST = ["ワカクサ本島","シアンの砂浜","トープ洞窟","ウノハナ雪原","ラピスラズリ湖畔","ゴールド旧発電所","アンバー渓谷","ワカクサ本島EX"];
+const FIELD_LIST = ["ワカクサ本島","シアンの砂浜","トープ洞窟","ウノハナ雪原","ラピスラズリ湖畔","ゴールド旧発電所","アンバー渓谷","ワカクサ本島EX","シアンの砂浜EX"];
+const REGION_LIST = ["カントー","ジョウト","ホウエン","シンオウ","イッシュ","カロス","アローラ","ガラル","パルデア"];
 
 let filteredList = [...pokedexData_All];
-const selectedFilters = { type:[], tokui:[], skill:[], ingredient:[], sleep:[], field:[] };
+const selectedFilters = { type:[], tokui:[], skill:[], ingredient:[], sleep:[], field:[], region:[] };
 let ingredientMode = "OR";
 
 /* ▼ ひらがな → カタカナ変換 */
@@ -22,7 +23,7 @@ function hiraToKana(str) {
 /* ▼ 表示名 */
 const FILTER_DISPLAY_NAMES = {
   type:"タイプ", tokui:"とくいタイプ", skill:"メインスキル",
-  ingredient:"食材", sleep:"睡眠タイプ", field:"出現フィールド"
+  ingredient:"食材", sleep:"睡眠タイプ", field:"出現フィールド", region:"地方"
 };
 
 /* ▼ ドロップダウン生成 */
@@ -150,6 +151,7 @@ function initDropdowns() {
 
   createDropdownMulti(document.querySelector("[data-filter='sleep']"), SLEEP_LIST, "sleep");
   createDropdownMulti(document.querySelector("[data-filter='field']"), FIELD_LIST, "field");
+  createDropdownMulti(document.querySelector("[data-filter='region']"), REGION_LIST, "region");
 }
 
 /* ▼ 絞り込み */
@@ -177,7 +179,10 @@ function applyFilters() {
     if (selectedFilters.field.length) {
       const fieldNames = p.fields.map(f => f.name);
       if (!selectedFilters.field.some(f => fieldNames.includes(f))) return false;
+    
     }
+
+    if (selectedFilters.region.length && !selectedFilters.region.includes(p.region)) return false;
 
     return true;
   });
