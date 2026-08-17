@@ -12,6 +12,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "げんきオールS",
 
@@ -127,6 +128,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "げんきオールS",
 
@@ -242,6 +244,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "げんきオールS",
 
@@ -353,6 +356,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "シンオウ",
 
     mainSkill: "きのみバースト",
 
@@ -468,6 +472,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "きのみバースト",
 
@@ -583,6 +588,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "きのみバースト",
 
@@ -698,6 +704,7 @@ const pokedexData_Sinnoh = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "おてつだいサポートS",
 
@@ -797,6 +804,15 @@ const pokedexData_Sinnoh = [
           3: [{ type: "ハイパー", rank: 3 }],
           4: [{ type: "ハイパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -813,6 +829,7 @@ const pokedexData_Sinnoh = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "おてつだいサポートS",
 
@@ -912,6 +929,15 @@ const pokedexData_Sinnoh = [
           3: [{ type: "ハイパー", rank: 5 }],
           4: [{ type: "マスター", rank: 2 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
       }
     ]
   },
@@ -928,6 +954,7 @@ const pokedexData_Sinnoh = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "おてつだいサポートS",
 
@@ -1027,6 +1054,15 @@ const pokedexData_Sinnoh = [
           3: [{ type: "マスター", rank: 10 }],
           4: [{ type: "マスター", rank: 11 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 8 }],
+          4: [{ type: "マスター", rank: 9 }]
+        }
       }
     ]
   },
@@ -1043,6 +1079,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "シンオウ",
 
     mainSkill: "料理パワーアップS",
 
@@ -1131,6 +1168,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "シンオウ",
 
     mainSkill: "料理パワーアップS",
 
@@ -1219,6 +1257,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "シンオウ",
 
     mainSkill: "料理パワーアップS",
 
@@ -1307,6 +1346,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "たくわえる(エナジーチャージS)",
 
@@ -1396,6 +1436,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "たくわえる(エナジーチャージS)",
 
@@ -1477,6 +1518,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "きょううん(食材セレクトS)",
 
@@ -1578,6 +1620,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "エナジーチャージM",
 
@@ -1670,6 +1713,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "ものまね(スキルコピー)",
 
@@ -1744,6 +1788,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "げんきオールS",
 
@@ -1844,6 +1889,15 @@ const pokedexData_Sinnoh = [
           3: [{ type: "ハイパー", rank: 2 }],
           4: [{ type: "ハイパー", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 2 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -1860,6 +1914,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "おてつだいサポートS",
 
@@ -1947,6 +2002,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -2040,8 +2096,9 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
-    mainSkill: "ゆめのかけらゲットS",
+    mainSkill: "はどうだん(ゆめのかけらゲットS)",
 
     ingredients: [
       {
@@ -2115,6 +2172,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "エナジーチャージS",
 
@@ -2178,6 +2236,15 @@ const pokedexData_Sinnoh = [
           3: [{ type: "スーパー", rank: 3 }],
           4: [{ type: "スーパー", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -2194,6 +2261,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "エナジーチャージS",
 
@@ -2257,6 +2325,15 @@ const pokedexData_Sinnoh = [
           3: [{ type: "ハイパー", rank: 4 }],
           4: [{ type: "スーパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "スーパー", rank: 5 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
       }
     ]
   },
@@ -2273,6 +2350,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -2356,6 +2434,7 @@ const pokedexData_Sinnoh = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -2437,6 +2516,7 @@ const pokedexData_Sinnoh = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "料理チャンスS",
 
@@ -2530,6 +2610,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "料理パワーアップS",
 
@@ -2629,6 +2710,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "シンオウ",
 
     mainSkill: "ゆびをふる",
 
@@ -2701,6 +2783,15 @@ const pokedexData_Sinnoh = [
           3: [{ type: "マスター", rank: 16 }],
           4: [{ type: "マスター", rank: 11 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 4 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 1 }],
+          4: [{ type: "マスター", rank: 2 }]
+        }
       }
     ]
   },
@@ -2717,6 +2808,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "げんきエールS",
 
@@ -2846,6 +2938,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "料理パワーアップS",
 
@@ -2975,6 +3068,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "シンオウ",
 
     mainSkill: "おてつだいサポートS",
 
@@ -3081,6 +3175,7 @@ const pokedexData_Sinnoh = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "シンオウ",
 
     mainSkill: "みかづきのいのり(げんきオールS)",
 
@@ -3164,6 +3259,7 @@ const pokedexData_Sinnoh = [
     tokui: "オール",
 
     sleepType: "うとうと",
+    region: "シンオウ",
 
     mainSkill: "ナイトメア(エナジーチャージM)",
 
