@@ -12,6 +12,7 @@ const pokedexData_Galar = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ガラル",
 
     mainSkill: "料理チャンスS",
 
@@ -83,6 +84,15 @@ const pokedexData_Galar = [
           3: [{ type: "マスター", rank: 1 }],
           4: [{ type: "マスター", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 1 }],
+          4: [{ type: "マスター", rank: 2 }]
+        }
       }
     ]
   },
@@ -99,6 +109,7 @@ const pokedexData_Galar = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "ガラル",
 
     mainSkill: "食材ゲットS",
 
@@ -201,6 +212,7 @@ const pokedexData_Galar = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ガラル",
 
     mainSkill: "プラス(食材ゲットS)",
 
@@ -294,6 +306,7 @@ const pokedexData_Galar = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ガラル",
 
     mainSkill: "マイナス(料理パワーアップS)",
 
