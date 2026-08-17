@@ -12,6 +12,7 @@ const pokedexData_Kalos = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "カロス",
 
     mainSkill: "料理パワーアップS",
 
@@ -114,6 +115,7 @@ const pokedexData_Kalos = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "カロス",
 
     mainSkill: "料理パワーアップS",
 
@@ -212,6 +214,7 @@ const pokedexData_Kalos = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カロス",
 
     mainSkill: "げんきオールS",
 
@@ -316,6 +319,112 @@ const pokedexData_Kalos = [
           3: [{ type: "ハイパー", rank: 5 }],
           4: [{ type: "マスター", rank: 2 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 701,
+    formId: "normal",
+    name: "ルチャブル",
+
+    imageCard: getImagePath("card", 701, "normal"),
+    imageDetail: getImagePath("panel", 701, "normal"),
+
+    type: ["ひこう"],
+    tokui: "スキル",
+
+    sleepType: "ぐっすり",
+    region: "カロス",
+
+    mainSkill: "食材セレクトS",
+
+    ingredients: [
+      {
+        name: "げきからハーブ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 30: 3, 60: 4 }
+      },
+      {
+        name: "マメミート",
+        countsByLevel: { 60: 5 }
+      }
+    ],
+
+    baseHelpTime: 2400,
+    ingRate: 0.192,
+    skillRate: 0.052,
+    maxHold: 21,
+
+    berryIndex: 1.62,
+    ingIndex: 1.93,
+    skillIndicator: 3.87,
+
+    evolutionChain: [
+      {
+        dexNo: 702,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "マスター", rank: 5 }],
+          2: [{ type: "マスター", rank: 9 }],
+          3: null,
+          4: [{ type: "マスター", rank: 10 }]
+        }
+      },
+      {
+        name: "シアンの砂浜",
+        stars: {
+          1: [{ type: "マスター", rank: 2 }],
+          2: [{ type: "マスター", rank: 6 }],
+          3: [{ type: "マスター", rank: 12 }],
+          4: [{ type: "マスター", rank: 7 }]
+        }
+      },
+      {
+        name: "ラピスラズリ湖畔",
+        stars: {
+          1: [{ type: "ハイパー", rank: 4 }],
+          2: [{ type: "マスター", rank: 3 }],
+          3: [{ type: "マスター", rank: 9 }],
+          4: [{ type: "マスター", rank: 4 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 10 }],
+          4: [{ type: "マスター", rank: 11 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 8 }],
+          4: [{ type: "マスター", rank: 10 }]
+        }
       }
     ]
   },
@@ -332,6 +441,7 @@ const pokedexData_Kalos = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カロス",
 
     mainSkill: "料理チャンスS",
 
@@ -419,6 +529,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -511,6 +622,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -603,6 +715,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -695,6 +808,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -787,6 +901,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -879,6 +994,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -971,6 +1087,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -1063,6 +1180,7 @@ const pokedexData_Kalos = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージS",
 
@@ -1155,6 +1273,7 @@ const pokedexData_Kalos = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージM",
 
@@ -1256,6 +1375,7 @@ const pokedexData_Kalos = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "カロス",
 
     mainSkill: "エナジーチャージM",
 
