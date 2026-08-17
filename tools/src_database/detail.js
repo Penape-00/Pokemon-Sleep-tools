@@ -103,11 +103,21 @@ function renderTabInfo(p) {
         <div class="info-grid">
           <div><b>タイプ：</b> ${p.type.join("・")} ${renderBerryIcon(p.type[0])}</div>
           <div><b>とくい：</b> ${p.tokui}</div>
+          <div class="info-ingredients">
+            <b>食材：</b>
+            ${p.ingredients.map(i => `
+              <img class="ing-icon" src="${ingredientData[i.name].image}" title="${i.name}">
+            `).join("")}
+          </div>
+          <div class="info-mainSkill">
+            <b>メインスキル：</b> ${p.mainSkill}
+          </div>
           <div><b>睡眠タイプ：</b> ${p.sleepType}</div>
           <div><b>基礎おてつだい時間：</b> ${p.baseHelpTime} 秒</div>
           <div><b>食材確率：</b> ${(p.ingRate * 100).toFixed(1)}%</div>
           <div><b>スキル発動確率：</b> ${(p.skillRate * 100).toFixed(1)}%</div>
           <div><b>最大所持数：</b> ${p.maxHold} 個</div>
+
         </div>
 
         <hr class="info-hr">
@@ -658,95 +668,171 @@ function renderEvolutionDoubleBranch(chain) {
 }
 
 /* ================================
-   ▼ タブ4：出現フィールド（あなたの完全版）
+   ▼ タブ4：出現フィールド（完全版）
 ================================ */
 function renderFieldTab(p) {
+  const container = document.getElementById("tab-fields");
+  container.innerHTML = "";
 
-  let fieldHTML = "";
+  p.fields.forEach(field => {
+    const fieldName = field.name;
 
-  p.fields.forEach((f, index) => {
+    /* ▼ フィールドカラーライン */
+    const lineColor = getFieldLineColor(fieldName);
 
-    const lineColor = getFieldLineColor(f.name);
-    const starKeys = Object.keys(f.stars).sort((a, b) => a - b);
+    /* ▼ セクション生成 */
+    const section = document.createElement("div");
+    section.className = "field-section";
 
-    const columns = [];
-    starKeys.forEach(k => {
-      const list = f.stars[k];
-      if (list === null) {
-        columns.push({ star: k, data: null });
-      } else {
-        list.forEach(star => columns.push({ star: k, data: star }));
-      }
+    /* ▼ タイトル（クリックで開閉） */
+    const title = document.createElement("h3");
+    title.className = "field-title-collapsible";
+    title.innerHTML = `
+      <span class="field-title-line" style="background:${lineColor}"></span>
+      ${fieldName}
+      <span class="field-toggle-icon">▼</span>
+    `;
+    section.appendChild(title);
+
+    /* ▼ テーブル生成（初期は非表示） */
+    const tableWrapper = document.createElement("div");
+    tableWrapper.className = "field-table-wrapper";
+    tableWrapper.style.display = "none"; // ★ 初期は折り畳み
+
+    const table = document.createElement("table");
+    table.className = "field-table";
+
+    /* ▼ レア度背景色 */
+    const rarityColors = {
+      "ノーマル": "rgba(255, 0, 0, 0.10)",
+      "スーパー": "rgba(0, 80, 255, 0.10)",
+      "ハイパー": "rgba(255, 220, 0, 0.10)",
+      "マスター": "rgba(180, 0, 255, 0.10)"
+    };
+
+    /* ▼ stars の描画 */
+    Object.keys(field.stars).forEach(starKey => {
+      const starData = field.stars[starKey];
+      if (!starData) return; // ★ null はスキップ
+
+      starData.forEach(entry => {
+        const tr = document.createElement("tr");
+
+        /* ★ 星数 */
+        const tdStar = document.createElement("td");
+        tdStar.textContent = `★${starKey}`;
+        tr.appendChild(tdStar);
+
+        /* ★ ランク（不明対応） */
+        const tdRank = document.createElement("td");
+        tdRank.className = "rank-cell";
+
+        if (entry.type == null || entry.rank == null) {
+          tdRank.textContent = "不明";
+          tdRank.classList.add("unknown");
+        } else {
+          const rankName = `${entry.type}${entry.rank}`;
+          tdRank.textContent = rankName;
+          tdRank.dataset.rank = rankName;
+          tdRank.dataset.field = fieldName;
+
+          /* レア度背景色 */
+          tdRank.style.background = rarityColors[entry.type] || "transparent";
+        }
+
+        tr.appendChild(tdRank);
+        table.appendChild(tr);
+      });
     });
 
-    const fixedWidth = "80px";
+    tableWrapper.appendChild(table);
+    section.appendChild(tableWrapper);
+    container.appendChild(section);
 
-    const headerCells = columns
-      .map(col => `<th style="width:${fixedWidth}; min-width:${fixedWidth};">星${col.star}</th>`)
-      .join("");
-
-    const dataCells = columns
-      .map(col => renderFieldCell(col.data))
-      .join("");
-
-    fieldHTML += `
-      <div class="field-block">
-        <h3 class="field-title">
-          <span class="field-title-line" style="background:${lineColor}"></span>
-          ${f.name}
-        </h3>
-
-        <div class="field-table-wrapper">
-          <table class="field-table">
-            <tr>${headerCells}</tr>
-            <tr>${dataCells}</tr>
-          </table>
-        </div>
-      </div>
-    `;
-
-    if (index < p.fields.length - 1) fieldHTML += `<hr>`;
+    /* ▼ 開閉イベント */
+    title.addEventListener("click", () => {
+      const isOpen = tableWrapper.style.display !== "none";
+      tableWrapper.style.display = isOpen ? "none" : "block";
+      title.querySelector(".field-toggle-icon").textContent = isOpen ? "▼" : "▲";
+    });
   });
-
-  document.getElementById("tab-fields").innerHTML = fieldHTML;
 }
 
+/* ================================
+   ▼ 必要エナジー tooltip（PC：hover / スマホ：tap）
+================================ */
+const isTouchDevice = ("ontouchstart" in window || navigator.maxTouchPoints > 0);
+let energyTooltip = null;
 
-/* -------------------------------
-   ▼ 出現フィールド：セル生成
--------------------------------- */
-function renderFieldCell(star) {
-  if (!star) return `<td class="field-cell empty">ー</td>`;
-
-  if (star.type === null || star.rank === null) {
-    return `<td class="field-cell unknown">不明</td>`;
+function showEnergyTooltip(target, text) {
+  if (!energyTooltip) {
+    energyTooltip = document.createElement("div");
+    energyTooltip.className = "energy-tooltip";
+    document.body.appendChild(energyTooltip);
   }
 
-  const rarityColors = {
-    "ノーマル": "rgba(255, 0, 0, 0.10)",
-    "スーパー": "rgba(0, 80, 255, 0.10)",
-    "ハイパー": "rgba(255, 220, 0, 0.10)",
-    "マスター": "rgba(180, 0, 255, 0.10)"
-  };
+  energyTooltip.textContent = text;
 
-  const bg = rarityColors[star.type] || "transparent";
-
-  return `<td class="field-cell" style="background:${bg}">${star.type}${star.rank}</td>`;
+  const rect = target.getBoundingClientRect();
+  energyTooltip.style.left = `${rect.left + window.scrollX}px`;
+  energyTooltip.style.top = `${rect.bottom + window.scrollY + 4}px`;
+  energyTooltip.style.display = "block";
 }
 
+function hideEnergyTooltip() {
+  if (energyTooltip) energyTooltip.style.display = "none";
+}
+
+/* PC版 hover */
+document.addEventListener("mouseover", (e) => {
+  if (isTouchDevice) return;
+  const cell = e.target.closest(".rank-cell");
+  if (!cell || cell.classList.contains("unknown")) return;
+
+  const rank = cell.dataset.rank;
+  const field = cell.dataset.field;
+  const energy = ENERGY_TABLE[field]?.[rank];
+  if (energy == null) return;
+
+  showEnergyTooltip(cell, `必要エナジー：${energy.toLocaleString()}`);
+});
+
+document.addEventListener("mouseout", (e) => {
+  if (isTouchDevice) return;
+  if (e.target.closest(".rank-cell")) hideEnergyTooltip();
+});
+
+/* スマホ版 tap */
+document.addEventListener("click", (e) => {
+  if (!isTouchDevice) return;
+  const cell = e.target.closest(".rank-cell");
+  if (!cell || cell.classList.contains("unknown")) return;
+
+  const rank = cell.dataset.rank;
+  const field = cell.dataset.field;
+  const energy = ENERGY_TABLE[field]?.[rank];
+  if (energy == null) return;
+
+  if (energyTooltip?.style.display === "block") {
+    hideEnergyTooltip();
+  } else {
+    showEnergyTooltip(cell, `必要エナジー：${energy.toLocaleString()}`);
+  }
+});
 
 /* -------------------------------
    ▼ 出現フィールド：色分け
 -------------------------------- */
 function getFieldLineColor(name) {
   if (name.includes("ワカクサ本島EX")) return "#6FA85F";
-  if (name.includes("ワカクサ")) return "#8BC98B";
-  if (name.includes("ラピスラズリ")) return "#6FA8DC";
-  if (name.includes("シアン")) return "#76D7D7";
-  if (name.includes("トープ")) return "#B8A89A";
-  if (name.includes("ウノハナ")) return "#F3E8C8";
-  if (name.includes("ゴールド")) return "#D9C16F";
-  if (name.includes("アンバー")) return "#D9A76F";
+  if (name.includes("ワカクサ本島")) return "#8BC98B";
+  if (name.includes("シアンの砂浜EX")) return "#5AB6AB";
+  if (name.includes("シアンの砂浜")) return "#76D7D7";
+  if (name.includes("トープ洞窟")) return "#B8A89A";
+  if (name.includes("ウノハナ雪原")) return "#F3E8C8";
+  if (name.includes("ラピスラズリ湖畔")) return "#6FA8DC";
+  if (name.includes("ゴールド旧発電所")) return "#D9C16F";
+  if (name.includes("アンバー渓谷")) return "#D9A76F";
   return "#CCC";
 }
 
