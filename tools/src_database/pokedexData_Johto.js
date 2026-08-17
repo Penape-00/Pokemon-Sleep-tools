@@ -12,6 +12,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -118,6 +119,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -224,6 +226,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -330,6 +333,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -436,6 +440,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -542,6 +547,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -648,6 +654,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -734,6 +741,15 @@ const pokedexData_Johto = [
           3: [{ type: "スーパー", rank: 2 }],
           4: [{ type: "スーパー", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -750,6 +766,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -836,6 +853,15 @@ const pokedexData_Johto = [
           3: [{ type: "スーパー", rank: 5 }],
           4: [{ type: "ハイパー", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "スーパー", rank: 5 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
       }
     ]
   },
@@ -852,6 +878,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -938,6 +965,15 @@ const pokedexData_Johto = [
           3: [{ type: "マスター", rank: 1 }],
           4: [{ type: "マスター", rank: 2 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 4 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
       }
     ]
   },
@@ -954,6 +990,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージS",
 
@@ -1060,6 +1097,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "ゆびをふる",
 
@@ -1195,6 +1233,15 @@ const pokedexData_Johto = [
           3: [{ type: "スーパー", rank: 2 }],
           4: [{ type: "スーパー", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -1211,6 +1258,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "げんきオールS",
 
@@ -1292,6 +1340,15 @@ const pokedexData_Johto = [
           3: [{ type: "スーパー", rank: 2 }],
           4: [{ type: "スーパー", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 1 }],
+          4: [{ type: "スーパー", rank: 2 }]
+        }
       }
     ]
   },
@@ -1308,6 +1365,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "ゆびをふる",
 
@@ -1405,6 +1463,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "ゆびをふる",
 
@@ -1502,6 +1561,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "食材ゲットS",
 
@@ -1603,6 +1663,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "食材ゲットS",
 
@@ -1695,6 +1756,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージM",
 
@@ -1797,6 +1859,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージM",
 
@@ -1899,6 +1962,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージM",
 
@@ -1992,6 +2056,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージM",
 
@@ -2084,6 +2149,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "げんきチャージS",
 
@@ -2167,6 +2233,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "パルデア",
 
     mainSkill: "げんきチャージS",
 
@@ -2259,6 +2326,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "げんきチャージS",
 
@@ -2342,6 +2410,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージM",
 
@@ -2471,6 +2540,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "つきのひかり(げんきチャージS)",
 
@@ -2600,6 +2670,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "きょううん(食材セレクトS)",
 
@@ -2701,6 +2772,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "げんきエールS",
 
@@ -2775,6 +2847,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "げんきエールS",
 
@@ -2858,6 +2931,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "食材ゲットS",
 
@@ -2948,6 +3022,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "きのみジュース(げんきオールS)",
 
@@ -3019,6 +3094,15 @@ const pokedexData_Johto = [
           3: [{ type: "マスター", rank: 9 }],
           4: [{ type: "マスター", rank: 10 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 4 }],
+          3: [{ type: "マスター", rank: 7 }],
+          4: [{ type: "マスター", rank: 8 }]
+        }
       }
     ]
   },
@@ -3035,6 +3119,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "ビルドアップ(料理アシストS)",
 
@@ -3106,6 +3191,15 @@ const pokedexData_Johto = [
           3: [{ type: "ハイパー", rank: 3 }],
           4: [{ type: "ハイパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 4 }]
+        }
       }
     ]
   },
@@ -3122,6 +3216,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "料理チャンスS",
 
@@ -3215,6 +3310,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "プレゼント(食材ゲットS)",
 
@@ -3293,6 +3389,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージM",
 
@@ -3385,6 +3482,7 @@ const pokedexData_Johto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "エナジーチャージM",
 
@@ -3468,6 +3566,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "げんきオールS",
 
@@ -3568,6 +3667,15 @@ const pokedexData_Johto = [
           3: [{ type: "マスター", rank: 10 }],
           4: [{ type: "マスター", rank: 12 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 1 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: [{ type: "マスター", rank: 8 }],
+          4: [{ type: "マスター", rank: 9 }]
+        }
       }
     ]
   },
@@ -3584,6 +3692,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "おてつだいブースト",
 
@@ -3659,6 +3768,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "ジョウト",
 
     mainSkill: "おてつだいブースト",
 
@@ -3742,6 +3852,7 @@ const pokedexData_Johto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "おてつだいブースト",
 
@@ -3809,6 +3920,14 @@ const pokedexData_Johto = [
           2: [{ type: "マスター", rank: 7 }],
           3: [{ type: "マスター", rank: 15 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 3 }],
+          2: [{ type: "マスター", rank: 5 }],
+          3: [{ type: "マスター", rank: 12 }]
+        }
       }
     ]
   },
@@ -3825,6 +3944,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "げんきチャージS",
 
@@ -3940,6 +4060,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "ジョウト",
 
     mainSkill: "げんきチャージS",
 
@@ -4037,6 +4158,7 @@ const pokedexData_Johto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "ジョウト",
 
     mainSkill: "げんきチャージS",
 
