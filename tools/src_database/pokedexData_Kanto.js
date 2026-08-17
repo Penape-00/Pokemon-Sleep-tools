@@ -22,6 +22,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -128,6 +129,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -234,6 +236,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -340,6 +343,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -446,6 +450,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -552,6 +557,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -658,6 +664,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -748,6 +755,15 @@ const pokedexData_Kanto = [
           3: [{ type: "スーパー", rank: 2 }],
           4: [{ type: "スーパー", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -764,6 +780,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -854,6 +871,15 @@ const pokedexData_Kanto = [
           3: [{ type: "スーパー", rank: 5 }],
           4: [{ type: "ハイパー", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "スーパー", rank: 5 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
       }
     ]
   },
@@ -870,6 +896,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -960,6 +987,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 1 }],
           4: [{ type: "マスター", rank: 2 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 4 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
       }
     ]
   },
@@ -976,6 +1012,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -1091,6 +1128,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -1197,6 +1235,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -1303,6 +1342,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -1386,6 +1426,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -1469,6 +1510,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -1552,6 +1594,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -1635,6 +1678,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS",
 
@@ -1750,6 +1794,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -1785,12 +1830,12 @@ const pokedexData_Kanto = [
       }
     ],
 
-    fields: [
+fields: [
       {
-        name: "すべて",
+        name: "ワカクサ本島",
         stars: {
-          1: null,
-          2: null
+          1: [{ type: null, rank: null }],
+          2: [{ type: null, rank: null }]
         }
       }
     ]
@@ -1808,6 +1853,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -1843,12 +1889,12 @@ const pokedexData_Kanto = [
       }
     ],
 
-    fields: [
+fields: [
       {
-        name: "すべて",
+        name: "ワカクサ本島",
         stars: {
-          1: null,
-          2: null
+          1: [{ type: null, rank: null }],
+          2: [{ type: null, rank: null }]
         }
       }
     ]
@@ -1866,6 +1912,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -1901,12 +1948,70 @@ const pokedexData_Kanto = [
       }
     ],
 
+fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: null, rank: null }],
+          2: [{ type: null, rank: null }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 25,
+    formId: "captain",
+    name: "ピカチュウ(キャプテン)",
+
+    imageCard: getImagePath("card", 25, "captain"),
+    imageDetail: getImagePath("panel", 25, "captain"),
+
+    type: ["でんき"],
+    tokui: "きのみ",
+
+    sleepType: "すやすや",
+    region: "カントー",
+
+    mainSkill: "食材ゲットS",
+
+    ingredients: [
+      {
+        name: "とくせんリンゴ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "あったかジンジャー",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 60: 3 }
+      }
+    ],
+
+    baseHelpTime: 2500,
+    ingRate: 0.175,
+    skillRate: 0.018,
+    maxHold: 21,
+
+    berryIndex: 2.47,
+    ingIndex: 1.04,
+    skillIndicator: 1.20,
+
+    evolutionChain: [
+      {
+        dexNo: 25,
+        formId: "captain",
+        evolveTo: null
+      }
+    ],
+
     fields: [
       {
-        name: "すべて",
+        name: "ワカクサ本島",
         stars: {
-          1: null,
-          2: null
+          1: [{ type: null, rank: null }]
         }
       }
     ]
@@ -1924,6 +2029,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS",
 
@@ -2030,6 +2136,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "食材セレクトS",
 
@@ -2131,6 +2238,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "食材セレクトS",
 
@@ -2232,6 +2340,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "ゆびをふる",
 
@@ -2367,6 +2476,15 @@ const pokedexData_Kanto = [
           3: [{ type: "スーパー", rank: 3 }],
           4: [{ type: "スーパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "スーパー", rank: 3 }],
+          4: [{ type: "スーパー", rank: 4 }]
+        }
       }
     ]
   },
@@ -2383,6 +2501,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "ゆびをふる",
 
@@ -2403,7 +2522,7 @@ const pokedexData_Kanto = [
 
     baseHelpTime: 2800,
     ingRate: 0.168,
-    skillRate: 0.036,
+    skillRate: 0.040,
     maxHold: 34,
 
     berryIndex: 2.32,
@@ -2518,6 +2637,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 1 }],
           4: [{ type: "マスター", rank: 2 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 4 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "ハイパー", rank: 5 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
       }
     ]
   },
@@ -2534,6 +2662,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきエールS",
 
@@ -2635,6 +2764,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "アローラ",
 
     mainSkill: "おてつだいサポートS",
 
@@ -2718,6 +2848,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきエールS",
 
@@ -2819,6 +2950,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "アローラ",
 
     mainSkill: "おてつだいサポートS",
 
@@ -2902,6 +3034,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきオールS",
 
@@ -2983,6 +3116,15 @@ const pokedexData_Kanto = [
           3: [{ type: "ハイパー", rank: 1 }],
           4: [{ type: "スーパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -2999,6 +3141,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきオールS",
 
@@ -3080,6 +3223,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 9 }],
           4: [{ type: "マスター", rank: 7 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 1 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -3096,6 +3248,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS",
 
@@ -3177,6 +3330,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS",
 
@@ -3258,6 +3412,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -3346,6 +3501,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -3434,6 +3590,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3501,6 +3658,15 @@ const pokedexData_Kanto = [
           3: [{ type: "スーパー", rank: 4 }],
           4: [{ type: "スーパー", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 1 }],
+          3: [{ type: "スーパー", rank: 1 }],
+          4: [{ type: "スーパー", rank: 2 }]
+        }
       }
     ]
   },
@@ -3517,6 +3683,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3575,6 +3742,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 2 }],
           4: [{ type: "ハイパー", rank: 2 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "スーパー", rank: 5 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
       }
     ]
   },
@@ -3591,6 +3767,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3674,6 +3851,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3757,6 +3935,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "おてつだいサポートS",
 
@@ -3849,6 +4028,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "おてつだいサポートS",
 
@@ -3932,6 +4112,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -4038,6 +4219,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -4135,6 +4317,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -4232,6 +4415,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -4329,6 +4513,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -4426,6 +4611,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -4514,6 +4700,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきエールS",
 
@@ -4597,6 +4784,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきエールS",
 
@@ -4680,6 +4868,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "料理パワーアップS",
 
@@ -4779,6 +4968,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "料理パワーアップS",
 
@@ -4878,6 +5068,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS",
 
@@ -4949,6 +5140,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 8 }],
           4: [{ type: "マスター", rank: 10 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 4 }],
+          3: [{ type: "マスター", rank: 6 }],
+          4: [{ type: "マスター", rank: 7 }]
+        }
       }
     ]
   },
@@ -4965,6 +5165,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -5057,6 +5258,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -5149,6 +5351,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -5252,6 +5455,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -5355,6 +5559,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -5452,6 +5657,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -5534,6 +5740,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -5622,6 +5829,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -5710,6 +5918,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "げんきオールS",
 
@@ -5810,6 +6019,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 4 }],
           4: [{ type: "マスター", rank: 8 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 3 }],
+          3: [{ type: "マスター", rank: 3 }],
+          4: [{ type: "マスター", rank: 6 }]
+        }
       }
     ]
   },
@@ -5826,6 +6044,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -5904,6 +6123,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "ものまね(スキルコピー)",
 
@@ -5978,6 +6198,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "エナジーチャージM",
 
@@ -6049,6 +6270,15 @@ const pokedexData_Kanto = [
           3: [{ type: "ハイパー", rank: 3 }],
           4: [{ type: "ハイパー", rank: 4 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 4 }]
+        }
       }
     ]
   },
@@ -6065,6 +6295,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "へんしん(スキルコピー)",
 
@@ -6200,6 +6431,19 @@ const pokedexData_Kanto = [
               { type: "マスター", rank: 6 }
           ]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: null,
+          4: [{ type: "ハイパー", rank: 3 },
+              { type: "ハイパー", rank: 3 },
+              { type: "ハイパー", rank: 3 },
+              { type: "マスター", rank: 4 }
+          ]
+        }
       }
     ]
   },
@@ -6216,6 +6460,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -6338,6 +6583,15 @@ const pokedexData_Kanto = [
           3: [{ type: "スーパー", rank: 2 }],
           4: [{ type: "スーパー", rank: 3 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 5 }],
+          3: [{ type: "スーパー", rank: 2 }],
+          4: [{ type: "スーパー", rank: 3 }]
+        }
       }
     ]
   },
@@ -6354,6 +6608,7 @@ const pokedexData_Kanto = [
     tokui: "きのみ",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -6389,12 +6644,12 @@ const pokedexData_Kanto = [
       }
     ],
 
-    fields: [
+fields: [
       {
-        name: "すべて",
+        name: "ワカクサ本島",
         stars: {
-          1: null,
-          2: null
+          1: [{ type: null, rank: null }],
+          2: [{ type: null, rank: null }]
         }
       }
     ]
@@ -6412,6 +6667,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -6447,12 +6703,12 @@ const pokedexData_Kanto = [
       }
     ],
 
-    fields: [
+fields: [
       {
-        name: "すべて",
+        name: "ワカクサ本島",
         stars: {
-          1: null,
-          2: null
+          1: [{ type: null, rank: null }],
+          2: [{ type: null, rank: null }]
         }
       }
     ]
@@ -6470,6 +6726,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "ぐっすり",
+    region: "カントー",
 
     mainSkill: "食材ゲットS",
 
@@ -6599,6 +6856,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "おてつだいサポートS",
 
@@ -6728,6 +6986,7 @@ const pokedexData_Kanto = [
     tokui: "スキル",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "料理パワーアップS",
 
@@ -6857,6 +7116,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -6929,6 +7189,15 @@ const pokedexData_Kanto = [
           3: [{ type: "スーパー", rank: 4 }],
           4: [{ type: "ハイパー", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 3 }],
+          3: [{ type: "スーパー", rank: 5 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
       }
     ]
   },
@@ -6945,6 +7214,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -7017,6 +7287,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 1 }],
           4: [{ type: "マスター", rank: 1 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 4 }]
+        }
       }
     ]
   },
@@ -7033,6 +7312,7 @@ const pokedexData_Kanto = [
     tokui: "食材",
 
     sleepType: "うとうと",
+    region: "カントー",
 
     mainSkill: "げんきチャージS",
 
@@ -7105,6 +7385,15 @@ const pokedexData_Kanto = [
           3: [{ type: "マスター", rank: 16 }],
           4: [{ type: "マスター", rank: 11 }]
         }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 3 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: [{ type: "マスター", rank: 7 }],
+          4: [{ type: "マスター", rank: 8 }]
+        }
       }
     ]
   },
@@ -7121,6 +7410,7 @@ const pokedexData_Kanto = [
     tokui: "オール",
 
     sleepType: "すやすや",
+    region: "カントー",
 
     mainSkill: "オールマイティー",
 
