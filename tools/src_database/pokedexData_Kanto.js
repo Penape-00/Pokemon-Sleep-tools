@@ -23,6 +23,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "食材ゲットS",
 
@@ -130,6 +131,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -237,6 +239,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -344,6 +347,7 @@ const pokedexData_Kanto = [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "食材ゲットS",
 
@@ -451,6 +455,7 @@ const pokedexData_Kanto = [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -558,6 +563,7 @@ const pokedexData_Kanto = [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -665,6 +671,7 @@ const pokedexData_Kanto = [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "食材ゲットS",
 
@@ -781,6 +788,7 @@ const pokedexData_Kanto = [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -897,6 +905,7 @@ const pokedexData_Kanto = [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -1013,6 +1022,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "食材ゲットS",
 
@@ -1129,6 +1139,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -1236,6 +1247,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -1343,6 +1355,7 @@ const pokedexData_Kanto = [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -1427,6 +1440,7 @@ const pokedexData_Kanto = [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -1511,6 +1525,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -1595,6 +1610,7 @@ const pokedexData_Kanto = [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -1679,6 +1695,7 @@ const pokedexData_Kanto = [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -1795,6 +1812,7 @@ const pokedexData_Kanto = [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -1854,6 +1872,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -1913,6 +1932,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -1972,6 +1992,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -2030,6 +2051,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -2137,6 +2159,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "食材セレクトS",
 
@@ -2239,6 +2262,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材セレクトS",
 
@@ -2341,6 +2365,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "ゆびをふる",
 
@@ -2502,6 +2527,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "ゆびをふる",
 
@@ -2663,6 +2689,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきエールS",
 
@@ -2765,6 +2792,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "アローラ",
+    evolutionStage: 1,
 
     mainSkill: "おてつだいサポートS",
 
@@ -2849,6 +2877,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきエールS",
 
@@ -2951,6 +2980,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいサポートS",
 
@@ -3035,6 +3065,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきオールS",
 
@@ -3142,6 +3173,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきオールS",
 
@@ -3249,6 +3281,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -3331,6 +3364,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -3413,6 +3447,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -3502,6 +3537,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -3591,6 +3627,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3682,8 +3719,9 @@ fields: [
     type: ["みず"],
     tokui: "スキル",
 
-    sleepType: "うとうと",
+    sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3768,6 +3806,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3852,6 +3891,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3936,6 +3976,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "おてつだいサポートS",
 
@@ -4029,6 +4070,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいサポートS",
 
@@ -4113,6 +4155,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "げんきチャージS",
 
@@ -4220,6 +4263,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -4318,6 +4362,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -4416,6 +4461,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -4514,6 +4560,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -4612,6 +4659,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -4701,6 +4749,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきエールS",
 
@@ -4785,6 +4834,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきエールS",
 
@@ -4869,6 +4919,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "料理パワーアップS",
 
@@ -4969,6 +5020,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "料理パワーアップS",
 
@@ -5069,6 +5121,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -5166,6 +5219,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -5259,6 +5313,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -5352,6 +5407,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -5456,6 +5512,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -5560,6 +5617,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -5658,6 +5716,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -5741,6 +5800,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -5830,6 +5890,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -5919,6 +5980,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきオールS",
 
@@ -6045,6 +6107,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -6124,6 +6187,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "ものまね(スキルコピー)",
 
@@ -6199,6 +6263,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -6296,6 +6361,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "へんしん(スキルコピー)",
 
@@ -6461,6 +6527,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -6609,6 +6676,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -6668,6 +6736,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -6727,6 +6796,7 @@ fields: [
 
     sleepType: "ぐっすり",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -6857,6 +6927,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいサポートS",
 
@@ -6987,6 +7058,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "料理パワーアップS",
 
@@ -7117,6 +7189,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 2,
 
     mainSkill: "げんきチャージS",
 
@@ -7215,6 +7288,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -7313,6 +7387,7 @@ fields: [
 
     sleepType: "うとうと",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -7399,6 +7474,86 @@ fields: [
   },
 
   {
+    dexNo: 150,
+    formId: "normal",
+    name: "ミュウツー",
+
+    imageCard: getImagePath("card", 150, "normal"),
+    imageDetail: getImagePath("panel", 150, "normal"),
+
+    type: ["エスパー"],
+    tokui: "スキル",
+
+    sleepType: "すやすや",
+    region: "カントー",
+    evolutionStage: 0,
+
+    mainSkill: "サイコブレイク(きのみゾーン)",
+
+    ingredients: [
+      {
+        name: "ワカクサ大豆",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "ワカクサコーン",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 60: 3 }
+      }
+    ],
+
+    baseHelpTime: 2300,
+    ingRate: 0.160,
+    skillRate: 0.029,
+    maxHold: 24,
+
+    berryIndex: 1.90,
+    ingIndex: 1.31,
+    skillIndicator: 2.36,
+
+    evolutionChain: [
+      {
+        dexNo: 150,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "マスター", rank: 10 }],
+          2: [{ type: "マスター", rank: 14 }],
+          3: [{ type: "マスター", rank: 20 }],
+          5: [{ type: null, rank: null }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 5 }],
+          2: [{ type: "マスター", rank: 8 }],
+          3: [{ type: "マスター", rank: 16 }],
+          5: [{ type: null, rank: null }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 4 }],
+          2: [{ type: "マスター", rank: 6 }],
+          3: [{ type: "マスター", rank: 14 }],
+          5: [{ type: null, rank: null }]
+        }
+      }
+    ]
+  },
+
+  {
     dexNo: 151,
     formId: "normal",
     name: "ミュウ",
@@ -7411,6 +7566,7 @@ fields: [
 
     sleepType: "すやすや",
     region: "カントー",
+    evolutionStage: 0,
 
     mainSkill: "オールマイティー",
 
