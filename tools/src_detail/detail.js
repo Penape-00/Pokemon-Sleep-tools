@@ -1,24 +1,8 @@
 // ==================================================
-//  ▼ 初期化
+// ▼ 初期化（detail ver2 用）
 // ==================================================
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  // ▼ 性格の初期値を「がんばりや（hardy）」に設定
-  const natureSelect = document.getElementById("natureSelect");
-  natureSelect.value = "hardy";
-
-  // ▼ タイプ選択イベント
-  document.getElementById("typeSelect")
-    .addEventListener("change", updatePokemonList);
-
-  // ▼ ポケモン選択イベント
-  document.getElementById("pokemonSelect")
-    .addEventListener("change", onPokemonSelected);
-
-  // ▼ 検索欄イベント
-  document.getElementById("pokemonSearch")
-    .addEventListener("input", onSearchInput);
 
   // ▼ クリアボタン
   document.getElementById("clearBtn")
@@ -30,16 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ▼ メニュー開閉
   setupMenuToggle();
+
+  // ▼ セクション折り畳み（デフォルトで開く）
+  setupSectionToggle();
 });
 
 
 // ==================================================
-//  ▼ メニュー開閉
+// ▼ メニュー開閉
 // ==================================================
 
 function setupMenuToggle() {
-  const menuBtn = document.getElementById("menuBtn");
-  const sideMenu = document.getElementById("sideMenu");
+  const menuBtn = document.getElementById("menu-button");
+  const sideMenu = document.getElementById("side-menu");
   const overlay = document.getElementById("overlay");
 
   menuBtn.addEventListener("click", () => {
@@ -55,312 +42,501 @@ function setupMenuToggle() {
 
 
 // ==================================================
-//  ▼ タイプ選択 → ポケモン候補更新
+// ▼ セクションヘッダー開閉（デフォルトで開いた状態）
 // ==================================================
 
-function updatePokemonList() {
-  const type = document.getElementById("typeSelect").value;
-  const select = document.getElementById("pokemonSelect");
+function setupSectionToggle() {
+  document.querySelectorAll(".section-header").forEach(header => {
+    const targetSelector = header.dataset.target;
+    const body = document.querySelector(targetSelector);
 
-  select.innerHTML = '<option value="">選択してください</option>';
+    // ▼ デフォルトで開く
+    body.classList.add("open");
+    header.classList.add("open");
+    header.querySelector(".toggle-icon").textContent = "−";
 
-  if (!pokemonData[type]) return;
-
-  pokemonData[type].forEach(entry => {
-    const name = entry.split("|")[0];
-    const opt = document.createElement("option");
-    opt.value = entry;
-    opt.textContent = name;
-    select.appendChild(opt);
-  });
-}
-
-
-// ==================================================
-//  ▼ ポケモン選択時：食材スロット更新
-// ==================================================
-
-function onPokemonSelected() {
-  const selected = this.value;
-  if (!selected) {
-    updateIngredientSelectors(null);
-    return;
-  }
-  const pokemonName = selected.split("|")[0];
-  updateIngredientSelectors(pokemonName);
-}
-
-
-// ==================================================
-//  ▼ 食材スロット更新
-// ==================================================
-
-function updateIngredientSelectors(pokemonName) {
-  const lv1  = document.getElementById("ingredientLv1");
-  const lv30 = document.getElementById("ingredientLv30");
-  const lv60 = document.getElementById("ingredientLv60");
-
-  // 未選択時はリセット
-  if (!pokemonName || !ingredientOptions[pokemonName]) {
-    const reset = '<option value="">ポケモンを選択してください</option>';
-    lv1.innerHTML = lv30.innerHTML = lv60.innerHTML = reset;
-    return;
-  }
-
-  const data = ingredientOptions[pokemonName];
-
-  function setOptions(selectEl, options) {
-    selectEl.innerHTML = "";
-    options.forEach(item => {
-      const opt = document.createElement("option");
-      opt.value = item;
-      opt.textContent = item;
-      selectEl.appendChild(opt);
-    });
-    selectEl.value = options[0];
-    selectEl.disabled = (options.length === 1);
-  }
-
-  setOptions(lv1,  data.level1);
-  setOptions(lv30, data.level30);
-  setOptions(lv60, data.level60);
-}
-
-
-// ==================================================
-//  ▼ ポケモン検索（オートコンプリート）
-// ==================================================
-
-function hiraToKana(str) {
-  return str.replace(/[\u3041-\u3096]/g, ch =>
-    String.fromCharCode(ch.charCodeAt(0) + 0x60)
-  );
-}
-
-function onSearchInput() {
-  const raw = this.value.trim();
-  const keyword = hiraToKana(raw);
-  const type = document.getElementById("typeSelect").value;
-
-  const autocompleteList = document.getElementById("autocompleteList");
-  autocompleteList.innerHTML = "";
-  autocompleteList.style.display = "none";
-
-  if (!keyword) return;
-
-  let list = [];
-
-  Object.keys(pokemonData).forEach(typeKey => {
-    pokemonData[typeKey].forEach(entry => {
-      const name = entry.split("|")[0];
-
-      if (type && type !== typeKey) return;
-      if (!name.startsWith(keyword)) return;
-
-      list.push({ name, entry });
+    // ▼ クリックで開閉
+    header.addEventListener("click", () => {
+      body.classList.toggle("open");
+      header.classList.toggle("open");
+      const icon = header.querySelector(".toggle-icon");
+      icon.textContent = body.classList.contains("open") ? "−" : "+";
     });
   });
-
-  list.sort((a, b) => a.name.localeCompare(b.name, "ja"));
-
-  if (list.length === 0) return;
-
-  list.forEach(item => {
-    const div = document.createElement("div");
-    div.className = "autocomplete-item";
-    div.textContent = item.name;
-
-    div.addEventListener("click", () => {
-      document.getElementById("pokemonSearch").value = item.name;
-
-      const select = document.getElementById("pokemonSelect");
-      select.innerHTML = `<option value="${item.entry}">${item.name}</option>`;
-      select.value = item.entry;
-
-      const pokemonName = item.entry.split("|")[0];
-      updateIngredientSelectors(pokemonName);
-
-      autocompleteList.style.display = "none";
-    });
-
-    autocompleteList.appendChild(div);
-  });
-
-  autocompleteList.style.display = "block";
 }
 
-
 // ==================================================
-//  ▼ 設定クリア
+// ▼ 設定クリア（完全版）
 // ==================================================
 
 function clearSettings() {
-  const ids = [
-    "typeSelect", "pokemonSelect", "level",
-    "natureSelect", "subskillSpeed", "subskillIngredient", "subskillSkill",
-    "berryCountSkill", "teamBonus", "fieldBonus", "fieldBerryBonus",
-    "campTicket", "EXtype", "EXBonus"
-  ];
 
-  ids.forEach(id => {
-    const el = document.getElementById(id);
-    if (!el) return;
+  // ▼ 1. ポケモン検索欄
+  const pokemonContainer = document.getElementById("pokemonDropdown");
+  const pokemonInput = document.getElementById("pokemonInput");
+  const pokemonOptions = pokemonContainer.querySelector(".pokemon-options");
 
-    if (el.tagName === "SELECT") {
-      el.selectedIndex = 0;
-    } else if (el.type === "number") {
-      el.value = (id === "level") ? 65 : 0;
-    }
-  });
+  pokemonInput.value = "";
+  pokemonContainer.dataset.dexNo = "";
+  pokemonContainer.dataset.formId = "";
+  pokemonContainer.dataset.name = "";
+  pokemonContainer.classList.remove("has-value", "focused");
+  pokemonOptions.style.display = "none";
 
-  // 性格は「がんばりや」に戻す
-  document.getElementById("natureSelect").value = "hardy";
+  updateIngredientSelectors(null); // 食材リセット
+  updateFieldTokui();              // フィールド適正リセット
+  updateEXBonus();                 // EXボーナスリセット
 
-  // 検索欄リセット
-  document.getElementById("pokemonSearch").value = "";
 
-  // ポケモン欄初期化
-  document.getElementById("pokemonSelect").innerHTML =
-    '<option value="">タイプを選択してください</option>';
+  // ▼ 2. 性格欄
+  const natureContainer = document.getElementById("natureDropdown");
+  const natureInput = document.getElementById("natureInput");
+  const natureOptions = natureContainer.querySelector(".nature-options");
 
-  // 食材欄初期化
+  natureInput.value = "";
+  natureContainer.dataset.value = "";
+  natureContainer.classList.remove("focused", "active");
+  natureOptions.style.display = "none";
+
+
+  // ▼ 3. レベル欄
+  const lvInput = document.getElementById("level");
+  lvInput.value = "";
+  const lvField = lvInput.closest(".lv-field");
+  lvField.classList.remove("has-value");
+
+
+  // ▼ 4. リボン欄
+  const ribbonContainer = document.getElementById("ribbonDropdown");
+  ribbonContainer.dataset.value = "";
+  ribbonContainer.classList.remove("active", "focused");
+  ribbonContainer.querySelector(".dropdown-selected-text").textContent = "おやすみリボン";
+
+
+  // ▼ 5. 食材欄（Lv1 / Lv30 / Lv60）
   updateIngredientSelectors(null);
 
-  // 結果クリア
+
+  // ▼ 6. サブスキル欄（Lv10 / Lv25 / Lv50 / Lv70 / Lv80）
+  subskillIds.forEach(id => {
+    const container = document.getElementById(id);
+    const input = container.querySelector(".subskill-input");
+
+    input.value = "";
+    container.dataset.value = "";
+
+    // 状態をすべてリセット
+    container.classList.remove("active", "focused", "open", "has-value");
+  });
+  
+  updateSubskillAll(); // 重複禁止ロジックを初期化
+
+  // ▼ 7. その他のおてボ数
+  const teamContainer = document.getElementById("teamBonusDropdown");
+  teamContainer.dataset.value = "";
+  teamContainer.classList.remove("active", "focused");
+  teamContainer.querySelector(".dropdown-selected-text").textContent = "その他のおてボ数";
+
+
+  // ▼ 8. キャンプチケット
+  const campContainer = document.getElementById("campTicketDropdown");
+  campContainer.dataset.value = "";
+  campContainer.classList.remove("active", "focused");
+  campContainer.querySelector(".dropdown-selected-text").textContent = "キャンプチケット";
+
+
+  // ▼ 9. フィールド選択
+  const fieldContainer = document.getElementById("fieldDropdown");
+  fieldContainer.dataset.value = "";
+  fieldContainer.classList.remove("active", "focused");
+  fieldContainer.querySelector(".dropdown-selected-text").textContent = "フィールド選択";
+
+
+  // ▼ 10. フィールド適正
+  const tokuiContainer = document.getElementById("fieldTokuiDropdown");
+  tokuiContainer.dataset.value = "";
+  tokuiContainer.classList.remove("active", "focused", "disabled");
+  tokuiContainer.querySelector(".dropdown-selected-text").textContent = "フィールド適正";
+
+
+  // ▼ 11. EXボーナス
+  const exContainer = document.getElementById("exBonusDropdown");
+  exContainer.dataset.value = "";
+  exContainer.classList.remove("active", "focused", "disabled");
+  exContainer.querySelector(".dropdown-selected-text").textContent = "EXボーナス";
+
+
+  // ▼ 12. フィールドボーナス（% の位置も初期化）
+  const fieldBonusInput = document.getElementById("fieldBonus");
+  const percentField = fieldBonusInput.closest(".percent-field");
+  const percentUnit = percentField.querySelector(".input-unit");
+
+  fieldBonusInput.value = "";
+  percentField.classList.remove("has-value");
+  percentUnit.style.left = ""; // 初期位置に戻す
+
+
+  // ▼ 13. 結果欄クリア
   document.getElementById("summary").innerHTML = "";
   document.getElementById("tableArea").innerHTML = "";
 }
 
+// ==================================================
+// ▼ 暫定出力
+// ==================================================
 
-// ==================================================
-//  ▼ 計算 → 結果描画
-// ==================================================
+const TYPE_COLOR_MAP = {
+  "ノーマル": "171, 171, 171",
+  "ほのお": "255, 102, 44",
+  "みず": "44, 153, 255",
+  "でんき": "255, 223, 0",
+  "くさ": "69, 201, 36",
+  "こおり": "69, 223, 255",
+  "かくとう": "255, 167, 2",
+  "どく": "158, 78, 215",
+  "じめん": "176, 125, 57",
+  "ひこう": "161, 216, 255",
+  "エスパー": "255, 104, 134",
+  "むし": "169, 177, 35",
+  "いわ": "201, 200, 150",
+  "ゴースト": "113, 72, 117",
+  "ドラゴン": "92, 109, 240",
+  "あく": "84, 76, 76",
+  "はがね": "109, 183, 223",
+  "フェアリー": "255, 181, 255"
+};
 
 function calculateAndRender() {
 
-  // ▼ ポケモン選択
-  const selected = document.getElementById("pokemonSelect").value;
-  if (!selected) {
+  // ==================================================
+  // ▼ 1. pokedexData から取得する基礎データ
+  // ==================================================
+
+  const monName = document.getElementById("pokemonInput").value;
+  if (!monName) {
     alert("ポケモンを選択してください");
     return;
   }
 
-  const [
-    name, type, tokui,
-    baseTimeStr, berryEnergyBaseStr,
-    ingRateStr, skillRateStr
-  ] = selected.split("|");
-
-  const level = parseInt(document.getElementById("level").value);
-
-  // ▼ 性格
-  const natureKey = document.getElementById("natureSelect").value;
-  const nature = natureModifiers[natureKey];
-
-  // ▼ サブスキル
-  const subSpeed = parseFloat(document.getElementById("subskillSpeed").value);
-  const subIng = parseFloat(document.getElementById("subskillIngredient").value);
-  const subSkill = parseFloat(document.getElementById("subskillSkill").value);
-  const berryCountSkill = parseInt(document.getElementById("berryCountSkill").value);
-  const teamBonus = parseInt(document.getElementById("teamBonus").value);
-
-  // ▼ フィールド・キャンプ
-  const fieldBonus = parseFloat(document.getElementById("fieldBonus").value);
-  const fieldBerryBonus = parseFloat(document.getElementById("fieldBerryBonus").value);
-  const campTicket = parseFloat(document.getElementById("campTicket").value);
-
-  // ▼ EX
-  const exType = document.getElementById("EXtype").value;
-  const exBonus = document.getElementById("EXBonus").value;
-
-  // ▼ 食材スロット
-  const ingredientLv1 = document.getElementById("ingredientLv1").value;
-  const ingredientLv30 = document.getElementById("ingredientLv30").value;
-  const ingredientLv60 = document.getElementById("ingredientLv60").value;
-
-  // ▼ おてつだい時間
-  const { standardHelpTime, helpTime } = calcHelpTime(
-    parseFloat(baseTimeStr), level, nature, subSpeed, teamBonus, exType, campTicket
-  );
-
-  // ▼ 1日の行動回数
-  const actionsPerDay = 86400 / helpTime;
-
-  // ▼ きのみエナジー（1回）
-  const berryEnergyPerHelp = calcBerryEnergy(
-    level, parseFloat(berryEnergyBaseStr), 1,
-    fieldBerryBonus, berryCountSkill, fieldBonus,
-    exBonus, tokui, exType
-  );
-
-  // ▼ きのみエナジー（通常）
-  const finalIngredientRate =
-    parseFloat(ingRateStr) * nature.ingredient * (1 + subIng);
-
-  const berryEnergyPerDay =
-    berryEnergyPerHelp * actionsPerDay * (1 - finalIngredientRate);
-
-  // ▼ きのみのみモード
-  const berryOnlyEnergyPerDay =
-    berryEnergyPerHelp * actionsPerDay;
-
-  // ▼ スキル発動
-  const skillPerDay = calcSkillPerDay(
-    parseFloat(skillRateStr), nature, subSkill,
-    exBonus, exType, actionsPerDay
-  );
-
-  // ▼ 食材計算
-  const ingredientPerDayMap = calcIngredientPerDay(
-    name, level, parseFloat(ingRateStr), nature, subIng,
-    exBonus, tokui, exType,
-    ingredientLv1, ingredientLv30, ingredientLv60,
-    actionsPerDay
-  );
-
-  // ▼ 食材エナジー集計
-  let ingredientEnergyTotal = 0;
-  let ingredientRows = "";
-
-  Object.keys(ingredientPerDayMap).forEach(ingName => {
-    const count = ingredientPerDayMap[ingName];
-    const baseEnergy = ingredientEnergy[ingName] || 0;
-    const boostedEnergy = baseEnergy * (1 + fieldBonus / 100);
-    const totalEnergy = count * boostedEnergy;
-
-    ingredientEnergyTotal += totalEnergy;
-
-    ingredientRows += `
-      <tr>
-        <td>${ingName}</td>
-        <td>${count.toFixed(2)}</td>
-        <td>${totalEnergy.toFixed(1)}</td>
-      </tr>
-    `;
-  });
-
-  if (!ingredientRows) {
-    ingredientRows = `<tr><td colspan="3">（食材なし）</td></tr>`;
+  const mon = pokedexData_All.find(m => m.name === monName);
+  if (!mon) {
+    alert("ポケモンデータが見つかりません");
+    return;
   }
 
-  // ▼ 総合エナジー
-  const totalEnergy = Math.round(berryEnergyPerDay + ingredientEnergyTotal);
+  const type = mon.type[0];
+  const berry = berryData[type];
 
-  // ▼ 出力
-  document.getElementById("summary").innerHTML = `
-    <p><strong>おてつだい時間:</strong> ${helpTime.toFixed(1)} 秒（標準: ${standardHelpTime} 秒）</p>
-    <p><strong>きのみエナジー（通常）:</strong> ${Math.round(berryEnergyPerDay)} energy/day</p>
-    <p><strong>きのみエナジー（きのみのみ）:</strong> ${Math.round(berryOnlyEnergyPerDay)} energy/day</p>
-    <p><strong>スキル発動:</strong> ${skillPerDay.toFixed(2)} 回/day</p>
-    <p><strong>食材エナジー:</strong> ${ingredientEnergyTotal.toFixed(1)} energy/day</p>
-    <p><strong>総合エナジー:</strong> ${totalEnergy} energy/day</p>
+  const baseHelpTime = mon.baseHelpTime;
+  const evolutionStage = mon.evolutionStage;
+  const baseIngRate = mon.ingRate;
+  const baseSkillRate = mon.skillRate;
+  const baseMaxHold = mon.maxHold;
+  const baseBerryEnergy = berry.energy;
+
+
+  // ==================================================
+  // ▼ 2. 入力欄から取得するデータ
+  // ==================================================
+
+  const level = Number(document.getElementById("level")?.value || 60);
+  const natureKey = document.getElementById("natureDropdown")?.dataset?.value || "hardy";
+
+  const subskillValues = {};
+  subskillIds.forEach(id => {
+    const container = document.getElementById(id);
+    subskillValues[id] = container?.dataset?.value || "";
+  });
+
+  const teamBonusCount = Number(document.getElementById("teamBonusDropdown")?.dataset?.value || 0);
+  const ribbonValue = document.getElementById("ribbonDropdown")?.dataset?.value || "non";
+
+  const fieldValue = document.getElementById("fieldDropdown")?.dataset?.value || "";
+  const fieldTokui = document.getElementById("fieldTokuiDropdown")?.dataset?.value || "none";
+
+  const campTicketValue = document.getElementById("campTicketDropdown")?.dataset?.value || "1";
+
+  const fieldBonusPercent = Number(document.getElementById("fieldBonus")?.value || 85);
+  const exBonus = document.getElementById("exBonusDropdown")?.dataset?.value || "";
+
+
+  // ==================================================
+  // ▼ 3. 計算に必要なその他データ
+  // ==================================================
+
+  const ribbonImageValue = document.getElementById("ribbonDropdown").dataset.value;
+  const ribbonImageMap = {
+    "200": "src_detail/img/おやすみリボン1.png",
+    "500": "src_detail/img/おやすみリボン2.png",
+    "1000": "src_detail/img/おやすみリボン3.png",
+    "2000": "src_detail/img/おやすみリボン4.png"
+  };
+  const ribbonImage = ribbonImageMap[ribbonImageValue] || "";
+
+  const typeColorRGB = TYPE_COLOR_MAP[type] || "170,170,170";
+
+
+  // ==================================================
+  // ▼ 4. 各種計算
+  // ==================================================
+
+  const standardHelpTime = calcStandardHelpTime(
+    baseHelpTime,
+    level,
+    natureKey,
+    subskillValues,
+    teamBonusCount,
+    ribbonValue,
+    evolutionStage
+  );
+
+  const actualHelpTime = calcActualHelpTime(
+    standardHelpTime,
+    fieldValue,
+    fieldTokui,
+    campTicketValue
+  );
+
+  const berryEnergyOne = calcBerryEnergyOne(
+    level,
+    baseBerryEnergy,
+    fieldBonusPercent,
+    fieldTokui,
+    exBonus
+  );
+
+  const ingredientRate = calcIngredientRate(
+    baseIngRate,
+    natureKey,
+    level,
+    subskillValues
+  );
+
+  const skillRate = calcSkillRate(
+    baseSkillRate,
+    natureKey,
+    level,
+    subskillValues,
+    fieldTokui,
+    exBonus
+  );
+
+  const maxHold = calcMaxHold(
+    baseMaxHold,
+    level,
+    subskillValues,
+    ribbonValue,
+    campTicketValue,
+    fieldValue,
+    fieldTokui
+  );
+
+  const { expectedGain: helpGainExpected, berryCount, ingredientExpected } =
+  calcHelpGainExpected(
+    mon,
+    level,
+    ingredientRate,
+    subskillValues,
+    fieldTokui,
+    exBonus
+  );
+
+  const reachMaxHoldCount = calcReachMaxHoldCount(
+    maxHold,
+    helpGainExpected
+  );
+
+  const helpCounts = calcHelpCounts(
+    actualHelpTime,
+    reachMaxHoldCount
+  );
+
+  const { effectiveCount, ineffectiveCount } = helpCounts;
+
+  const totalBerryEnergy = calcTotalBerryEnergy(
+    berryEnergyOne,
+    berryCount,
+    ingredientRate,
+    effectiveCount,
+    ineffectiveCount
+  );
+
+  const ingredientCount = effectiveCount * ingredientRate;
+
+  const ingredientTotals = calcIngredientTotals(
+    mon,
+    level,
+    ingredientCount,
+    ingredientData,
+    fieldTokui,
+    exBonus
+  );
+
+  const { dayCount, sleepCount } = helpCounts;
+
+  const skillCounts = calcSkillCount(
+    mon,
+    skillRate,
+    dayCount,
+    reachMaxHoldCount
+  );
+
+  const totalSkillCount = skillCounts.totalSkillCount;
+
+  // ==================================================
+  // ▼ 5. HTML構築（profileRight はここで初めて DOM に生成される）
+  // ==================================================
+
+  const cardHTML = `
+    <div class="card-wrapper">
+      <div class="card-container" style="--type-color-rgb:${typeColorRGB};">
+        <img src="${mon.imageCard}" class="card-image">
+      </div>
+      ${ribbonImage ? `<img src="${ribbonImage}" class="ribbon-image">` : ""}
+    </div>
   `;
 
-  document.getElementById("tableArea").innerHTML = `
-    <h3>1日あたりの食材内訳</h3>
-    <table>
-      <tr><th>食材</th><th>個数/day</th><th>合計エナジー/day</th></tr>
-      ${ingredientRows}
-    </table>
+// ▼ 食材行の生成（最大3行）
+function buildIngredientRows(ingredientTotals) {
+  const rows = [];
+
+  // 食材行
+  ingredientTotals.forEach(row => {
+    rows.push(`
+      <div class="right-row three-cols">
+        <div class="right-value">
+          <img src="${row.image}" class="ingredient-icon">
+        </div>
+        <div class="right-value">${row.totalCount.toFixed(1)}個</div>
+        <div class="right-value">${Math.round(row.totalEnergy)}</div>
+      </div>
+    `);
+  });
+
+  // グレーアウト行
+  const missing = 3 - ingredientTotals.length;
+  const grayRows = [];
+
+  for (let i = 0; i < missing; i++) {
+    grayRows.push(`
+      <div class="right-row three-cols gray-row">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    `);
+  }
+
+  return { ingredientRows: rows, grayRows: grayRows };
+}
+
+const { ingredientRows, grayRows } = buildIngredientRows(ingredientTotals);
+
+// 最下段は「総スキル発動回数」か「グレーアウト行」
+let lastRowHtml = "";
+
+// 食材が3種類 → 最下段は総スキル発動回数
+if (ingredientTotals.length === 3) {
+  lastRowHtml = `
+    <div class="right-row two-cols no-bottom">
+      <div class="right-label">総スキル発動回数</div>
+      <div class="right-value">${totalSkillCount.toFixed(2)} 回/day</div>
+    </div>
   `;
+}
+
+// 食材が1〜2種類 → 最下段はグレーアウト行
+else {
+  // グレーアウト行の最後に no-bottom を付ける
+  const lastGrayIndex = grayRows.length - 1;
+  grayRows[lastGrayIndex] = grayRows[lastGrayIndex].replace(
+    'right-row three-cols gray-row',
+    'right-row three-cols gray-row no-bottom'
+  );
+
+  lastRowHtml = `
+    <div class="right-row two-cols">
+      <div class="right-label">総スキル発動回数</div>
+      <div class="right-value">${totalSkillCount.toFixed(2)} 回/day</div>
+    </div>
+    ${grayRows.join("")}
+  `;
+}
+
+let html = `
+  <div class="result-table">
+
+  <!--左列-->
+  <div class="result-left">
+    <div class="left-main">
+      ${cardHTML}
+    </div>
+
+    <div class="left-middle">
+      <div class="left-value">${type} / ${mon.tokui}</div>
+    </div>
+
+    <div class="left-bottom">
+      <div class="left-value">${mon.mainSkill}</div>
+    </div>
+  </div>
+
+  <!--中央列-->
+  <div class="result-center">
+    <div class="center-row">
+      <div class="center-label">標準おてつだい時間</div>
+      <div class="center-value">${standardHelpTime} 秒</div>
+    </div>
+
+    <div class="center-row">
+      <div class="center-label">実おてつだい時間</div>
+      <div class="center-value">${actualHelpTime} 秒</div>
+    </div>
+
+    <div class="center-row">
+      <div class="center-label">きのみエナジー単価</div>
+      <div class="center-value">${berryEnergyOne} <img src="${berry.image}" class="berry-icon"></div>
+    </div>
+
+    <div class="center-row">
+      <div class="center-label">食材確率</div>
+      <div class="center-value">${(ingredientRate * 100).toFixed(1)}%</div>
+    </div>
+
+    <div class="center-row">
+      <div class="center-label">スキル確率</div>
+      <div class="center-value">${(skillRate * 100).toFixed(1)}%</div>
+    </div>
+
+    <div class="center-bottom">
+      <div class="center-label">最大所持数</div>
+      <div class="center-value">${maxHold}個</div>
+    </div>
+  </div>
+
+  <!--右列-->
+  <div class="result-right">
+    <div class="right-row two-cols">
+      <div class="right-label">総きのみエナジー</div>
+      <div class="right-value">${Math.round(totalBerryEnergy)} energy/day</div>
+    </div>
+
+    <div class="right-row three-cols">
+      <div class="right-label">食材</div>
+      <div class="right-label">個数</div>
+      <div class="right-label">エナジー</div>
+    </div>
+
+      ${ingredientRows.join("")}
+
+      ${lastRowHtml}
+
+      </div>
+</div>
+
+<small>※常時げんき80%以上で算出</small>
+
+`;
+
+document.getElementById("summary").innerHTML = html;
 }
