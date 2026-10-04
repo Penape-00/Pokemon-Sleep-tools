@@ -1,3 +1,32 @@
+// ==================================================
+// ▼ 初期化
+// ==================================================
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupMenuToggle();
+  renderTools();
+  renderHistory(updateHistory);
+});
+
+/* ===============================
+   ▼ メニュー開閉
+================================ */
+function setupMenuToggle() {
+  const menuBtn = document.getElementById("menu-button");
+  const sideMenu = document.getElementById("side-menu");
+  const overlay = document.getElementById("overlay");
+
+  menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("open");
+    overlay.classList.add("show");
+  });
+
+  overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("open");
+    overlay.classList.remove("show");
+  });
+}
+
 /* ===============================
    ▼ ツール一覧データ
 ================================ */
@@ -41,11 +70,20 @@ const tools = [
   {
     id: "sleepPower",
     title: "ねむけパワー算出",
-    href: "tools/sleepPower.html",
+    href: "tools/SleepPower.html",
     icon: "src/Petal Dance Chocolate Tart.png",
     desc: "ねむけパワー計算ツール",
     color: "#ba68c8",
     hoverColor: "#ab47bc"
+  },
+  {
+    id: "detabase",
+    title: "データベース",
+    href: "tools/database.html",
+    icon: "src/Role Play Pumpkaboo Stew.png",
+    desc: "ポケモンデータベース",
+    color: "#78909c",
+    hoverColor: "#546e7a"
   }
 ];
 
@@ -55,9 +93,10 @@ const tools = [
 const updateHistory = [
   { date: "2025-03-10", tool: "パーティ評価", color: "rgba(255,183,77,0.8)", content: "公開(ver1.0.0)" },
   { date: "2025-02-05", tool: "ねむけパワー", color: "rgba(186,104,216,0.8)", content: "公開(ver1.0.0)" },
-  { date: "2025-02-05", tool: "詳細評価", color: "rgba(255,187,255,0.8)", content: "公開(ver1.6.2)" },
-  { date: "2025-02-05", tool: "比較評価", color: "rgba(102,187,255,0.8)", content: "公開(ver1.1.1)" },
-  { date: "2025-02-05", tool: "Exp算出", color: "rgba(129,199,132,0.8)", content: "公開(ver1.2.0)" }
+  { date: "2025-01-26", tool: "Exp算出", color: "rgba(129,199,132,0.8)", content: "ハンバーガーメニュー追加(ver1.1.0)" },
+  { date: "2025-01-23", tool: "詳細評価", color: "rgba(255,187,255,0.8)", content: "公開(ver1.6.1)" },
+  { date: "2025-01-23", tool: "比較評価", color: "rgba(102,187,255,0.8)", content: "公開(ver1.1.0)" },
+  { date: "2025-01-23", tool: "Exp算出", color: "rgba(129,199,132,0.8)", content: "公開(ver1.0.0)" }
 ];
 
 /* ===============================
@@ -117,25 +156,4 @@ document.getElementById("filterTool").addEventListener("change", () => {
     : updateHistory.filter(item => item.tool === selected);
 
   renderHistory(filtered);
-});
-
-/* ===============================
-   ▼ メニュー開閉
-================================ */
-document.getElementById("menuBtn").addEventListener("click", () => {
-  document.getElementById("sideMenu").classList.add("open");
-  document.getElementById("overlay").classList.add("show");
-});
-
-document.getElementById("overlay").addEventListener("click", () => {
-  document.getElementById("sideMenu").classList.remove("open");
-  document.getElementById("overlay").classList.remove("show");
-});
-
-/* ===============================
-   ▼ 初期表示
-================================ */
-document.addEventListener("DOMContentLoaded", () => {
-  renderTools();
-  renderHistory(updateHistory);
 });
