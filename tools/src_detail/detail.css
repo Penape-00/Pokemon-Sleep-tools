@@ -1,36 +1,84 @@
 /* ================================
-   全体設定
+   セクション
 ================================ */
-body {
-  font-family: sans-serif;
-  background: #a9a9a9;
-  margin: 0;
-  padding: 16px;
-  padding-top: 30px; /* 固定ヘッダー分の余白 */
-  color: #222;
+
+.section-block,
+.section-header {
+  background: #f7f2e9;
 }
 
-h1 {
-  margin-bottom: 20px;
+.section-block {
+  padding: 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.section-header {
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  user-select: none;
+  margin-bottom: 12px;
+}
+
+.section-header:hover {
+  background: #e5e1d8;
 }
 
 h2 {
   margin: 0 0 12px 0;
   font-size: 20px;
-  border-left: 6px solid #4CAF50;
+  color: #403a34;
+  border-left: 6px solid #ef5350;
   padding-left: 8px;
 }
 
-/* ================================
-   セクション
-================================ */
-.section-block {
-  background: #f5f5f5;
-  padding: 16px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+.content {
+  display: none;
 }
+
+.content.open {
+  display: block;
+}
+
+.section-basic {
+  margin-bottom: 0;
+  padding: 8px 16px 0 16px;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+}
+
+.section-global {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 8px 16px 0 16px;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.section-buttons {
+  margin-top: 0;
+  padding: 0px 16px 16px 16px;
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+}
+
+.section-header .toggle-icon {
+  color: #e53935;
+}
+
+.section-header.open .toggle-icon {
+  color: #1e88e5;
+}
+
+/* ================================
+   入力欄
+================================ */
 
 .row {
   display: flex;
@@ -44,6 +92,202 @@ h2 {
   min-width: 220px;
 }
 
+/* ================================
+   ポケモン名検索ドロップダウン
+================================ */
+
+/* ▼ ポケモンドロップダウン全体 */
+.pokemon-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+/* ▼ 入力欄 */
+.pokemon-dropdown input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* ▼ 候補リスト */
+.pokemon-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+  display: none;
+  z-index: 20;
+}
+
+/* ▼ 候補項目 */
+.pokemon-option {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ▼ hover時の強調 */
+.pokemon-option:hover {
+  background: #e0e0e0;
+}
+
+/* ▼ 入力欄がフォーカスされた時の枠線強調 */
+.pokemon-dropdown.focused input {
+  border-color: #007bff;
+}
+
+.pokemon-dropdown {
+  position: relative;
+}
+
+.pokemon-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  display: none; /* 初期は非表示 */
+}
+
+.pokemon-dropdown.has-value .pokemon-clear {
+  display: block;
+}
+
+/* ================================
+   性格ドロップダウン
+================================ */
+
+.nature-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.nature-dropdown input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.nature-dropdown::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+}
+
+.nature-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+  display: none; /* 初期は非表示 */
+  z-index: 20;
+}
+
+.nature-option {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nature-option:hover {
+  background: #e0e0e0;
+}
+
+.nature-dropdown.focused input {
+  border-color: #007bff;
+}
+
+/* ================================
+   レベル、フィールドボーナス
+================================ */
+
+.lv-field::before,
+.percent-field::after {
+  font-size: 16px;
+  line-height: 1.2;
+  top: 50%;
+  transform: translateY(-55%);
+}
+
+.lv-field {
+  position: relative;
+}
+
+.lv-field::before {
+  content: "Lv.";
+  position: absolute;
+  left: 10px;
+  top: 48%;
+  color: #666;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.lv-field.has-value::before {
+  opacity: 1;
+}
+
+.lv-field input {
+  padding-left: 40px; /* Lv. の分だけ余白 */
+}
+
+/* placeholderだけ左端から始める */
+.lv-field input::placeholder {
+  position: absolute;
+  left: 10px; /* Lv. と同じ左端に配置 */
+  transform: translateY(-15%);
+  color: #777;
+}
+
+.percent-field {
+  position: relative;
+}
+
+.percent-field input {
+  width: 100%;
+  padding-right: 10px; /* 数値入力の余白だけ確保 */
+  box-sizing: border-box;
+}
+
+/* % の単位 */
+.percent-field .input-unit {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-55%);
+  left: 10px; /* 初期位置（後でJSで上書きされる） */
+  color: #666;
+  pointer-events: none;
+  visibility: hidden; /* 初期は非表示 */
+}
+
+/* 数値が入ったら表示 */
+.percent-field.has-value .input-unit {
+  visibility: visible;
+}
+
 label {
   display: block;
   font-weight: bold;
@@ -55,153 +299,495 @@ input,
 button {
   width: 100%;
   padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #000;
   box-sizing: border-box;
   font-size: 16px;
 }
 
-/* ================================
-   固定ヘッダー
-================================ */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 40px;
-  background: #4CAF50;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  z-index: 2000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
-.menu-icon {
-  font-size: 28px;
-  cursor: pointer;
-  margin-right: 8px;
-}
-
-.header-title {
-  font-size: 20px;
-  font-weight: bold;
+input::placeholder {
+  color: #777;
 }
 
 /* ================================
-   スライドメニュー
+   カスタムドロップダウン（おやすみリボン）
 ================================ */
-.side-menu {
-  position: fixed;
-  top: 0;
-  right: -220px;
-  width: 220px;
-  height: 100%;
-  background: #e8f5e9;
-  box-shadow: -2px 0 6px rgba(0,0,0,0.2);
-  padding-top: 30px;
-  transition: right 0.3s ease;
-  z-index: 2500;
-  border-radius: 12px 0 0 12px;
-  display: flex;
-  flex-direction: column;
-}
 
-.side-menu.open {
-  right: 0;
-}
-
-.side-menu a {
-  display: block;
-  padding: 14px;
-  font-size: 16px;
-  color: #2e7d32;
-  text-decoration: none;
-  border-bottom: 1px solid #c8e6c9;
-}
-
-.side-menu a:hover {
-  background: #c8e6c9;
-}
-
-.menu-header {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 16px;
-  color: #1b5e20;
-  border-bottom: 2px solid #a5d6a7;
-}
-
-.side-menu .menu-bottom {
-  margin-top: auto;
-  border-top: 2px solid #a5d6a7;
-  padding: 16px;
-}
-
-.side-menu .menu-bottom a {
-  font-size: 16px;
-  font-weight: bold;
-  color: #1b5e20;
-}
-
-/* メニュー展開時の背景 */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.4);
-  display: none;
-  z-index: 2400;
-}
-
-.overlay.show {
-  display: block;
-}
-
-/* ================================
-   オートコンプリート
-================================ */
-.autocomplete-wrapper {
+.ribbon-dropdown {
   position: relative;
-  width: 100%;
+  background: #fff;
+  border: 1px solid #000; /* 枠線を黒に統一 */
+  border-radius: 4px;
+  padding: 8px;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #777; /* 初期表示は薄く */
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
 }
 
-.autocomplete-list {
+.ribbon-dropdown::after {
+  content: "▼";
   position: absolute;
-  top: 100%;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+}
+
+.ribbon-dropdown.active {
+  color: #222; /* 選択後は濃く */
+}
+
+.ribbon-dropdown.focused {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.2);
+}
+
+.ribbon-dropdown .dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
   left: 0;
   right: 0;
   background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-top: 4px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: none;
+  z-index: 1000;
+}
+
+.ribbon-dropdown .dropdown-option {
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #222;
+}
+
+.dropdown-option:hover {
+  background: #e8f5e9;
+}
+
+/* ================================
+   食材ドロップダウン（余白調整版）
+================================ */
+
+/* ▼ 食材欄の横並び（PC） */
+.ingredient-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 12px; /* 他の行との間隔を適度に */
+}
+
+/* ▼ 食材欄の各項目 */
+.ingredient-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+/* ▼ ラベル（Lv.1 / Lv.30 / Lv.60） */
+.ingredient-label {
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* ▼ select 本体（矢印非表示＋統一デザイン） */
+.ingredient-item select {
+  width: 100%;
+  padding: 8px;
+  padding-right: 28px; /* ▼ の分だけ余白を追加 */
+  border-radius: 4px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #fff;
+  cursor: pointer;
+
+  /* ▼ ブラウザ標準の矢印を非表示 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ▼ カスタム矢印（性格欄と統一） */
+.ingredient-item::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+  pointer-events: none;
+}
+
+/* ▼ disabled のとき */
+.ingredient-item select:disabled {
+  background: #f0f0f0;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* ▼ スマホでは縦並びにする */
+@media (max-width: 600px) {
+  .ingredient-row {
+    flex-direction: column;
+  }
+
+  .ingredient-item {
+    width: 100%;
+  }
+}
+
+/* ================================
+   サブスキル（性格欄と同じ構造）
+================================ */
+
+.subskill-dropdown {
+  position: relative;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.subskill-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #777; /* 初期表示は薄く */
+}
+
+.subskill-dropdown.active .subskill-input {
+  color: #222; /* 選択後は濃く */
+}
+
+/* ▼ デフォルトで矢印は出さない */
+.subskill-dropdown::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+  pointer-events: none;
+}
+
+/* ▼ 入力欄に値がある（選択済み）ときだけ × を表示 */
+.subskill-dropdown.has-value::after {
+  content: "×";
+  color: #c00;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* ▼ 右端クリック領域（実要素で確実に拾う） */
+.subskill-clear-zone {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* ▼ open クラスで表示制御（display を JS で直接触るより安定） */
+.subskill-dropdown .subskill-options { display: none; }
+.subskill-dropdown.open .subskill-options { display: block; }
+
+.subskill-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  display: none;
   max-height: 240px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.subskill-white { color: #222; }
+.subskill-blue { color: #1e88e5; }
+.subskill-gold { color: #b8860b; }
+
+.subskill-option {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.subskill-option:hover {
+  background: #e8f5e9;
+}
+
+/* ================================
+   カスタムドロップダウン（その他のおてボ数）
+================================ */
+
+.teambonus-dropdown {
+  position: relative;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 8px;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #777; /* 初期表示は薄く */
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.teambonus-dropdown::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+}
+
+.teambonus-dropdown.active {
+  color: #222; /* 選択後は濃く */
+}
+
+.teambonus-dropdown.focused {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.2);
+}
+
+.teambonus-dropdown .dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: none;
+  z-index: 1000;
+}
+
+.teambonus-dropdown .dropdown-option {
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #222;
+}
+
+.teambonus-dropdown .dropdown-option:hover {
+  background: #e8f5e9;
+}
+
+/* ================================
+   カスタムドロップダウン（キャンプチケット）
+================================ */
+
+.campticket-dropdown {
+  position: relative;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 8px;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #777; /* 初期表示は薄く */
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.campticket-dropdown::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+}
+
+.campticket-dropdown.active {
+  color: #222; /* 選択後は濃く */
+}
+
+.campticket-dropdown.focused {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.2);
+}
+
+.campticket-dropdown .dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: none;
+  z-index: 1000;
+}
+
+.campticket-dropdown .dropdown-option {
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #222;
+}
+
+.campticket-dropdown .dropdown-option:hover {
+  background: #e8f5e9;
+}
+
+/* ================================
+   フィールド選択、フィールド適正
+================================ */
+
+.field-dropdown,
+.fieldtokui-dropdown {
+  position: relative;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 8px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-size: 16px;
+  color: #777; /* 初期表示は薄く */
+}
+
+.field-dropdown.active,
+.fieldtokui-dropdown.active {
+  color: #222; /* 選択後は濃く */
+}
+
+.field-dropdown::after,
+.fieldtokui-dropdown::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+}
+
+.field-dropdown .dropdown-options,
+.fieldtokui-dropdown .dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  max-height: 180px;
   overflow-y: auto;
   display: none;
   z-index: 1000;
 }
 
-.autocomplete-item {
-  padding: 14px;
-  font-size: 18px;
-  border-bottom: 1px solid #eee;
+.field-dropdown .dropdown-option,
+.fieldtokui-dropdown .dropdown-option {
+  padding: 8px 10px;
   cursor: pointer;
+  color: #222;
 }
 
-.autocomplete-item:last-child {
-  border-bottom: none;
+.dropdown-single.disabled {
+  background: #eee;
+  color: #999;
+  cursor: not-allowed;
 }
 
-.autocomplete-item:hover {
-  background: #e8f5e9;
+.dropdown-single.disabled::after {
+  color: #ccc;
+}
+
+.dropdown-single.disabled .dropdown-options {
+  display: none !important;
+}
+
+/* ================================
+   ＥＸボーナス
+================================ */
+
+.exbonus-dropdown {
+  position: relative;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 8px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-size: 16px;
+  color: #777; /* 初期表示は薄く */
+}
+
+/* 選択後の表示テキストを濃くする */
+.exbonus-dropdown.active .dropdown-selected-text {
+  color: #222 !important;
+}
+
+.exbonus-dropdown::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: #666;
+}
+
+.exbonus-dropdown .dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: none;
+  z-index: 1000;
+}
+
+.exbonus-dropdown .dropdown-option {
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #222;
+}
+
+.exbonus-dropdown.disabled {
+  background: #eee;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.exbonus-dropdown.disabled::after {
+  color: #ccc;
+}
+
+.exbonus-dropdown.disabled .dropdown-options {
+  display: none !important;
 }
 
 /* ================================
    ボタン
 ================================ */
+
 .button-row {
   display: flex;
   justify-content: space-between;
@@ -235,41 +821,4 @@ button {
 
 .btn-clear:hover {
   background: #c9302c;
-}
-
-/* ================================
-   結果表示
-================================ */
-.results {
-  background: #dcdcdc;
-  padding: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 12px;
-  background: #fff;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
-  text-align: center;
-}
-
-th {
-  background: #666;
-  color: #fff;
-}
-
-/* ================================
-   スマホ対応
-================================ */
-@media (max-width: 480px) {
-  .field {
-    min-width: 100%;
-  }
 }
