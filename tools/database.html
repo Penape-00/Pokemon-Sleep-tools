@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>詳細評価 ver2.0.0</title>
+  <title>ポケモンデータベース</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="src_common/basic.css">
-  <link rel="stylesheet" href="src_detail/detail.css">
-  <link rel="stylesheet" href="src_detail/result.css">
+  <link rel="stylesheet" href="src_database/database.css">
 </head>
 
 <body>
@@ -16,207 +14,149 @@
 <!-- ▼ 固定ヘッダー -->
 <header class="header">
   <div class="header-title">Pokémon Sleep Tools</div>
-  <button id="menu-button" class="menu-button" type="button" aria-label="メニューを開く" aria-controls="side-Menu" aria-expanded="false">
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
-  </button>
+  <div class="menu-icon" id="menuBtn">☰</div>
 </header>
 
 <!-- ▼ スライドメニュー -->
-<nav class="side-menu" id="side-menu">
+<nav class="side-menu" id="sideMenu">
   <div class="menu-header">メニュー</div>
 
-  <div class="menu-body">
-    <a href="detail.html">詳細評価</a>
-    <a href="compare.html">比較評価</a>
-    <a href="party.html">パーティ評価</a>
-    <a href="exp.html">Exp計算</a>
-    <a href="sleepPower.html">ねむけパワー算出</a>
-    <a href="database.html">データベース</a>
-  </div>
+  <a href="detail.html">詳細評価</a>
+  <a href="compare.html">比較評価</a>
+  <a href="party.html">パーティ評価</a>
+  <a href="exp.html">Exp計算</a>
+  <a href="sleepPower.html">ねむけパワー算出</a>
+  <a href="database.html">データベース</a>
 
   <div class="menu-bottom">
     <a href="../index.html">トップページ</a>
   </div>
 </nav>
 
+<!-- ▼ メニュー展開時の背景 -->
 <div class="overlay" id="overlay"></div>
 
-<h1>詳細評価 ver2.0.0</h1>
+<h1>データベース</h1>
 
-<!-- ==================================================
-     ▼ 基本情報（折りたたみ）
-================================================== -->
-<section class="section-block section-basic">
-  <h2 class="section-header" data-target="#basicArea">基本情報 <span class="toggle-icon">+</span></h2>
-    <div id="basicArea" class="content">
+<!-- ▼ 絞り込みエリア -->
+<section class="section-block section-filter">
+ <h2 class="section-header" data-target="#filterArea">絞り込み <span class="toggle-icon">+</span></h2>
+  <div id="filterArea" class="filter-content">
 
-    <!-- ▼ 1行目：ポケモン名・性格・レベル・リボン -->
-    <div class="row">
+   <div class="filter-row">
+     <div class="filter-field">
+       <input id="nameSearch" type="text" placeholder="名前検索（ひらがな可）">
+     </div>
 
-      <div class="field pokemon-field">
-        <div id="pokemonDropdown" class="pokemon-dropdown">
-          <input id="pokemonInput" type="text" placeholder="ポケモン名を検索…" autocomplete="off">
-          <div class="pokemon-options"></div>
-        </div>
-      </div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="type"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="tokui"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="ingredient"></div></div>
+   </div>
 
-      <div class="field nature-field">
-        <div id="natureDropdown" class="nature-dropdown">
-          <input id="natureInput" type="text" placeholder="性格を検索…" autocomplete="off">
-          <div class="nature-options"></div>
-        </div>
-      </div>
+   <!-- ▼ 下段：メインスキル + 睡眠タイプ + 出現フィールド -->
+   <div class="filter-row">
+     <div class="filter-field"><div class="dropdown-multi" data-filter="skill"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="sleep"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="field"></div></div>
+     <div class="filter-field"><div class="dropdown-multi" data-filter="region"></div></div>
+   </div>
 
-      <div class="field lv-field">
-        <input id="level" type="number" min="1" max="70" placeholder="Lv.（1〜70）">
-      </div>
+   <div style="margin-top: 12px;">
+     <button id="filterClearBtn">クリア</button>
+   </div>
 
-      <div class="field ribbon-field">
-        <div class="ribbon-dropdown dropdown-single" id="ribbonDropdown"></div>
-      </div>
+ </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ▼ ソートエリア -->
+<section class="section-block section-sort">
+ <h2 class="section-header" data-target="#sortArea">ソート <span class="toggle-icon">+</span></h2>
+  <div id="sortArea" class="filter-content">
+
+   <div class="filter-row">
+
+    <div class="filter-field">
+      <label>項目</label>
+      <select id="sortSelect">
+        <option value="dex">図鑑番号</option>
+        <option value="name">名前</option>
+        <option value="help">おてつだい時間</option>
+        <option value="berry">きのみ指数</option>
+        <option value="ing">食材指数</option>
+        <option value="skill">スキル発動指標</option>
+      </select>
     </div>
 
-    <!-- ▼ 2行目：食材 -->
-    <div class="ingredient-row">
-
-      <div class="ingredient-item">
-        <span class="ingredient-label">Lv.1食材</span>
-        <select id="ingredientLv1">
-          <option value="" disabled selected>ポケモンを選択してください</option>
-        </select>
-      </div>
-
-      <div class="ingredient-item">
-        <span class="ingredient-label">Lv.30食材</span>
-        <select id="ingredientLv30">
-          <option value="" disabled selected>ポケモンを選択してください</option>
-        </select>
-      </div>
-
-      <div class="ingredient-item">
-        <span class="ingredient-label">Lv.60食材</span>
-        <select id="ingredientLv60">
-          <option value="" disabled selected>ポケモンを選択してください</option>
-        </select>
-      </div>
-
+    <div class="filter-field">
+      <label>順序</label>
+      <select id="sortOrder">
+        <option value="asc">昇順</option>
+        <option value="desc">降順</option>
+      </select>
     </div>
 
-    <!-- ▼ 3行目：サブスキル -->
-    <div class="row subskill-row">
-
-      <div class="field">
-        <div class="subskill-dropdown" id="subskill10">
-          <input type="text" class="subskill-input" placeholder="サブスキル（Lv10）">
-          <div class="subskill-options"></div>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="subskill-dropdown" id="subskill25">
-          <input type="text" class="subskill-input" placeholder="サブスキル（Lv25）">
-          <div class="subskill-options"></div>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="subskill-dropdown" id="subskill50">
-          <input type="text" class="subskill-input" placeholder="サブスキル（Lv50）">
-          <div class="subskill-options"></div>
-        </div>
-      </div>
-
-    </div>
-
-  <!-- ▼ 4行目：サブスキル -->
-    <div class="row subskill-row">
-
-      <div class="field">
-        <div class="subskill-dropdown" id="subskill70">
-          <input type="text" class="subskill-input" placeholder="サブスキル（Lv70）">
-          <div class="subskill-options"></div>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="subskill-dropdown" id="subskill80">
-          <input type="text" class="subskill-input" placeholder="サブスキル（Lv80）">
-          <div class="subskill-options"></div>
-        </div>
-      </div>
-
-    </div>
-
+   </div>
   </div>
 </section>
 
-<!-- ==================================================
-     ▼ 全体情報（折りたたみ）
-================================================== -->
-<section class="section-block section-global">
-  <h2 class="section-header" data-target="#globalArea">
-    全体情報 <span class="toggle-icon">+</span>
+<!-- ▼ カード一覧 -->
+<section class="section-block">
+  <h2>
+    ポケモン一覧
+    <span id="pokemonCount" class="pokemon-count">表示中: 0 / 0</span>
   </h2>
 
-  <div id="globalArea" class="content">
+  <div id="cardGrid" class="card-grid"></div>
 
-    <!-- ▼ 1行目：おてボ・フィールドボーナス・キャンプ -->
-    <div class="row">
+  <button id="showMoreBtn" class="btn-comp" style="margin-top:16px;">
+    もっと見る
+  </button>
+</section>
 
-      <div class="field teambonus-field">
-        <div class="teambonus-dropdown dropdown-single" id="teamBonusDropdown"></div>
-      </div>
-
-      <div class="field percent-field">
-        <input id="fieldBonus" type="number" min="0" max="85" placeholder="フィールドボーナス(初期値：85%)">
-        <span class="input-unit">%</span>
-      </div>
-
-      <div class="field campticket-field">
-        <div class="campticket-dropdown dropdown-single" id="campTicketDropdown"></div>
-      </div>
-
+<!-- ▼ カードテンプレート -->
+<template id="pokemon-card-template">
+  <div class="pokemon-card">
+    <div class="card-left">
+      <img class="card-image" src="" alt="">
     </div>
 
-    <!-- ▼ 2行目：フィールド・適正・EXボーナス -->
-    <div class="row">
-
-      <div class="field">
-        <div class="dropdown-single field-dropdown" id="fieldDropdown"></div>
-      </div>
-
-      <div class="field">
-        <div class="dropdown-single fieldtokui-dropdown" id="fieldTokuiDropdown"></div>
-      </div>
-
-      <div class="field">
-        <div class="dropdown-single exbonus-dropdown disabled" id="exBonusDropdown"></div>
-      </div>
-
+    <div class="card-right">
+      <div class="card-dex"></div>
+      <div class="card-name"></div>
+      <div class="card-type"></div>
+      <div class="card-tokui"></div>
     </div>
 
+    <div class="tokui-accent"></div>
+    <div class="type-accent"></div>
   </div>
-</section>
+</template>
 
-<!-- ▼ ボタン -->
-<section class="section-block section-buttons">
-  <div class="button-row">
-    <button id="calcBtn" class="btn-calc">計算する</button>
-    <button id="clearBtn" class="btn-clear">設定をクリア</button>
+<!-- ▼ 詳細パネル -->
+<div id="detailOverlay" class="modal-overlay"></div>
+
+<div id="detailPanel" class="modal">
+
+  <div class="detail-tabs">
+    <button class="detail-tab active" data-tab="info">基本情報</button>
+    <button class="detail-tab" data-tab="skill">食材・スキル</button>
+    <button class="detail-tab" data-tab="evolution">進化段階</button>
+    <button class="detail-tab" data-tab="fields">出現フィールド</button>
   </div>
-</section>
 
-<!-- ▼ 結果表示 -->
-<section class="section-block results">
-  <h2>結果</h2>
-  <div id="summary"></div>
-  <div id="tableArea"></div>
-</section>
+  <div class="detail-content">
+    <div id="tab-info" class="tab-section active"></div>
+    <div id="tab-skill" class="tab-section"></div>
+    <div id="tab-evolution" class="tab-section"></div>
+    <div id="tab-fields" class="tab-section"></div>
+  </div>
 
-<!-- ▼ 参照 -->
-<footer style="margin-top:8px; font-size:13px; color:#81776c;">
+  <button id="closeDetailBtn" class="btn-close">閉じる</button>
+</div>
+
+<footer style="margin-top:20px; font-size:13px; color:#555;">
   <p>
     参照元：
     <a href="https://pks.raenonx.cc/ja" target="_blank">RaenonX ポケモンスリープ攻略ツール</a>, 
@@ -225,8 +165,10 @@
 </footer>
 
 <!-- ▼ データファイル -->
-<script src="src_database/berryData.js"></script>
+<script src="src_database/mainSkillData.js"></script>
 <script src="src_database/ingredientData.js"></script>
+<script src="src_database/berryData.js"></script>
+<script src="src_database/energyTable.js"></script>
 <script src="src_database/pokedexData_Kanto.js"></script>
 <script src="src_database/pokedexData_Johto.js"></script>
 <script src="src_database/pokedexData_Hoenn.js"></script>
@@ -237,13 +179,13 @@
 <script src="src_database/pokedexData_Galar.js"></script>
 <script src="src_database/pokedexData_Paldea.js"></script>
 <script src="src_database/pokedexData_All.js"></script>
-<script src="src_common/natureData.js"></script>
+<script src="src_database/evolutionChain.js"></script>
 
-<!-- ▼ ロジック -->
-<script src="src_detail/calc.js"></script>
-<script src="src_detail/basic.js"></script>
-<script src="src_detail/global.js"></script>
-<script src="src_detail/detail.js"></script>
+<!-- ▼ 分割後のJS（ここが重要） -->
+<script src="src_database/ui.js"></script>
+<script src="src_database/card.js"></script>
+<script src="src_database/filter.js"></script>
+<script src="src_database/detail.js"></script>
 
 </body>
 </html>
