@@ -13,6 +13,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "きのみバースト",
 
@@ -138,6 +139,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "きのみバースト",
 
@@ -263,6 +265,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "きのみバースト",
 
@@ -388,6 +391,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "げんきチャージS",
 
@@ -495,6 +499,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -602,6 +607,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -709,6 +715,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "料理チャンスS",
 
@@ -825,6 +832,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "料理チャンスS",
 
@@ -941,6 +949,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "料理チャンスS",
 
@@ -1057,6 +1066,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "げんきオールS",
 
@@ -1164,6 +1174,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "げんきオールS",
 
@@ -1271,6 +1282,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "げんきオールS",
 
@@ -1378,6 +1390,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "食材ゲットS",
 
@@ -1483,8 +1496,9 @@ const pokedexData_Hoenn = [
     type: ["ノーマル"],
     tokui: "きのみ",
 
-    sleepType: "すやすや",
+    sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -1592,6 +1606,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -1699,6 +1714,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -1769,6 +1785,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "かいりきバサミ(食材セレクトS)",
 
@@ -1857,6 +1874,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "げんきチャージS",
 
@@ -1955,6 +1973,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -2053,6 +2072,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -2151,6 +2171,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "プラス(食材ゲットS)",
 
@@ -2239,6 +2260,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "すやすや",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "マイナス(料理パワーアップS)",
 
@@ -2327,6 +2349,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -2420,6 +2443,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -2504,6 +2528,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS",
 
@@ -2602,6 +2627,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -2700,6 +2726,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -2798,6 +2825,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -2891,6 +2919,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -2975,6 +3004,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3065,6 +3095,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -3158,6 +3189,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -3321,6 +3353,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "食材ゲットS",
 
@@ -3428,6 +3461,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "料理チャンスS",
 
@@ -3487,6 +3521,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -3585,6 +3620,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "ぐっすり",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -3683,6 +3719,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 2,
 
     mainSkill: "料理パワーアップS",
 
@@ -3772,6 +3809,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 1,
 
     mainSkill: "料理パワーアップS",
 
@@ -3861,6 +3899,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "料理パワーアップS",
 
@@ -3950,6 +3989,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "いやしのはどう(げんきエールS)",
 
@@ -4038,6 +4078,7 @@ const pokedexData_Hoenn = [
 
     sleepType: "うとうと",
     region: "ホウエン",
+    evolutionStage: 0,
 
     mainSkill: "りゅうせいぐん(きのみバースト)",
 
