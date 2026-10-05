@@ -13,6 +13,7 @@ const pokedexData_Galar = [
 
     sleepType: "ぐっすり",
     region: "ガラル",
+    evolutionStage: 0,
 
     mainSkill: "料理チャンスS",
 
@@ -110,6 +111,7 @@ const pokedexData_Galar = [
 
     sleepType: "ぐっすり",
     region: "ガラル",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -213,6 +215,7 @@ const pokedexData_Galar = [
 
     sleepType: "うとうと",
     region: "ガラル",
+    evolutionStage: 0,
 
     mainSkill: "プラス(食材ゲットS)",
 
@@ -307,6 +310,7 @@ const pokedexData_Galar = [
 
     sleepType: "うとうと",
     region: "ガラル",
+    evolutionStage: 0,
 
     mainSkill: "マイナス(料理パワーアップS)",
 
