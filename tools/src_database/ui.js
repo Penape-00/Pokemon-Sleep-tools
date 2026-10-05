@@ -5,20 +5,21 @@
 /* -------------------------------
    ▼ スライドメニュー制御
 -------------------------------- */
-const menuBtn = document.getElementById("menuBtn");
-const sideMenu = document.getElementById("sideMenu");
-const overlay = document.getElementById("overlay");
+function setupMenuToggle() {
+  const menuBtn = document.getElementById("menu-button");
+  const sideMenu = document.getElementById("side-menu");
+  const overlay = document.getElementById("overlay");
 
-menuBtn.addEventListener("click", () => {
-  sideMenu.classList.add("open");
-  overlay.classList.add("show");
-});
+  menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("open");
+    overlay.classList.add("show");
+  });
 
-overlay.addEventListener("click", () => {
-  sideMenu.classList.remove("open");
-  overlay.classList.remove("show");
-});
-
+  overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("open");
+    overlay.classList.remove("show");
+  });
+}
 
 /* -------------------------------
    ▼ 詳細パネル（モーダル）制御
@@ -79,6 +80,7 @@ function openDetailPanelUI() {
    ▼ カード初期表示
 -------------------------------- */
 window.addEventListener("DOMContentLoaded", () => {
-  applySort();        // ソート初期化（filter.js側の関数）
-  resetAndRender();   // カード描画
+  setupMenuToggle();
+  applySort();
+  resetAndRender();
 });
