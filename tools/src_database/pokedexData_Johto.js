@@ -13,6 +13,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -120,6 +121,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -227,6 +229,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -334,6 +337,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -441,6 +445,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -548,6 +553,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -655,6 +661,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -767,6 +774,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -879,6 +887,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -991,6 +1000,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS",
 
@@ -1098,6 +1108,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "ゆびをふる",
 
@@ -1259,6 +1270,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "げんきオールS",
 
@@ -1366,6 +1378,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "ゆびをふる",
 
@@ -1464,6 +1477,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "ゆびをふる",
 
@@ -1562,6 +1576,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "食材ゲットS",
 
@@ -1664,6 +1679,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -1757,6 +1773,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージM",
 
@@ -1860,6 +1877,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージM",
 
@@ -1963,6 +1981,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -2057,6 +2076,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -2150,6 +2170,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -2234,6 +2255,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "パルデア",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -2327,6 +2349,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -2411,6 +2434,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -2541,6 +2565,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "つきのひかり(げんきチャージS)",
 
@@ -2671,6 +2696,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "きょううん(食材セレクトS)",
 
@@ -2773,6 +2799,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "げんきエールS",
 
@@ -2848,6 +2875,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "げんきエールS",
 
@@ -2932,6 +2960,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "食材ゲットS",
 
@@ -3023,6 +3052,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "きのみジュース(げんきオールS)",
 
@@ -3120,6 +3150,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "ビルドアップ(料理アシストS)",
 
@@ -3217,6 +3248,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "料理チャンスS",
 
@@ -3311,6 +3343,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "プレゼント(食材ゲットS)",
 
@@ -3390,6 +3423,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージM",
 
@@ -3483,6 +3517,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -3567,6 +3602,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "げんきオールS",
 
@@ -3693,6 +3729,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいブースト",
 
@@ -3769,6 +3806,7 @@ const pokedexData_Johto = [
 
     sleepType: "すやすや",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいブースト",
 
@@ -3853,6 +3891,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいブースト",
 
@@ -3945,6 +3984,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 2,
 
     mainSkill: "げんきチャージS",
 
@@ -4061,6 +4101,7 @@ const pokedexData_Johto = [
 
     sleepType: "ぐっすり",
     region: "ジョウト",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -4159,6 +4200,7 @@ const pokedexData_Johto = [
 
     sleepType: "うとうと",
     region: "ジョウト",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
