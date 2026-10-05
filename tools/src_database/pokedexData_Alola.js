@@ -13,6 +13,7 @@ const pokedexData_Alola = [
 
     sleepType: "うとうと",
     region: "アローラ",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージS",
 
@@ -111,6 +112,7 @@ const pokedexData_Alola = [
 
     sleepType: "うとうと",
     region: "アローラ",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -209,6 +211,7 @@ const pokedexData_Alola = [
 
     sleepType: "うとうと",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -307,6 +310,7 @@ const pokedexData_Alola = [
 
     sleepType: "すやすや",
     region: "アローラ",
+    evolutionStage: 1,
 
     mainSkill: "食材セレクトS",
 
@@ -409,6 +413,7 @@ const pokedexData_Alola = [
 
     sleepType: "すやすや",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "食材セレクトS",
 
@@ -511,6 +516,7 @@ const pokedexData_Alola = [
 
     sleepType: "ぐっすり",
     region: "アローラ",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -586,6 +592,7 @@ const pokedexData_Alola = [
 
     sleepType: "ぐっすり",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -661,6 +668,7 @@ const pokedexData_Alola = [
 
     sleepType: "すやすや",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "げんきエールS",
 
@@ -749,6 +757,7 @@ const pokedexData_Alola = [
 
     sleepType: "ぐっすり",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "ほっぺすりすり(げんきエールS)",
 
@@ -837,6 +846,7 @@ const pokedexData_Alola = [
 
     sleepType: "うとうと",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "ばけのかわ(きのみバースト)",
 
@@ -916,6 +926,7 @@ const pokedexData_Alola = [
 
     sleepType: "うとうと",
     region: "アローラ",
+    evolutionStage: 0,
 
     mainSkill: "料理チャンスS",
 
