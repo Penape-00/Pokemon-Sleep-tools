@@ -13,6 +13,7 @@ const pokedexData_Paldea = [
 
     sleepType: "うとうと",
     region: "パルデア",
+    evolutionStage: 2,
 
     mainSkill: "料理パワーアップS",
 
@@ -121,6 +122,7 @@ const pokedexData_Paldea = [
 
     sleepType: "うとうと",
     region: "パルデア",
+    evolutionStage: 1,
 
     mainSkill: "料理パワーアップS",
 
@@ -229,6 +231,7 @@ const pokedexData_Paldea = [
 
     sleepType: "うとうと",
     region: "パルデア",
+    evolutionStage: 0,
 
     mainSkill: "料理パワーアップS",
 
@@ -337,6 +340,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 2,
 
     mainSkill: "げんきチャージS",
 
@@ -453,6 +457,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -560,6 +565,7 @@ const pokedexData_Paldea = [
 
     sleepType: "うとうと",
     region: "パルデア",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -667,6 +673,7 @@ const pokedexData_Paldea = [
 
     sleepType: "ぐっすり",
     region: "パルデア",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージM",
 
@@ -774,6 +781,7 @@ const pokedexData_Paldea = [
 
     sleepType: "ぐっすり",
     region: "パルデア",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージM",
 
@@ -872,6 +880,7 @@ const pokedexData_Paldea = [
 
     sleepType: "ぐっすり",
     region: "パルデア",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -970,6 +979,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 2,
 
     mainSkill: "げんきオールS",
 
@@ -1086,6 +1096,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 1,
 
     mainSkill: "げんきオールS",
 
@@ -1193,6 +1204,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 0,
 
     mainSkill: "げんきオールS",
 
@@ -1300,6 +1312,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 2,
 
     mainSkill: "エナジーチャージM",
 
@@ -1425,6 +1438,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージM",
 
@@ -1550,6 +1564,7 @@ const pokedexData_Paldea = [
 
     sleepType: "すやすや",
     region: "パルデア",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
@@ -1670,6 +1685,7 @@ const pokedexData_Paldea = [
 
     sleepType: "ぐっすり",
     region: "パルデア",
+    evolutionStage: 1,
 
     mainSkill: "げんきチャージS",
 
@@ -1763,6 +1779,7 @@ const pokedexData_Paldea = [
 
     sleepType: "ぐっすり",
     region: "パルデア",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
@@ -1845,6 +1862,7 @@ const pokedexData_Paldea = [
 
     sleepType: "うとうと",
     region: "パルデア",
+    evolutionStage: 0,
 
     mainSkill: "げんきチャージS",
 
