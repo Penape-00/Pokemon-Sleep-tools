@@ -721,6 +721,7 @@ function renderFieldTab(p) {
         /* ★ 星数 */
         const tdStar = document.createElement("td");
         tdStar.textContent = `★${starKey}`;
+        tdStar.classList.add("star-cell");
         tr.appendChild(tdStar);
 
         /* ★ ランク（不明対応） */
