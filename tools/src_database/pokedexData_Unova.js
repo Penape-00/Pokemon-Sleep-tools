@@ -13,6 +13,7 @@ const pokedexData_Unova = [
 
     sleepType: "すやすや",
     region: "イッシュ",
+    evolutionStage: 1,
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -103,6 +104,7 @@ const pokedexData_Unova = [
 
     sleepType: "すやすや",
     region: "イッシュ",
+    evolutionStage: 0,
 
     mainSkill: "ゆめのかけらゲットS(ランダム)",
 
@@ -193,6 +195,7 @@ const pokedexData_Unova = [
 
     sleepType: "うとうと",
     region: "イッシュ",
+    evolutionStage: 1,
 
     mainSkill: "食材セレクトS",
 
@@ -268,6 +271,7 @@ const pokedexData_Unova = [
 
     sleepType: "うとうと",
     region: "イッシュ",
+    evolutionStage: 0,
 
     mainSkill: "食材セレクトS",
 
@@ -331,6 +335,230 @@ const pokedexData_Unova = [
   },
 
   {
+    dexNo: 590,
+    formId: "normal",
+    name: "タマゲタケ",
+
+    imageCard: getImagePath("card", 590, "normal"),
+    imageDetail: getImagePath("panel", 590, "normal"),
+
+    type: ["どく"],
+    tokui: "食材",
+
+    sleepType: "うとうと",
+    region: "イッシュ",
+    evolutionStage: 1,
+
+    mainSkill: "エナジーチャージS",
+
+    ingredients: [
+      {
+        name: "あじわいキノコ",
+        countsByLevel: { 1: 2, 30: 5, 60: 7 }
+      },
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 30: 7, 60: 10 }
+      },
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 60: 11 }
+      }
+    ],
+
+    baseHelpTime: 5700,
+    ingRate: 0.174,
+    skillRate: 0.035,
+    maxHold: 12,
+
+    berryIndex: 0.93,
+    ingIndex: 1.75,
+    skillIndicator: 1.09,
+
+    evolutionChain: [
+      {
+        dexNo: 590,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 591,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 29 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 591,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: null,
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ラピスラズリ湖畔",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 4 }],
+          3: [{ type: "スーパー", rank: 5 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 2 }],
+          3: [{ type: "スーパー", rank: 3 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 4 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 2 }],
+          3: [{ type: "ハイパー", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 4 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 591,
+    formId: "normal",
+    name: "モロバレル",
+
+    imageCard: getImagePath("card", 591, "normal"),
+    imageDetail: getImagePath("panel", 591, "normal"),
+
+    type: ["どく"],
+    tokui: "食材",
+
+    sleepType: "うとうと",
+    region: "イッシュ",
+    evolutionStage: 0,
+
+    mainSkill: "エナジーチャージS",
+
+    ingredients: [
+      {
+        name: "あじわいキノコ",
+        countsByLevel: { 1: 2, 30: 5, 60: 7 }
+      },
+      {
+        name: "とくせんエッグ",
+        countsByLevel: { 30: 7, 60: 10 }
+      },
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 60: 11 }
+      }
+    ],
+
+    baseHelpTime: 3500,
+    ingRate: 0.204,
+    skillRate: 0.047,
+    maxHold: 19,
+
+    berryIndex: 1.46,
+    ingIndex: 3.55,
+    skillIndicator: 2.34,
+
+    evolutionChain: [
+      {
+        dexNo: 590,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 591,
+            targetFormId: "normal",
+            conditions: [
+              { type: "level", value: 29 },
+              { type: "candy", value: 40 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 591,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ハイパー", rank: 4 }],
+          2: [{ type: "マスター", rank: 3 }],
+          3: null,
+          4: [{ type: "マスター", rank: 4 }]
+        }
+      },
+      {
+        name: "ラピスラズリ湖畔",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 3 }],
+          4: [{ type: "ハイパー", rank: 3 }]
+        }
+      },
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "スーパー", rank: 5 }],
+          3: [{ type: "マスター", rank: 1 }],
+          4: [{ type: "ハイパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 4 }],
+          4: [{ type: "マスター", rank: 7 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 3 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 3 }],
+          4: [{ type: "マスター", rank: 6 }]
+        }
+      }
+    ]
+  },
+
+  {
     dexNo: 627,
     formId: "normal",
     name: "ワシボン",
@@ -343,6 +571,7 @@ const pokedexData_Unova = [
 
     sleepType: "ぐっすり",
     region: "イッシュ",
+    evolutionStage: 1,
 
     mainSkill: "きのみバースト",
 
@@ -454,6 +683,7 @@ const pokedexData_Unova = [
 
     sleepType: "ぐっすり",
     region: "イッシュ",
+    evolutionStage: 0,
 
     mainSkill: "きのみバースト",
 
