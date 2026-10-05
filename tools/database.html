@@ -6,6 +6,7 @@
   <title>ポケモンデータベース</title>
 
   <!-- CSS -->
+  <link rel="stylesheet" href="src_common/basic.css">
   <link rel="stylesheet" href="src_database/database.css">
 </head>
 
@@ -14,26 +15,31 @@
 <!-- ▼ 固定ヘッダー -->
 <header class="header">
   <div class="header-title">Pokémon Sleep Tools</div>
-  <div class="menu-icon" id="menuBtn">☰</div>
+  <button id="menu-button" class="menu-button" type="button" aria-label="メニューを開く" aria-controls="side-Menu" aria-expanded="false">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </button>
 </header>
 
 <!-- ▼ スライドメニュー -->
-<nav class="side-menu" id="sideMenu">
+<nav class="side-menu" id="side-menu">
   <div class="menu-header">メニュー</div>
 
-  <a href="detail.html">詳細評価</a>
-  <a href="compare.html">比較評価</a>
-  <a href="party.html">パーティ評価</a>
-  <a href="exp.html">Exp計算</a>
-  <a href="sleepPower.html">ねむけパワー算出</a>
-  <a href="database.html">データベース</a>
+  <div class="menu-body">
+    <a href="detail.html">詳細評価</a>
+    <a href="compare.html">比較評価</a>
+    <a href="party.html">パーティ評価</a>
+    <a href="exp.html">Exp計算</a>
+    <a href="sleepPower.html">ねむけパワー算出</a>
+    <a href="database.html">データベース</a>
+  </div>
 
   <div class="menu-bottom">
     <a href="../index.html">トップページ</a>
   </div>
 </nav>
 
-<!-- ▼ メニュー展開時の背景 -->
 <div class="overlay" id="overlay"></div>
 
 <h1>データベース</h1>
