@@ -13,6 +13,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 2,
 
     mainSkill: "げんきオールS",
 
@@ -129,6 +130,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "げんきオールS",
 
@@ -245,6 +247,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "げんきオールS",
 
@@ -357,6 +360,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "すやすや",
     region: "シンオウ",
+    evolutionStage: 2,
 
     mainSkill: "きのみバースト",
 
@@ -473,6 +477,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "きのみバースト",
 
@@ -589,6 +594,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "きのみバースト",
 
@@ -705,6 +711,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 2,
 
     mainSkill: "おてつだいサポートS",
 
@@ -830,6 +837,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "おてつだいサポートS",
 
@@ -955,6 +963,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいサポートS",
 
@@ -1080,6 +1089,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "すやすや",
     region: "シンオウ",
+    evolutionStage: 2,
 
     mainSkill: "料理パワーアップS",
 
@@ -1169,6 +1179,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "すやすや",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "料理パワーアップS",
 
@@ -1258,6 +1269,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "すやすや",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "料理パワーアップS",
 
@@ -1347,6 +1359,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "たくわえる(エナジーチャージS)",
 
@@ -1437,6 +1450,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "たくわえる(エナジーチャージS)",
 
@@ -1519,6 +1533,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "きょううん(食材セレクトS)",
 
@@ -1621,6 +1636,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージM",
 
@@ -1714,6 +1730,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "ものまね(スキルコピー)",
 
@@ -1789,6 +1806,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 2,
 
     mainSkill: "げんきオールS",
 
@@ -1915,6 +1933,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいサポートS",
 
@@ -2003,6 +2022,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "ゆめのかけらゲットS",
 
@@ -2097,6 +2117,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "はどうだん(ゆめのかけらゲットS)",
 
@@ -2173,6 +2194,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -2262,6 +2284,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -2351,6 +2374,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -2435,6 +2459,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS(ランダム)",
 
@@ -2517,6 +2542,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "料理チャンスS",
 
@@ -2611,6 +2637,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "料理パワーアップS",
 
@@ -2711,6 +2738,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "すやすや",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "ゆびをふる",
 
@@ -2809,6 +2837,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "げんきエールS",
 
@@ -2939,6 +2968,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "料理パワーアップS",
 
@@ -3069,6 +3099,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "ぐっすり",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "おてつだいサポートS",
 
@@ -3176,6 +3207,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "すやすや",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "みかづきのいのり(げんきオールS)",
 
@@ -3260,6 +3292,7 @@ const pokedexData_Sinnoh = [
 
     sleepType: "うとうと",
     region: "シンオウ",
+    evolutionStage: 0,
 
     mainSkill: "ナイトメア(エナジーチャージM)",
 
