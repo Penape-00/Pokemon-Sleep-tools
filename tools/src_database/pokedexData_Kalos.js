@@ -13,6 +13,7 @@ const pokedexData_Kalos = [
 
     sleepType: "ぐっすり",
     region: "カロス",
+    evolutionStage: 1,
 
     mainSkill: "料理パワーアップS",
 
@@ -116,6 +117,7 @@ const pokedexData_Kalos = [
 
     sleepType: "ぐっすり",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "料理パワーアップS",
 
@@ -215,6 +217,7 @@ const pokedexData_Kalos = [
 
     sleepType: "すやすや",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "げんきオールS",
 
@@ -345,6 +348,7 @@ const pokedexData_Kalos = [
 
     sleepType: "ぐっすり",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "食材セレクトS",
 
@@ -442,6 +446,7 @@ const pokedexData_Kalos = [
 
     sleepType: "すやすや",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "料理チャンスS",
 
@@ -530,6 +535,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -623,6 +629,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -716,6 +723,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -809,6 +817,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージS",
 
@@ -902,6 +911,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -995,6 +1005,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -1088,6 +1099,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -1181,6 +1193,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージS",
 
@@ -1274,6 +1287,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 1,
 
     mainSkill: "エナジーチャージM",
 
@@ -1376,6 +1390,7 @@ const pokedexData_Kalos = [
 
     sleepType: "うとうと",
     region: "カロス",
+    evolutionStage: 0,
 
     mainSkill: "エナジーチャージM",
 
