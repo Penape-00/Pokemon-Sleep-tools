@@ -1521,6 +1521,105 @@ const pokedexData_Sinnoh = [
   },
 
   {
+    dexNo: 429,
+    formId: "normal",
+    name: "ムウマージ",
+
+    imageCard: getImagePath("card", 429, "normal"),
+    imageDetail: getImagePath("panel", 429, "normal"),
+
+    type: ["ゴースト"],
+    tokui: "スキル",
+
+    sleepType: "うとうと",
+    region: "シンオウ",
+    evolutionStage: 0,
+
+    mainSkill: "マジカルフレイム(料理アドバンスS)",
+
+    ingredients: [
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "めざましコーヒー",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 2400,
+    ingRate: 0.142,
+    skillRate: 0.036,
+    maxHold: 22,
+
+    berryIndex: 1.86,
+    ingIndex: 1.21,
+    skillIndicator: 2.78,
+
+    evolutionChain: [
+      {
+        dexNo: 200,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 429,
+            targetFormId: "normal",
+            conditions: [
+              { type: "item", value: "やみのいし" },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 429,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "マスター", rank: 8 }],
+          2: [{ type: "マスター", rank: 12 }],
+          3: null
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "マスター", rank: 3 }],
+          2: [{ type: "マスター", rank: 7 }],
+          3: [{ type: "マスター", rank: 13 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "マスター", rank: 1 }],
+          2: [{ type: "マスター", rank: 5 }],
+          3: [{ type: "マスター", rank: 11 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "マスター", rank: 3 }],
+          3: [{ type: "マスター", rank: 11 }]
+        }
+      },
+    ]
+  },
+
+  {
     dexNo: 430,
     formId: "normal",
     name: "ドンカラス",
