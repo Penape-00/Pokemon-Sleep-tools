@@ -5637,7 +5637,7 @@ fields: [
     ],
 
     baseHelpTime: 2200,
-    ingRate: 0.161,
+    ingRate: 0.166,
     skillRate: 0.024,
     maxHold: 28,
 
