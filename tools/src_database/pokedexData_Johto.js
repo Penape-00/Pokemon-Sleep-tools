@@ -2863,6 +2863,105 @@ const pokedexData_Johto = [
   },
 
   {
+    dexNo: 200,
+    formId: "normal",
+    name: "ムウマ",
+
+    imageCard: getImagePath("card", 200, "normal"),
+    imageDetail: getImagePath("panel", 200, "normal"),
+
+    type: ["ゴースト"],
+    tokui: "スキル",
+
+    sleepType: "うとうと",
+    region: "ジョウト",
+    evolutionStage: 1,
+
+    mainSkill: "料理パワーアップS",
+
+    ingredients: [
+      {
+        name: "ほっこりポテト",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "めざましコーヒー",
+        countsByLevel: { 30: 2, 60: 3 }
+      },
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 60: 4 }
+      }
+    ],
+
+    baseHelpTime: 2800,
+    ingRate: 0.150,
+    skillRate: 0.047,
+    maxHold: 13,
+
+    berryIndex: 1.58,
+    ingIndex: 1.04,
+    skillIndicator: 2.88,
+
+    evolutionChain: [
+      {
+        dexNo: 200,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 429,
+            targetFormId: "normal",
+            conditions: [
+              { type: "item", value: "やみのいし" },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 429,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "ハイパー", rank: 2 }],
+          2: [{ type: "マスター", rank: 1 }],
+          3: null
+        }
+      },
+      {
+        name: "ウノハナ雪原",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: [{ type: "マスター", rank: 2 }]
+        }
+      },
+      {
+        name: "ゴールド旧発電所",
+        stars: {
+          1: [{ type: "ノーマル", rank: 5 }],
+          2: [{ type: "スーパー", rank: 4 }],
+          3: [{ type: "ハイパー", rank: 5 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "スーパー", rank: 1 }],
+          2: [{ type: "ハイパー", rank: 2 }],
+          3: [{ type: "マスター", rank: 1 }]
+        }
+      },
+    ]
+  },
+
+  {
     dexNo: 202,
     formId: "normal",
     name: "ソーナンス",
