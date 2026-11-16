@@ -112,6 +112,12 @@ const ingredientData = {
     name: "つやつやアボカド",
     image: "src_database/img/ingredient/glossyavocado.png",
     energy: 162
+  },
+
+  "ひとくちナッツ": {
+    name: "ひとくちナッツ",
+    image: "src_database/img/ingredient/snackablenuts.png",
+    energy: 112
   }
 
 };
