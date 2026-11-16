@@ -70,7 +70,7 @@ const tools = [
   {
     id: "sleepPower",
     title: "ねむけパワー算出",
-    href: "tools/SleepPower.html",
+    href: "tools/sleepPower.html",
     icon: "src/Petal Dance Chocolate Tart.png",
     desc: "ねむけパワー計算ツール",
     color: "#ba68c8",
