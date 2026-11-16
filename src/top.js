@@ -77,7 +77,7 @@ const tools = [
     hoverColor: "#ab47bc"
   },
   {
-    id: "detabase",
+    id: "database",
     title: "データベース",
     href: "tools/database.html",
     icon: "src/Role Play Pumpkaboo Stew.png",
@@ -90,13 +90,19 @@ const tools = [
 /* ===============================
    ▼ 更新履歴データ
 ================================ */
+const categoryColors = {
+  GAME: "#ff9800",
+  TOOL: "#4caf50",
+  FIX:  "#f44336",
+  UI:   "#2196f3"
+};
+
 const updateHistory = [
-  { date: "2025-03-10", tool: "パーティ評価", color: "rgba(255,183,77,0.8)", content: "公開(ver1.0.0)" },
-  { date: "2025-02-05", tool: "ねむけパワー", color: "rgba(186,104,216,0.8)", content: "公開(ver1.0.0)" },
-  { date: "2025-01-26", tool: "Exp算出", color: "rgba(129,199,132,0.8)", content: "ハンバーガーメニュー追加(ver1.1.0)" },
-  { date: "2025-01-23", tool: "詳細評価", color: "rgba(255,187,255,0.8)", content: "公開(ver1.6.1)" },
-  { date: "2025-01-23", tool: "比較評価", color: "rgba(102,187,255,0.8)", content: "公開(ver1.1.0)" },
-  { date: "2025-01-23", tool: "Exp算出", color: "rgba(129,199,132,0.8)", content: "公開(ver1.0.0)" }
+  { date: "2026/11/16", category: "GAME" ,content: "「モンメン」「エルフーン」「イーブイ(ハロウィン(パープル))」追加" },
+  { date: "2026/11/16", category: "UI" ,content: "トップページ改修" },
+  { date: "2026/10/26", category: "GAME" ,content: "「ムウマ」「ムウマージ」追加" },
+  { date: "2026/10/01", category: "TOOL" ,content: "詳細評価ツール更新(ver 2.0.0)" },
+  { date: "2026/09/01", category: "TOOL" ,content: "EXP算出ツール更新(ver 3.0.0)" }
 ];
 
 /* ===============================
@@ -136,24 +142,19 @@ function renderHistory(list) {
 
   list.forEach(item => {
     const tr = document.createElement("tr");
+
+    const color = categoryColors[item.category] || "#ffffff";
+
     tr.innerHTML = `
       <td>${item.date}</td>
-      <td style="color: ${item.color}; font-weight: bold;">${item.tool}</td>
-      <td>${item.content}</td>
+      <td>
+        <span class="history-tag" style="background:${color};">
+          ${item.category}
+        </span>
+        ${item.content}
+      </td>
     `;
+
     tbody.appendChild(tr);
   });
 }
-
-/* ===============================
-   ▼ 絞り込み
-================================ */
-document.getElementById("filterTool").addEventListener("change", () => {
-  const selected = document.getElementById("filterTool").value;
-
-  const filtered = selected === "all"
-    ? updateHistory
-    : updateHistory.filter(item => item.tool === selected);
-
-  renderHistory(filtered);
-});
