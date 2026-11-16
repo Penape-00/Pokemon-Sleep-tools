@@ -183,6 +183,230 @@ const pokedexData_Unova = [
   },
 
   {
+    dexNo: 546,
+    formId: "normal",
+    name: "モンメン",
+
+    imageCard: getImagePath("card", 546, "normal"),
+    imageDetail: getImagePath("panel", 546, "normal"),
+
+    type: ["フェアリー"],
+    tokui: "食材",
+
+    sleepType: "すやすや",
+    region: "イッシュ",
+    evolutionStage: 1,
+
+    mainSkill: "げんきチャージS",
+
+    ingredients: [
+      {
+        name: "ひとくちナッツ",
+        countsByLevel: { 1: 2, 30: 5, 60: 7 }
+      },
+      {
+        name: "つやつやアボカド",
+        countsByLevel: { 30: 3, 60: 5 }
+      },
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 60: 7 }
+      }
+    ],
+
+    baseHelpTime: 4600,
+    ingRate: 0.200,
+    skillRate: 0.035,
+    maxHold: 10,
+
+    berryIndex: 0.90,
+    ingIndex: 1.67,
+    skillIndicator: 1.29,
+
+    evolutionChain: [
+      {
+        dexNo: 546,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 547,
+            targetFormId: "normal",
+            conditions: [
+              { type: "item", value: "たいようのいし" },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 547,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "スーパー", rank: 2 }],
+          2: [{ type: "ハイパー", rank: 1 }],
+          3: null,
+          4: [{ type: "ハイパー", rank: 2 }]
+        }
+      },
+      {
+        name: "シアンの砂浜",
+        stars: {
+          1: [{ type: "ノーマル", rank: 4 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 4 }],
+          4: [{ type: "スーパー", rank: 4 }]
+        }
+      },
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "ノーマル", rank: 3 }],
+          3: [{ type: "スーパー", rank: 4 }],
+          4: [{ type: "スーパー", rank: 1 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 4 }],
+          4: [{ type: "マスター", rank: 1 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ノーマル", rank: 1 }],
+          2: [{ type: "スーパー", rank: 3 }],
+          3: [{ type: "ハイパー", rank: 4 }],
+          4: [{ type: "ハイパー", rank: 5 }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 547,
+    formId: "normal",
+    name: "エルフーン",
+
+    imageCard: getImagePath("card", 547, "normal"),
+    imageDetail: getImagePath("panel", 547, "normal"),
+
+    type: ["フェアリー"],
+    tokui: "食材",
+
+    sleepType: "すやすや",
+    region: "イッシュ",
+    evolutionStage: 0,
+
+    mainSkill: "げんきチャージS",
+
+    ingredients: [
+      {
+        name: "ひとくちナッツ",
+        countsByLevel: { 1: 2, 30: 5, 60: 7 }
+      },
+      {
+        name: "つやつやアボカド",
+        countsByLevel: { 30: 3, 60: 5 }
+      },
+      {
+        name: "あんみんトマト",
+        countsByLevel: { 60: 7 }
+      }
+    ],
+
+    baseHelpTime: 2400,
+    ingRate: 0.199,
+    skillRate: 0.038,
+    maxHold: 22,
+
+    berryIndex: 1.74,
+    ingIndex: 3.26,
+    skillIndicator: 2.75,
+
+    evolutionChain: [
+      {
+        dexNo: 546,
+        formId: "normal",
+        evolveTo: [
+          {
+            targetDexNo: 547,
+            targetFormId: "normal",
+            conditions: [
+              { type: "item", value: "たいようのいし" },
+              { type: "candy", value: 80 }
+            ]
+          }
+        ]
+      },
+      {
+        dexNo: 547,
+        formId: "normal",
+        evolveTo: null
+      }
+    ],
+
+    fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: "マスター", rank: 8 }],
+          2: [{ type: "マスター", rank: 12 }],
+          3: null,
+          4: [{ type: "マスター", rank: 13 }]
+        }
+      },
+      {
+        name: "シアンの砂浜",
+        stars: {
+          1: [{ type: "マスター", rank: 5 }],
+          2: [{ type: "マスター", rank: 9 }],
+          3: [{ type: "マスター", rank: 15 }],
+          4: [{ type: "マスター", rank: 10 }]
+        }
+      },
+      {
+        name: "アンバー渓谷",
+        stars: {
+          1: [{ type: "ハイパー", rank: 5 }],
+          2: [{ type: "マスター", rank: 4 }],
+          3: [{ type: "マスター", rank: 10 }],
+          4: [{ type: "マスター", rank: 5 }]
+        }
+      },
+      {
+        name: "ワカクサ本島EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 1 }],
+          2: [{ type: "マスター", rank: 3 }],
+          3: [{ type: "マスター", rank: 11 }],
+          4: [{ type: "マスター", rank: 12 }]
+        }
+      },
+      {
+        name: "シアンの砂浜EX",
+        stars: {
+          1: [{ type: "ハイパー", rank: 1 }],
+          2: [{ type: "マスター", rank: 2 }],
+          3: [{ type: "マスター", rank: 9 }],
+          4: [{ type: "マスター", rank: 10 }]
+        }
+      }
+    ]
+  },
+
+  {
     dexNo: 557,
     formId: "normal",
     name: "イシズマイ",
