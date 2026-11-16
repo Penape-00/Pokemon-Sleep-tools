@@ -6725,11 +6725,11 @@ fields: [
 
   {
     dexNo: 133,
-    formId: "halloween",
-    name: "イーブイ(ハロウィン)",
+    formId: "halloween(orange)",
+    name: "イーブイ(ハロウィン(オレンジ))",
 
-    imageCard: getImagePath("card", 133, "halloween"),
-    imageDetail: getImagePath("panel", 133, "halloween"),
+    imageCard: getImagePath("card", 133, "halloween(orange)"),
+    imageDetail: getImagePath("panel", 133, "halloween(orange)"),
 
     type: ["ノーマル"],
     tokui: "スキル",
@@ -6767,7 +6767,67 @@ fields: [
     evolutionChain: [
       {
         dexNo: 133,
-        formId: "halloween",
+        formId: "halloween(orange)",
+        evolveTo: null
+      }
+    ],
+
+fields: [
+      {
+        name: "ワカクサ本島",
+        stars: {
+          1: [{ type: null, rank: null }],
+          2: [{ type: null, rank: null }]
+        }
+      }
+    ]
+  },
+
+  {
+    dexNo: 133,
+    formId: "halloween(purple)",
+    name: "イーブイ(ハロウィン(パープル))",
+
+    imageCard: getImagePath("card", 133, "halloween(purple)"),
+    imageDetail: getImagePath("panel", 133, "halloween(purple)"),
+
+    type: ["ノーマル"],
+    tokui: "スキル",
+
+    sleepType: "すやすや",
+    region: "カントー",
+    evolutionStage: 0,
+
+    mainSkill: "食材ゲットS",
+
+    ingredients: [
+      {
+        name: "ずっしりカボチャ",
+        countsByLevel: { 1: 1, 30: 2, 60: 4 }
+      },
+      {
+        name: "リラックスカカオ",
+        countsByLevel: { 30: 4, 60: 6 }
+      },
+      {
+        name: "モーモーミルク",
+        countsByLevel: { 60: 9 }
+      }
+    ],
+
+    baseHelpTime: 3200,
+    ingRate: 0.120,
+    skillRate: 0.046,
+    maxHold: 18,
+
+    berryIndex: 1.54,
+    ingIndex: 1.40,
+    skillIndicator: 2.65,
+
+    evolutionChain: [
+      {
+        dexNo: 133,
+        formId: "halloween(orange)",
         evolveTo: null
       }
     ],
