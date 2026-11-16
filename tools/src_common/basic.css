@@ -1,6 +1,42 @@
+/* ================================
+   カラーコード
+================================ */
+
+:root {
+  /* ===== Base Colors ===== */
+  --color-base-bg: #d6cec2;
+  --color-base-section: #f7f2e9;
+  --color-base-border: #b3a291;
+  --color-base-text: #403a34;
+
+  /* ===== Header ===== */
+  --color-header-bg: #4a4038;
+  --color-header-text: #fff8ed;
+  --color-header-icon: #fff;
+
+  /* ===== Side Menu ===== */
+  --color-menu-bg: #f7f2e9;
+  --color-menu-header-text: #9B7254;
+  --color-menu-header-border: #998b7c;
+  --color-menu-link-hover-bg: #ccb9a6;
+  --color-menu-link-text: #403a34;
+
+  /* ===== Table ===== */
+  --color-table-border: #262421;
+  --color-table-border-sub: #d2c5b6;
+  --color-table-left-bg: #4a4038;
+  --color-table-left-text: #fffbf2;
+  --color-table-right-bg: #fffbf2;
+  --color-table-right-text: #4a4038;
+}
+
+/* ================================
+   背景・項目
+================================ */
+
 body {
   font-family: sans-serif;
-  background: #d6cec2;
+  background: var(--color-base-bg);
   margin: 0;
   padding: 16px;
   padding-top: 30px; /* 固定ヘッダー分の余白 */
@@ -9,7 +45,7 @@ body {
 
 h1 {
   margin-bottom: 20px;
-  color: #403a34;
+  color: var(--color-base-text);
 }
 
 /* ================================
@@ -21,8 +57,8 @@ h1 {
   left: 0;
   right: 0;
   height: 40px;
-  background: #4a4038;
-  color: #fff8ed;
+  background: var(--color-header-bg);
+  color: var(--color-header-text);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +87,7 @@ h1 {
 }
 
 .menu-button:focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid var(--color-header-icon);
   outline-offset: 2px;
 }
 
@@ -59,7 +95,7 @@ h1 {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--color-header-icon);
   border-radius: 2px;
 }
 
@@ -72,7 +108,7 @@ h1 {
   right: -220px;
   width: 220px;
   height: 100%;
-  background: #f7f2e9;
+  background: var(--color-menu-bg);
   box-shadow: -2px 0 6px rgba(0,0,0,0.2);
   padding-top: 30px;
   transition: right 0.3s ease;
@@ -90,8 +126,8 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   padding: 16px;
-  color: #9B7254;
-  border-bottom: 2px solid #998b7c;
+  color: var(--color-menu-header-text);
+  border-bottom: 2px solid var(--color-menu-header-border);
   flex: 0 0 auto;
 }
 
@@ -106,7 +142,7 @@ h1 {
   display: block;
   padding: 14px;
   font-size: 16px;
-  color: #403a34;
+  color: var(--color-menu-link-text);
   text-decoration: none;
   border-bottom: 1px solid #b3a291;
 }
@@ -114,7 +150,7 @@ h1 {
 .menu-body a:hover,
 .side-menu .menu-bottom a:hover,
 .side-menu > a:hover {
-  background: #ccb9a6;
+  background: var(--color-menu-link-hover-bg);
 }
 
 .menu-body a:last-child {
@@ -124,14 +160,14 @@ h1 {
 .side-menu .menu-bottom {
   flex: 0 0 auto; /* 固定 */
   padding-bottom: 28px;
-  border-top: 2px solid #998b7c;
+  border-top: 2px solid var(--color-menu-header-border);
   background: transparent;
 }
 
 .side-menu .menu-bottom a {
   font-size: 16px;
   font-weight: bold;
-  color: #403a34;
+  color: var(--color-menu-link-text);
   text-decoration: none;
   padding: 14px;
   display: block;
