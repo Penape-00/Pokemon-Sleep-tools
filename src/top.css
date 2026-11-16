@@ -13,15 +13,28 @@
    ツール一覧
 ================================ */
 #tools {
-  margin-top: 40px;
   margin-bottom: 20px;
 }
 
 #tools h2 {
-  margin: 0 0 16px 0;
-  font-size: 20px;
-  border-left: 6px solid #4CAF50;
-  padding-left: 8px;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 24px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3949AB;
+}
+
+#tools h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 240px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #fffc64, #5C6BC0, #3949AB, #1A237E);
 }
 
 /* ================================
@@ -138,20 +151,32 @@
   background: rgba(255,255,255,0.1);
 }
 
-/* 絞り込み */
-.filter-box {
-  margin-bottom: 12px;
+.chalkboard-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.chalkboard select {
-  background: #3c6f4a;
+.chalkboard-scroll table {
+  min-width: 500px; /* スマホで横スクロールが発生する */
+}
+
+.chalkboard td:first-child,
+.chalkboard th:first-child {
+  width: 120px;
+  white-space: nowrap;
+}
+
+.history-tag {
+  display: inline-block;
+  min-width: 58px;
+  padding: 2px 8px;
+  margin-right: 8px;
+  border-radius: 4px;
   color: #fff;
-  border: 1px solid #fff;
-  padding: 8px;
-  border-radius: 6px;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
 }
-
 /* ================================
    フッター
 ================================ */
