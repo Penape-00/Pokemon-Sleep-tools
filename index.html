@@ -46,11 +46,11 @@
 
 <main>
 
-  <h1>評価ツールまとめ</h1>
+  <h1>Pokémon Sleep Tools</h1>
 
   <!-- ▼ ツール一覧 -->
   <section id="tools">
-    <h2>ツール一覧</h2>
+    <h2>利用可能なツール</h2>
     <div id="toolGrid" class="grid"></div>
   </section>
 
@@ -58,29 +58,18 @@
   <section id="history" class="panel chalkboard">
     <h2>更新履歴</h2>
 
-    <table id="historyTable">
-      <thead>
-        <tr>
-          <th>日付</th>
-          <th>
-            <div class="filter-box">
-              <label>ツール名：</label>
-              <select id="filterTool">
-                <option value="all">すべて</option>
-                <option value="詳細評価">詳細評価</option>
-                <option value="比較評価">比較評価</option>
-                <option value="パーティ評価">パーティ評価</option>
-                <option value="Exp算出">Exp算出</option>
-                <option value="ねむけパワー算出">ねむけパワー算出</option>
-                <option value="Database">データベース</option>
-              </select>
-            </div>
-          </th>
-          <th>更新内容</th>
-        </tr>
-      </thead>
-      <tbody id="historyBody"></tbody>
-    </table>
+    <div class="chalkboard-scroll">
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th>日付</th>
+            <th>更新内容</th>
+          </tr>
+        </thead>
+
+        <tbody id="historyBody"></tbody>
+      </table>
+    </div>
   </section>
 
 </main>
